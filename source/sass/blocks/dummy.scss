@@ -1,5 +1,6 @@
 .dummy {
   position: relative;
+  overflow: hidden;
 
 
   &__top {
@@ -25,9 +26,19 @@
     }
   }
 
+  &__right {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
   &__logo {
-    width: 90.9rem;
     margin: 0 0 2.7rem;
+    width: 100%;
+  }
+
+  &__main {
+    width: 49.5%;
   }
 
   &__main-text {
@@ -82,11 +93,12 @@
 
   &__girls {
     position: absolute;
-    top: -3.7rem;
-    right: -3.9rem;
+    bottom: -15.7%;
+    right: -2.1%;
     width: 97.1rem;
     user-select: none;
     pointer-events: none;
+    width: 52.7%;
   }
 
   &__info {
