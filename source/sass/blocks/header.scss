@@ -1,0 +1,97 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 60;
+  transition: background-color 0.3s ease;
+  background: transparent;
+
+  &.is-scrolled {
+    background-color: #8E003F;
+
+    @media (max-width: $tablet) {
+      background: transparent;
+    }
+  }
+
+  &__logos-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+  }
+
+   &__container {
+      &.nav-open {
+         background: $black;
+         backdrop-filter: none;
+      }
+
+      @media (max-width: $tablet) {
+         display: flex;
+         height: 100%;
+       }
+   }
+
+  &__logos-wrapper {
+
+   @media (max-width: $tablet) {
+      display: none;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.2rem;
+
+      a {
+         img {
+            max-height: 2.4rem;
+
+            @media (max-width: $mobile) {
+                max-height: 1.9rem;
+            }
+         }
+      }
+
+
+      a:last-child {
+         img {
+            max-height: 4.1rem;
+
+            @media (max-width: $mobile) {
+                max-height: 3.5rem;
+            }
+         }
+      }
+   }
+
+  }
+
+  &__nav {
+    position: relative;
+    padding: 2.7rem 0;
+    flex-shrink: 0;
+    z-index: 2;
+
+    @media (max-width: $laptop) {
+      padding: 2rem 0;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 1.6rem 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (max-width: $tablet) {
+      justify-content: flex-start;
+   }
+  }
+
+
+
+
+}
