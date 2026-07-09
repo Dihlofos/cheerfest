@@ -14,7 +14,7 @@ html {
   }
 
   @media (max-width: $mobile) {
-    @include font(9px, 9px, 400);
+    @include font(10px, 10px, 400);
   }
 }
 
@@ -93,6 +93,13 @@ img {
   display: block;
   @media (max-width: $mobile) {
     display: none;
+  }
+}
+
+.tablet {
+  display: none;
+  @media (max-width: $tablet) {
+    display: block;
   }
 }
 

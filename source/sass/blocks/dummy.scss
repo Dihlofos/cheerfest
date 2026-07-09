@@ -9,12 +9,22 @@
     padding: 2.9rem 0;
     z-index: 10;
 
+    @media (max-width: $tablet) {
+      padding: 1.7rem 0;
+    }
   }
 
   &__logos {
     display: flex;
     justify-content: center;
     gap: 4.8rem;
+
+    @media (max-width: $tablet) {
+      gap: 2.7rem;
+      padding: 0 1rem;
+      max-width: 50rem;
+      margin: 0 auto;
+    }
   }
 
   &__content {
@@ -24,24 +34,46 @@
     .container {
       max-width: 184rem;
     }
+
+    @media (max-width: $tablet) {
+      padding: 4.9rem 0 4.1rem;
+
+      .container {
+        padding: 0 1.6rem;
+      }
+    }
   }
 
   &__right {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
 
   &__logo {
     margin: 0 0 2.7rem;
     width: 100%;
+
+    @media (max-width: $tablet) {
+      margin: 0 0 3rem;
+      max-width: 50rem;
+    }
   }
 
   &__main {
     width: 49.5%;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
   }
 
   &__main-text {
+    position: relative;
     font-weight: 700;
     line-height: 1.1;
     font-style: italic;
@@ -49,6 +81,32 @@
     text-transform: uppercase;
     max-width: 65.4rem;
     margin: 0 0 2.3rem 10rem;
+
+    @media (max-width: $tablet) {
+      margin-left: 0;
+      font-size: 2rem;
+      padding: 0 1rem;
+      text-align: center;
+      margin-bottom: 1.7rem;
+
+
+      span {
+        position: relative;
+        z-index: 1;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: calc(100% + 1rem);
+        left: 0;
+        top: -0.7rem;
+        background-color: $magenta;
+        z-index: 0;
+        transform: skewX(-12deg);
+      }
+    }
   }
 
   &__subtext {
@@ -57,6 +115,14 @@
     font-weight: 500;
     max-width: 65.4rem;
     margin-left: 10rem;
+
+    @media (max-width: $tablet) {
+      margin-left: 0;
+      font-size: 1.6rem;
+      text-align: center;
+      position: relative;
+      z-index: 5;
+    }
   }
 
   &__date {
@@ -65,6 +131,13 @@
     margin-right: 2rem;
     z-index: 5;
     position: relative;
+
+    @media (max-width: $tablet) {
+      margin-top: 0;
+      width: 26rem;
+      margin-right: 0;
+      margin-left: -0.3rem;
+    }
   }
 
   &__decor {
@@ -89,6 +162,39 @@
       top: -10.5rem;
       width: 85.9rem;
     }
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__girl {
+    position: relative;
+    width: 77rem;
+    max-width: unset;
+    left: 50%;
+    transform: translateX(-45.4%);
+    margin-top: -27.3rem;
+    margin-bottom: -31.6rem;
+  }
+
+  &__mobile-decor {
+    display: none;
+    position: absolute;
+    width: 140.4rem;
+    max-width: unset;
+    top: -41rem;
+    left: 50%;
+    transform: translateX(-56%) rotate(7deg);
+    z-index: 2;
+    mix-blend-mode: screen;
+    user-select: none;
+    pointer-events: none;
+
+    @media (max-width: $tablet) {
+      display: block;
+    }
+
   }
 
   &__girls {
@@ -118,5 +224,13 @@
     user-select: none;
     pointer-events: none;
     z-index: 0;
+
+    @media (max-width: $tablet) {
+      max-width: unset;
+      width: auto;
+      height: auto;
+      bottom: auto;
+      top: 0;
+    }
   }
 }
