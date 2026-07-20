@@ -27,6 +27,11 @@ jobs:
 
       - run: npm ci
       - run: npm run generate
+        env:
+          NITRO_APP_BASE_URL: /cheerfest/
+
+      # .nojekyll — иначе Jekyll игнорирует _assets/
+      - run: touch app/.output/public/.nojekyll
 
       - uses: actions/upload-pages-artifact@v3
         with:
