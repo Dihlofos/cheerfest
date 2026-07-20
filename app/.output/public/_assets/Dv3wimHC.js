@@ -1,6 +1,6 @@
 import { _ as _export_sfc } from "./1tPrXgE0.js";
-import { B as openBlock, C as createElementBlock, D as createBaseVNode, E as toDisplayString, l as unref, I as Fragment, J as renderList, N as normalizeClass, i as ref, o as onMounted, Q as onUnmounted, F as createVNode, G as withCtx, R as publicAssetsURL, M as renderSlot } from "./CL6YHsGD.js";
-import { _ as _sfc_main$4 } from "./0qfk64xl.js";
+import { B as openBlock, C as createElementBlock, D as createBaseVNode, E as toDisplayString, l as unref, I as Fragment, J as renderList, N as normalizeClass, i as ref, o as onMounted, Q as onUnmounted, F as createVNode, G as withCtx, R as publicAssetsURL, M as renderSlot } from "./BwZBAoix.js";
+import { _ as _sfc_main$4 } from "./B59Upf_s.js";
 const navItems = [
   {
     label: "О событии ",

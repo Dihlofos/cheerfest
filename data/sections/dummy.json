@@ -5,28 +5,28 @@
   "subText": "Скоро на сайте появится больше информации, расписание и подробности по всем активностям. Следите за обновлениями — будет интересно! С другими событиями вы можете ознакомиться на портале Московского спорта.",
   "logos": [
     {
-      "src": "/images/Dummy/major.svg",
+      "src": "/images/dummy/major.svg",
       "alt": "Проект мэра",
       "link": "https://www.mos.ru/city/projects/",
       "width": 96,
       "height": 49
     },
     {
-      "src": "/images/Dummy/summer.svg",
+      "src": "/images/dummy/summer.svg",
       "alt": "Лето в Москве",
       "link": "https://leto.mos.ru/",
       "width": 110,
       "height": 47
     },
     {
-      "src": "/images/Dummy/dep.svg",
+      "src": "/images/dummy/dep.svg",
       "alt": "Департамент Москвы",
       "link": "https://www.mos.ru/moskomsport/",
       "width": 138,
       "height": 47
     },
     {
-      "src": "/images/Dummy/mossport.svg",
+      "src": "/images/dummy/mossport.svg",
       "alt": "Московский спорт",
       "link": "https://sport.mos.ru",
       "width": 164,
@@ -34,15 +34,15 @@
     }
   ],
   "images": {
-    "decorLeft": "/images/Dummy/decor-left.png",
-    "decorTop": "/images/Dummy/decor-top.png",
-    "decorRight": "/images/Dummy/decor-right.png",
-    "mobileDecor": "/images/Dummy/mobile-decor.png",
-    "bg": "/images/Dummy/bg.jpg",
-    "logo": "/images/Dummy/logo.svg",
-    "dateDesktop": "/images/Dummy/date.svg",
-    "dateMobile": "/images/Dummy/date-mobile.svg",
-    "girl": "/images/Dummy/girl.png",
-    "girls": "/images/Dummy/girls.png"
+    "decorLeft": "/images/dummy/decor-left.png",
+    "decorTop": "/images/dummy/decor-top.png",
+    "decorRight": "/images/dummy/decor-right.png",
+    "mobileDecor": "/images/dummy/mobile-decor.png",
+    "bg": "/images/dummy/bg.jpg",
+    "logo": "/images/dummy/logo.svg",
+    "dateDesktop": "/images/dummy/date.svg",
+    "dateMobile": "/images/dummy/date-mobile.svg",
+    "girl": "/images/dummy/girl.png",
+    "girls": "/images/dummy/girls.png"
   }
 }

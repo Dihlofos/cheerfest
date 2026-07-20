@@ -1,6 +1,6 @@
-import { _ as _sfc_main$4 } from "./DxNTI2lQ.js";
-import { _ as _sfc_main$5 } from "./0qfk64xl.js";
-import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as renderSlot, N as normalizeClass, O as createBlock, H as createTextVNode, A as useHead, K as normalizeProps, L as guardReactiveProps, l as unref } from "./CL6YHsGD.js";
+import { _ as _sfc_main$4 } from "./hqowMvOn.js";
+import { _ as _sfc_main$5 } from "./B59Upf_s.js";
+import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as renderSlot, N as normalizeClass, O as createBlock, H as createTextVNode, A as useHead, K as normalizeProps, L as guardReactiveProps, l as unref } from "./BwZBAoix.js";
 const _hoisted_1$2 = {
   id: "about",
   class: "about"
@@ -279,8 +279,8 @@ const _sfc_main$1 = {
 const type$1 = "hero";
 const title$1 = "Фестиваль танцев и чирлидинга — 15 августа";
 const links = [{ "text": "Смотреть программу", "class": "magenta", "href": "#programm" }, { "text": "Участвовать в конкурсе", "class": "white", "href": "#contest" }];
-const logos = [{ "src": "/images/Hero/major.svg", "alt": "Проект мэра", "link": "https://www.mos.ru/city/projects/", "width": 97, "height": 49 }, { "src": "/images/Hero/summer.svg", "alt": "Лето в Москве", "link": "https://leto.mos.ru/", "width": 110, "height": 47 }, { "src": "/images/Hero/dep.svg", "alt": "Департамент Москвы", "link": "https://www.mos.ru/moskomsport/", "width": 138, "height": 47 }, { "src": "/images/Hero/mossport.svg", "alt": "Московский спорт", "link": "https://sport.mos.ru", "width": 164, "height": 49 }];
-const images = { "decorLeft": "/images/Hero/decor-left.png", "decorTop": "/images/Hero/decor-top.png", "decorRight": "/images/Hero/decor-right.png", "mobileDecor": "/images/Hero/mobile-decor.png", "bg": "/images/Hero/bg.jpg", "logo": "/images/Hero/logo.svg", "dateDesktop": "/images/Hero/date.svg", "dateMobile": "/images/Hero/date-mobile.svg", "girl": "/images/Hero/girl.png", "girls": "/images/Hero/girls.png" };
+const logos = [{ "src": "/images/hero/major.svg", "alt": "Проект мэра", "link": "https://www.mos.ru/city/projects/", "width": 97, "height": 49 }, { "src": "/images/hero/summer.svg", "alt": "Лето в Москве", "link": "https://leto.mos.ru/", "width": 110, "height": 47 }, { "src": "/images/hero/dep.svg", "alt": "Департамент Москвы", "link": "https://www.mos.ru/moskomsport/", "width": 138, "height": 47 }, { "src": "/images/hero/mossport.svg", "alt": "Московский спорт", "link": "https://sport.mos.ru", "width": 164, "height": 49 }];
+const images = { "decorLeft": "/images/hero/decor-left.png", "decorTop": "/images/hero/decor-top.png", "decorRight": "/images/hero/decor-right.png", "mobileDecor": "/images/hero/mobile-decor.png", "bg": "/images/hero/bg.jpg", "logo": "/images/hero/logo.svg", "dateDesktop": "/images/hero/date.svg", "dateMobile": "/images/hero/date-mobile.svg", "girl": "/images/hero/girl.png", "girls": "/images/hero/girls.png" };
 const heroData = {
   type: type$1,
   title: title$1,

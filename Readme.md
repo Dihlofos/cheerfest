@@ -79,7 +79,7 @@ npm run clean    # Clean Nuxt cache
 
 The `Faq` component demonstrates the image workflow:
 
-- Images are placed in `app/public/images/Faq/` (the folder name matches the component name)
+- Images are placed in `app/public/images/faq/` (the folder name matches the component name)
 - Paths are stored in the component's data JSON (`data/sections/faq.json`) under an `images` field:
 
 ```json

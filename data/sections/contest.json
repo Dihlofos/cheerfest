@@ -27,8 +27,8 @@
     }
   ],
   "images": {
-    "ballLeft": "/images/Contest/ball-left.png",
-    "ballRight": "/images/Contest/ball-right.png",
-    "ballMobile": "/images/Contest/ball-mobile.png"
+    "ballLeft": "/images/contest/ball-left.png",
+    "ballRight": "/images/contest/ball-right.png",
+    "ballMobile": "/images/contest/ball-mobile.png"
   }
 }
