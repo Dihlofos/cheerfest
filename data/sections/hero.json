@@ -1,0 +1,58 @@
+{
+  "type": "hero",
+  "title": "Фестиваль танцев и чирлидинга — 15 августа",
+  "links": [
+    {
+      "text": "Смотреть программу",
+      "class": "magenta",
+      "href": "#programm"
+    },
+    {
+      "text": "Участвовать в конкурсе",
+      "class": "white",
+      "href": "#contest"
+    }
+  ],
+  "logos": [
+    {
+      "src": "/images/Hero/major.svg",
+      "alt": "Проект мэра",
+      "link": "https://www.mos.ru/city/projects/",
+      "width": 97,
+      "height": 49
+    },
+    {
+      "src": "/images/Hero/summer.svg",
+      "alt": "Лето в Москве",
+      "link": "https://leto.mos.ru/",
+      "width": 110,
+      "height": 47
+    },
+    {
+      "src": "/images/Hero/dep.svg",
+      "alt": "Департамент Москвы",
+      "link": "https://www.mos.ru/moskomsport/",
+      "width": 138,
+      "height": 47
+    },
+    {
+      "src": "/images/Hero/mossport.svg",
+      "alt": "Московский спорт",
+      "link": "https://sport.mos.ru",
+      "width": 164,
+      "height": 49
+    }
+  ],
+  "images": {
+    "decorLeft": "/images/Hero/decor-left.png",
+    "decorTop": "/images/Hero/decor-top.png",
+    "decorRight": "/images/Hero/decor-right.png",
+    "mobileDecor": "/images/Hero/mobile-decor.png",
+    "bg": "/images/Hero/bg.jpg",
+    "logo": "/images/Hero/logo.svg",
+    "dateDesktop": "/images/Hero/date.svg",
+    "dateMobile": "/images/Hero/date-mobile.svg",
+    "girl": "/images/Hero/girl.png",
+    "girls": "/images/Hero/girls.png"
+  }
+}

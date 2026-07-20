@@ -1,11 +1,5 @@
-.DS_Store
-.idea
-.vscode
-*.ai
-*.log
-*.psd
-*.sublime*
-
 node_modules/
-npm-debug.*
-Thumbs.db
+app/.nuxt/
+app/dist/
+*.log
+.DS_Store

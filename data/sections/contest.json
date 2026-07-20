@@ -1,0 +1,34 @@
+{
+  "type": "contest",
+  "title": "Конкурс танцевальных клубов",
+  "text": "Танцуете в команде? Покажите свой номер на главной сцене фестиваля, поборитесь за победу и призовой фонд!",
+  "title2": "Состязания чирлидинг-команд",
+  "text2": "Выступаете в чирлидинге? Продемонстрируйте мощную энергетику и сложные элементы на главной арене фестиваля и поборитесь за призовой фонд.",
+  "button": {
+    "text": "Подать заявку",
+    "link": "https://fest-dance-cheerleading.timepad.ru/event/4084236/",
+    "target": "_blank"
+  },
+  "button2": {
+    "text": "Подать заявку",
+    "link": "#",
+    "target": "_blank"
+  },
+  "policyLinks": [
+    {
+      "text": "Политика конфиденциальности",
+      "href": "/docs/policy.pdf",
+      "target": "_blank"
+    },
+    {
+      "text": "Регламент соревнований",
+      "href": "/docs/reglament.pdf",
+      "target": "_blank"
+    }
+  ],
+  "images": {
+    "ballLeft": "/images/Contest/ball-left.png",
+    "ballRight": "/images/Contest/ball-right.png",
+    "ballMobile": "/images/Contest/ball-mobile.png"
+  }
+}

@@ -1,0 +1,42 @@
+// ══════════════════════════════════════════════════════════
+// Main SCSS — точка входа
+// ══════════════════════════════════════════════════════════
+
+@use 'variables' as *;
+@use 'reset';
+@use 'typography';
+
+// Утилитарный класс заголовка
+.title {
+  font-family: $monserrat;
+  font-size: 6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+  margin: 0 0 6rem;
+
+  &--white { color: $white; }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+// Tablet utility — hide on desktop, show on tablet/mobile
+.tablet {
+  display: none;
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
