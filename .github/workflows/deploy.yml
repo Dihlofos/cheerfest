@@ -30,6 +30,15 @@ jobs:
         env:
           BASE_URL: /cheerfest/
 
+      # Rewrite hardcoded absolute paths для работы из подпапки /cheerfest/
+      - name: Rewrite static asset paths for GitHub Pages subpath
+        run: |
+          cd app/.output/public
+          find . -type f \( -name '*.html' -o -name '*.js' -o -name '*.css' \) \
+            -exec sed -i 's|/images/|/cheerfest/images/|g' {} +
+          find . -type f \( -name '*.html' -o -name '*.js' -o -name '*.css' \) \
+            -exec sed -i 's|/docs/|/cheerfest/docs/|g' {} +
+
       # .nojekyll — иначе Jekyll игнорирует _assets/
       - run: touch app/.output/public/.nojekyll
 
