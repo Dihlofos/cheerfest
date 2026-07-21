@@ -1,0 +1,53 @@
+{
+  "type": "map",
+  "title": "карта площадки",
+  "buttons": [
+    {
+      "text": "Построить маршрут",
+      "link": "https://yandex.com/maps/-/CTV3MZJw"
+    }
+  ],
+  "mapImage": "/images/map/map.jpg",
+  "legend": [
+    {
+      "name": "Главная сцена",
+      "icon": "/images/map/icon-main-stage.svg"
+    },
+    {
+      "name": "Акробатическая дорожка",
+      "icon": "/images/map/icon-acro.svg"
+    },
+    {
+      "name": "Зона разминки",
+      "icon": "/images/map/icon-stretch.svg"
+    },
+        {
+      "name": "Мейкап и кастомизация костюмов",
+      "icon": "/images/map/icon-costumes.svg"
+    },
+    {
+      "name": "Зона чирлидинга",
+      "icon": "/images/map/icon-cheerleading.svg"
+    },
+        {
+      "name": "Пространство для батлов",
+      "icon": "/images/map/icon-swords.svg"
+    },
+    {
+      "name": "Судейская зона",
+      "icon": "/images/map/icon-sud.svg"
+    },
+        {
+      "name": "Фотозоны",
+      "icon": "/images/map/icon-photo.svg"
+    },
+    {
+      "name": "Зона спортивных танцев",
+      "icon": "/images/map/icon-children.svg"
+    },
+    {
+      "name": "Мастер-классы на льду",
+      "icon": "/images/map/icon-ice.svg"
+    }
+  ]
+}

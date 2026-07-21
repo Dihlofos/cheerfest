@@ -2,6 +2,7 @@
 import HeroSection from '~/components/sections/HeroSection.vue';
 import heroData from '~/../data/sections/hero.json';
 import aboutData from '~/../data/sections/about.json';
+import mapData from '~/../data/sections/map.json';
 
 // Здесь можно переписать title и description для каждой страницы, если нужно
 useHead({
@@ -13,6 +14,7 @@ useHead({
   <main>
     <HeroSection v-bind="heroData" />
     <AboutSection v-bind="aboutData" />
+    <MapSection v-bind="mapData" />
   </main>
 </template>
 
