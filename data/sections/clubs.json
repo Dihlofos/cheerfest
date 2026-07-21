@@ -1,0 +1,13 @@
+{
+  "type": "clubs",
+  "title": "Конкурс танцевальных клубов",
+  "text": "Покажите свой номер на главной сцене фестиваля и поборитесь за победу в одной из пяти номинаций. Победителей определяет звездное жюри, а лучшие команды получают денежные призы",
+  "button": {
+    "link": "#",
+    "text": "Подать заявку"
+  },
+  "girl": "/images/clubs/girl.png",
+  "titleImg": "/images/clubs/title.svg",
+  "bg": "/images/clubs/bg.png",
+  "decorTop": "/images/clubs/decor-top.png"
+}
