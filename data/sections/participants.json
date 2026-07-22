@@ -1,0 +1,26 @@
+{
+  "type": "participants",
+  "title": "Кто уже участвует",
+  "cards": [
+    {
+      "name": "НАЗВАНИЕ\nКОМАНДЫ",
+      "photo": "/images/shared/cheerleaders-placeholder.jpg"
+    },
+    {
+      "name": "НАЗВАНИЕ\nКОМАНДЫ",
+      "photo": "/images/shared/cheerleaders-placeholder.jpg"
+    },
+    {
+      "name": "НАЗВАНИЕ\nКОМАНДЫ",
+      "photo": "/images/shared/cheerleaders-placeholder.jpg"
+    },
+    {
+      "name": "НАЗВАНИЕ\nКОМАНДЫ",
+      "photo": "/images/shared/cheerleaders-placeholder.jpg"
+    },
+    {
+      "name": "НАЗВАНИЕ\nКОМАНДЫ",
+      "photo": "/images/shared/cheerleaders-placeholder.jpg"
+    }
+  ]
+}

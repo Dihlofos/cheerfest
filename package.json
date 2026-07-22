@@ -10,7 +10,8 @@
     "clean": "npx nuxt cleanup --cwd app"
   },
   "dependencies": {
-    "dompurify": "^3.4.12"
+    "dompurify": "^3.4.12",
+    "swiper": "^14.0.6"
   },
   "devDependencies": {
     "js-beautify": "^2.0.3",
