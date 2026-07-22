@@ -1,0 +1,26 @@
+{
+  "type": "slider",
+  "title": "Звездное жюри",
+  "cards": [
+    {
+      "name": "иМЯ\nфАМИЛИЯ",
+      "photo": "/images/shared/girl-placeholder.png"
+    },
+    {
+      "name": "иМЯ\nфАМИЛИЯ",
+      "photo": "/images/shared/girl-placeholder.png"
+    },
+    {
+      "name": "иМЯ\nфАМИЛИЯ",
+      "photo": "/images/shared/girl-placeholder.png"
+    },
+    {
+      "name": "иМЯ\nфАМИЛИЯ",
+      "photo": "/images/shared/girl-placeholder.png"
+    },
+    {
+      "name": "иМЯ\nфАМИЛИЯ",
+      "photo": "/images/shared/girl-placeholder.png"
+    }
+  ]
+}

@@ -6,9 +6,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <section id="participants" class="participants">
+  <section class="slider-section">
     <Container>
-      <h2 class="participants__title title">{{ title }}</h2>
+      <h2 class="slider-section__title title">{{ title }}</h2>
 
       <Slider
         :items="cards"
@@ -16,16 +16,16 @@ const props = defineProps({
         arrow-right="/images/shared/arrow-right.svg"
       >
         <template #slide="{ item }">
-          <div class="participants__card">
+          <div class="slider-section__card">
             <Image
-              class="participants__card-photo"
+              class="slider-section__card-photo"
               :src="item.photo"
               alt=""
               width="380"
               height="393"
             />
-            <div class="participants__card-name-wrap">
-              <p class="participants__card-name">{{ item.name }}</p>
+            <div class="slider-section__card-name-wrap">
+              <p class="slider-section__card-name">{{ item.name }}</p>
             </div>
           </div>
         </template>
@@ -35,7 +35,7 @@ const props = defineProps({
 </template>
 
 <style lang="scss">
-.participants {
+.slider-section {
   padding: 6rem 0 10rem;
 
   &__title {
@@ -90,7 +90,7 @@ const props = defineProps({
 }
 
 @media (max-width: $mobile) {
-  .participants {
+  .slider-section {
     padding: 6rem 0 5rem;
 
     &__title {
