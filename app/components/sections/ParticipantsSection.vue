@@ -36,27 +36,27 @@ const props = defineProps({
 
 <style lang="scss">
 .participants {
-  padding: 12rem 0 10rem;
+  padding: 6rem 0 10rem;
 
   &__title {
-    margin: 0 0 7.5rem;
+    margin: 0 0 6.3rem;
   }
 
   &__card {
     position: relative;
-    width: 37rem;
+    width: 100%;
     height: 40rem;
     border-radius: 3rem;
     overflow: hidden;
-    background: linear-gradient(90deg, $darkBlue 0.18%, #25135D 14.18%, #661368 44.18%, #CC137A 88.18%, $magenta 100.17%);
+    background: $magenta;
   }
 
   &__card-photo {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100;
-    height: 100%;
+    width: 100%;
+    height: 76%;
     max-width: none;
     object-fit: cover;
     object-position: top center;
@@ -70,9 +70,9 @@ const props = defineProps({
     z-index: 2;
     display: flex;
     justify-content: center;
-    padding: 4rem 0;
+    padding: 6rem 0 3.6rem;
     background: var(--gr-0, linear-gradient(90deg, #0C1359 0.18%, #25135D 14.18%, #661368 44.18%, #CC137A 88.17%, #EB1380 100.17%));
-    clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 3rem, 101% 0, 100% 100%, 0% 100%);
   }
 
   &__card-name {

@@ -108,7 +108,7 @@ const nextRef = ref(null)
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2.8rem;
+    gap: 6.3rem;
   }
 
   &__viewport {
