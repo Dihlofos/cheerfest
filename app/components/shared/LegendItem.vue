@@ -8,13 +8,13 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="legend-item" :class="{ 'legend-item--extended': isExtended && subtitle }">
+  <div class="legend-item" :class="{ 'legend-item--extended': isExtended }">
     <div class="legend-item__icon">
       <Image
         :src="icon"
         alt=""
-        width="44"
-        height="44"
+        :width="isExtended ? 120 : 44"
+        :height="isExtended ? 120 : 44"
       />
     </div>
     <div class="legend-item__text">
@@ -34,8 +34,6 @@ const props = defineProps({
   background: linear-gradient(90deg, $magenta 0.18%, #CC137A 12.18%, #661368 56.18%, #25135D 86.17%, $darkBlue 100.17%);
 
   &__icon {
-    width: 4.4rem;
-    height: 4.4rem;
     position: relative;
     flex-shrink: 0;
   }
@@ -65,9 +63,36 @@ const props = defineProps({
     margin-top: 0.4rem;
   }
 
+  // ═══ Extended — для секции Локации ═══
   &--extended {
-    min-height: 12rem;
-    padding: 2rem 2.9rem;
+    min-height: 18.1rem;
+    padding: 3rem 3rem 3rem 4.1rem;
+
+    .legend-item__icon {
+      width: 12rem;
+      height: 12rem;
+    }
+
+    .legend-item__text {
+      margin-left: 3.9rem;
+      gap: 2.3rem;
+    }
+
+    .legend-item__title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .legend-item__subtitle {
+      font-family: $monserrat;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.1;
+      color: $white;
+      margin-top: 0;
+      opacity: 1;
+    }
   }
 }
 </style>

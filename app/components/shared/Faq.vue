@@ -29,40 +29,37 @@ function isOpen(index) {
 
 <template>
   <section id="faq" class="faq">
-    <img :src="images.decorLeft" alt="" class="faq__decor faq__decor--left" width="1075" height="1090">
-    <img :src="images.decorRight" alt="" class="faq__decor faq__decor--right" width="945" height="958">
     <Container>
-      <div class="faq__wrapper">
-        <h2 class="faq__title">{{ title }}</h2>
-        <div class="faq__accordion">
-          <div
-            v-for="(item, index) in items"
-            :key="index"
-            class="faq__item"
-            :class="{ active: isOpen(index) }"
-          >
-            <button
-              class="faq__toggler"
-              :class="{ active: isOpen(index) }"
-              :aria-expanded="isOpen(index)"
-              :aria-controls="`faq-content-${index}`"
-              @click="toggle(index)"
-            >
-              {{ item.question }}
-              <span class="faq__icon" aria-hidden="true">
-                <img :src="images.arrowDown" alt="" class="faq__down" width="36" height="36">
-                <img :src="images.arrowUp" alt="" class="faq__up" width="36" height="36">
-              </span>
-            </button>
+      <h2 class="faq__title title">{{ title }}</h2>
 
-            <div
-              :id="`faq-content-${index}`"
-              class="faq__content"
-              :class="{ active: isOpen(index) }"
-              role="region"
-            >
-              <p v-html="sanitizeText(item.answer)"></p>
-            </div>
+      <div class="faq__accordion">
+        <div
+          v-for="(item, index) in items"
+          :key="index"
+          class="faq__item"
+          :class="{ active: isOpen(index) }"
+        >
+          <button
+            class="faq__toggler"
+            :class="{ active: isOpen(index) }"
+            :aria-expanded="isOpen(index)"
+            :aria-controls="`faq-content-${index}`"
+            @click="toggle(index)"
+          >
+            {{ item.question }}
+            <span class="faq__icon" aria-hidden="true">
+              <img :src="images.arrowDown" alt="" class="faq__down" width="36" height="36">
+              <img :src="images.arrowUp" alt="" class="faq__up" width="36" height="36">
+            </span>
+          </button>
+
+          <div
+            :id="`faq-content-${index}`"
+            class="faq__content"
+            :class="{ active: isOpen(index) }"
+            role="region"
+          >
+            <p v-html="sanitizeText(item.answer)"></p>
           </div>
         </div>
       </div>
@@ -74,31 +71,14 @@ function isOpen(index) {
 .faq {
   position: relative;
   z-index: 2;
-  padding-block: 8rem 0;
+  padding-block: 8rem 16rem;
 
   @media (max-width: $tablet) {
-    padding-block: 4rem 0;
-  }
-
-  &__wrapper {
-    position: relative;
+    padding-block: 4rem 8rem;
   }
 
   &__title {
-    font-family: $mossport;
-    font-size: 6.4rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 0.86;
-    text-transform: uppercase;
-    color: $white;
-    text-align: center;
-    margin: 0 0 6rem;
-
-    @media (max-width: $tablet) {
-      font-size: 4rem;
-      margin-bottom: 3rem;
-    }
+    margin: 0 0 6.5rem;
   }
 
   &__accordion {
@@ -108,48 +88,51 @@ function isOpen(index) {
 
   &__item {
     width: 100%;
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    margin: 0 0 2.3rem;
+    background: $darkBlue;
+    border-radius: 2rem;
+    margin: 0 0 2rem;
     overflow: hidden;
     transition: background 0.3s ease;
 
     @media (max-width: $tablet) {
-      border-radius: 12px;
+      border-radius: 1.2rem;
       margin-bottom: 1.6rem;
     }
 
     &.active {
-      background: linear-gradient(
-        180deg,
-        $magenta -300%,
-        rgba(12, 19, 89, 0.9) 100%
-      );
+      background: linear-gradient(90deg, $darkBlue 0.18%, #25135D 14.18%, #661368 44.18%, #CC137A 88.18%, $magenta 100.17%);
     }
   }
 
   &__toggler {
-    font-family: $mossport;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     color: $white;
-    font-size: 3.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-family: $monserrat;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.1;
     text-transform: uppercase;
     border: none;
     background: transparent;
     cursor: pointer;
     text-align: left;
-    padding: 1.7rem 2.5rem 2rem;
+    padding: 3rem 4.2rem 2rem;
     gap: 1.5rem;
+
+    &.active {
+      padding: 2.2rem 4.2rem 0;
+    }
 
     @media (max-width: $tablet) {
       padding: 1.8rem;
-      font-size: 2.2rem;
+      font-size: 1.6rem;
+
+      &.active {
+        padding-bottom: 0.5rem;
+      }
     }
   }
 
@@ -175,36 +158,35 @@ function isOpen(index) {
     display: flex;
     width: 3.6rem;
     height: 3.6rem;
+    flex-shrink: 0;
 
     @media (max-width: $tablet) {
-        width: 2.4rem;
-        height: 2.4rem;
+      width: 2.4rem;
+      height: 2.4rem;
     }
 
     img {
-        width: 3.6rem;
-        height: 3.6rem;
-        align-self: flex-start;
+      width: 3.6rem;
+      height: 3.6rem;
 
-        @media (max-width: $tablet) {
-          width: 2.4rem;
-          height: 2.4rem;
-        }
+      @media (max-width: $tablet) {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
     }
 
     .faq__up {
-        display: none;
+      display: none;
     }
-
   }
 
   .faq__item.active &__icon {
     .faq__down {
-        display: none;
+      display: none;
     }
 
     .faq__up {
-        display: block;
+      display: block;
     }
   }
 
@@ -219,16 +201,15 @@ function isOpen(index) {
       color: $white;
       font-family: $monserrat;
       font-size: 2rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 120%;
-      padding: 0 2.5rem 3.1rem;
+      font-weight: 500;
+      line-height: 1.1;
+      padding: 0 4.2rem 3.2rem;
       margin: 0;
-      max-width: 108rem;
+      max-width: 108.4rem;
 
       @media (max-width: $tablet) {
         font-size: 1.4rem;
-        padding: 0 1.8rem 1.8rem;
+        padding: 1.6rem 1.8rem 1.8rem;
       }
     }
   }

@@ -8,6 +8,9 @@ import clubsData from '~/../data/sections/clubs.json';
 import nominationsData from '~/../data/sections/nominations.json';
 import participantsData from '~/../data/sections/participants.json';
 import juryData from '~/../data/sections/jury.json';
+import locationsData from '~/../data/sections/locations.json';
+import partnersData from '~/../data/sections/partners.json';
+import faqData from '~/../data/sections/faq.json';
 
 // Здесь можно переписать title и description для каждой страницы, если нужно
 useHead({
@@ -25,6 +28,9 @@ useHead({
     <NominationsSection v-bind="nominationsData" />
     <SliderSection v-bind="participantsData" />
     <SliderSection v-bind="juryData" />
+    <LocationsSection v-bind="locationsData" />
+    <PartnersSection v-bind="partnersData" />
+    <Faq v-bind="faqData" />
   </main>
 </template>
 

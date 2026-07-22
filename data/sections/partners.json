@@ -1,0 +1,11 @@
+{
+  "type": "partners",
+  "title": "Организаторы и партнеры",
+  "logos": [
+    { "src": "/images/partners/mossport.svg", "alt": "Мосспорт" },
+    { "src": "/images/partners/mossport.svg", "alt": "Партнёр" },
+    { "src": "/images/partners/mossport.svg", "alt": "Партнёр" },
+    { "src": "/images/partners/mossport.svg", "alt": "Партнёр" },
+    { "src": "/images/partners/mossport.svg", "alt": "Партнёр" }
+  ]
+}

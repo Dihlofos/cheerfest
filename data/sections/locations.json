@@ -1,0 +1,42 @@
+{
+  "type": "locations",
+  "title": "локации",
+  "timeBadge": "C ХХ:ХХ до ХХ:ХХ",
+  "items": [
+    {
+      "name": "Зона разминки",
+      "description": "Подготовка к мастер-классам и выступлениям",
+      "icon": "/images/shared/icon-stretch.svg"
+    },
+    {
+      "name": "Зона чирлидинга",
+      "description": "Мастер-классы и показательные выступления",
+      "icon": "/images/shared/icon-cheerleading.svg"
+    },
+    {
+      "name": "Зона спортивных танцев",
+      "description": "Зумба, бачата, фит-рок и рок-н-ролл",
+      "icon": "/images/shared/icon-children.svg"
+    },
+    {
+      "name": "Пространство для батлов",
+      "description": "Соревнования среди любителей",
+      "icon": "/images/shared/icon-swords.svg"
+    },
+    {
+      "name": "Мейкап и кастомизация костюмов",
+      "description": "Бьюти-зона для создания танцевального образа",
+      "icon": "/images/shared/icon-costumes.svg"
+    },
+    {
+      "name": "Зона мастер-классов на льду",
+      "description": "Открытые занятия и показательные выступления",
+      "icon": "/images/shared/icon-ice.svg"
+    },
+    {
+      "name": "Фотозоны",
+      "description": "Тематические локации для фотографий",
+      "icon": "/images/shared/icon-photo.svg"
+    }
+  ]
+}
