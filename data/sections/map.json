@@ -11,43 +11,43 @@
   "legend": [
     {
       "name": "Главная сцена",
-      "icon": "/images/map/icon-main-stage.svg"
+      "icon": "/images/shared/icon-main-stage.svg"
     },
     {
       "name": "Акробатическая дорожка",
-      "icon": "/images/map/icon-acro.svg"
+      "icon": "/images/shared/icon-acro.svg"
     },
     {
       "name": "Зона разминки",
-      "icon": "/images/map/icon-stretch.svg"
+      "icon": "/images/shared/icon-stretch.svg"
     },
         {
       "name": "Мейкап и кастомизация костюмов",
-      "icon": "/images/map/icon-costumes.svg"
+      "icon": "/images/shared/icon-costumes.svg"
     },
     {
       "name": "Зона чирлидинга",
-      "icon": "/images/map/icon-cheerleading.svg"
+      "icon": "/images/shared/icon-cheerleading.svg"
     },
         {
       "name": "Пространство для батлов",
-      "icon": "/images/map/icon-swords.svg"
+      "icon": "/images/shared/icon-swords.svg"
     },
     {
       "name": "Судейская зона",
-      "icon": "/images/map/icon-sud.svg"
+      "icon": "/images/shared/icon-sud.svg"
     },
         {
       "name": "Фотозоны",
-      "icon": "/images/map/icon-photo.svg"
+      "icon": "/images/shared/icon-photo.svg"
     },
     {
       "name": "Зона спортивных танцев",
-      "icon": "/images/map/icon-children.svg"
+      "icon": "/images/shared/icon-children.svg"
     },
     {
       "name": "Мастер-классы на льду",
-      "icon": "/images/map/icon-ice.svg"
+      "icon": "/images/shared/icon-ice.svg"
     }
   ]
 }

@@ -1,0 +1,26 @@
+{
+  "type": "nominations",
+  "title": "Номинации",
+  "nominations": [
+    {
+      "name": "Современный танец",
+      "icon": "/images/shared/icon-main-stage.svg"
+    },
+    {
+      "name": "Спортивный танец",
+      "icon": "/images/shared/icon-children.svg"
+    },
+    {
+      "name": "Уличный танец",
+      "icon": "/images/shared/icon-stretch.svg"
+    },
+
+    {
+      "name": "Чирлидинг",
+      "icon": "/images/shared/icon-cheerleading.svg"
+    }
+  ],
+  "prizeLabel": "ПРИЗОВОЙ ФОНД",
+  "prizeAmount": "350 000 ₽",
+  "prizeNote": "команде-победителю в каждой номинации"
+}

@@ -36,21 +36,12 @@ const props = defineProps({
       </div>
 
       <div class="map__legend">
-        <div
+        <LegendItem
           v-for="(item, index) in legend"
           :key="index"
-          class="map__legend-item"
-        >
-          <div class="map__legend-icon">
-            <Image
-              :src="item.icon"
-              alt=""
-              width="44"
-              height="44"
-            />
-          </div>
-          <span class="map__legend-name">{{ item.name }}</span>
-        </div>
+          :icon="item.icon"
+          :title="item.name"
+        />
       </div>
     </Container>
   </section>
@@ -120,34 +111,10 @@ const props = defineProps({
   }
 
 
-  &__legend-item {
-    display: flex;
-    align-items: center;
-    min-height: 8.9rem;
-    padding: 2.3rem 2.9rem;
-    border-radius: 2rem;
-    background: linear-gradient(90deg, $magenta 0.18%, #CC137A 12.18%, #661368 56.18%, #25135D 86.17%, $darkBlue 100.17%);
-
+  .legend-item {
     &:nth-child(odd) {
       background: linear-gradient(90deg, $darkBlue 0.18%, #25135D 14.18%, #661368 44.18%, #CC137A 88.18%, $magenta 100.17%);
     }
-
-  }
-
-  &__legend-icon {
-    width: 4.4rem;
-    height: 4.4rem;
-    position: relative;
-    flex-shrink: 0;
-  }
-  &__legend-name {
-    font-family: $monserrat;
-    font-size: 2.2rem;
-    font-weight: 700;
-    line-height: 1.1;
-    text-transform: uppercase;
-    color: $white;
-    margin-left: 1.6rem;
   }
 }
 </style>

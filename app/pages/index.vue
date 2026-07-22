@@ -5,6 +5,7 @@ import aboutData from '~/../data/sections/about.json';
 import mapData from '~/../data/sections/map.json';
 import programData from '~/../data/sections/program.json';
 import clubsData from '~/../data/sections/clubs.json';
+import nominationsData from '~/../data/sections/nominations.json';
 
 // Здесь можно переписать title и description для каждой страницы, если нужно
 useHead({
@@ -19,6 +20,7 @@ useHead({
     <MapSection v-bind="mapData" />
     <ProgramSection v-bind="programData" />
     <ClubsSection v-bind="clubsData" />
+    <NominationsSection v-bind="nominationsData" />
   </main>
 </template>
 
