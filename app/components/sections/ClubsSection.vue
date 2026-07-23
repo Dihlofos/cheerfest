@@ -27,7 +27,9 @@ const props = defineProps({
 
         <div class="clubs__content">
           <Image class="clubs__title-logo" :src="titleImg" alt="Title" />
-          <Image class="clubs__bg" :src="bg" alt="Background" width="1400" height="352"/>
+          <div class="clubs__bg">
+            <Image :src="bg" alt="Background" width="1400" height="352"/>
+          </div>
           <div class="clubs__text-content">
             <h2 class="clubs__text text">{{ text }}</h2>
             <a :href="button.link" class="clubs__button">{{ button.text }}</a>
@@ -127,6 +129,16 @@ const props = defineProps({
     height: 100%;
     object-fit: cover;
     z-index: 5;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   }
 
 }

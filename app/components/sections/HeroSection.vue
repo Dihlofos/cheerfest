@@ -166,6 +166,10 @@ const props = defineProps({
     padding-left: 6.6rem;
     margin: 0 0 6.5rem;
 
+    @media (max-width: 1280px) {
+      padding-left: 0;
+    }
+
     @media (max-width: $tablet) {
       gap: 2.7rem;
       padding: 0 1rem;
@@ -217,6 +221,8 @@ const props = defineProps({
   &__logo {
     margin: 0 0 5.4rem;
 
+
+
     @media (max-width: $tablet) {
       margin: 0 0 3rem;
       max-width: 50rem;
@@ -226,6 +232,10 @@ const props = defineProps({
   &__main {
     width: 49.5%;
     margin-left: 15.5rem;
+
+    @media (max-width: 1280px) {
+      margin-left: 0;
+    }
 
     @media (max-width: $tablet) {
       width: 100%;
@@ -308,6 +318,10 @@ const props = defineProps({
       bottom: 0;
       left: -1rem;
       width: 111rem;
+
+      @media (max-width: 1280px) {
+        display: none;
+      }
     }
 
     &--right {
@@ -335,6 +349,8 @@ const props = defineProps({
     transform: translateX(-45.4%);
     margin-top: -27.3rem;
     margin-bottom: -31.6rem;
+
+
   }
 
   &__mobile-decor {
@@ -363,6 +379,14 @@ const props = defineProps({
     user-select: none;
     pointer-events: none;
     width: 48.7%;
+
+    @media (max-width: 1700px) {
+      right: -8%;
+    }
+
+    @media (max-width: 1280px) {
+      right: -8%;
+    }
   }
 
   &__info {

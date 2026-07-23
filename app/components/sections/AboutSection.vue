@@ -59,23 +59,39 @@ const props = defineProps({
     pointer-events: none;
 
     &--left {
+      width: 41.2rem;
       top: -13.5rem;
       left: -0.5rem;
+
+      @media (max-width: 1280px) {
+        width: 30rem;
+      }
+
+      @media (max-width: $laptop) {
+        width: 35.2rem;
+      }
     }
 
     &--right {
+      width: 32.5rem;
       bottom: -2rem;
       right: -1rem;
+
+      @media (max-width: 1280px) {
+        width: 28rem;
+      }
     }
   }
 
   &__text {
+    position: relative;
     font-size: 2.4rem;
     line-height: 1.1;
     font-weight: 500;
     text-align: center;
     max-width: 100rem;
     margin: 0 auto 7rem;
+    z-index: 5;
 
     p {
       margin: 0;
@@ -110,6 +126,8 @@ const props = defineProps({
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
+    position: relative;
+    z-index: 1;
   }
 
   &__item {
