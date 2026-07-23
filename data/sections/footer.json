@@ -4,11 +4,11 @@
   "contacts": [
     {
       "label": "По вопросам регистрации",
-      "email": "name@mail.ru"
+      "email": "ano@mossport.ru"
     },
     {
       "label": "Для СМИ",
-      "email": "pressame@mail.ru"
+      "email": "press@moscow.sport"
     }
   ],
   "info": {
@@ -18,9 +18,15 @@
       "ФИО корреспондента / всех участников съемочной группы с контактными телефонами."
     ]
   },
+  "socials": [
+    { "icon": "/images/footer/icon-tg.svg", "href": "#", "alt": "Telegram" },
+    { "icon": "/images/footer/icon-vk.svg", "href": "#", "alt": "VK" },
+    { "icon": "/images/footer/icon-rutube.svg", "href": "#", "alt": "Rutube" },
+    { "icon": "/images/footer/icon-max.svg", "href": "#", "alt": "Max" }
+  ],
   "docs": [
-    { "href": "/docs/policy.pdf", "label": "Политика конфиденциальности" },
-    { "href": "/docs/reject.pdf", "label": "Отказ от претензий от участника" },
-    { "href": "/docs/reject_child.pdf", "label": "Отказ от претензий от опекуна ребенка" }
+    { "href": "#", "label": "Политика конфиденциальности" },
+    { "href": "#", "label": "Политика обработки персональных данных" },
+    { "href": "#", "label": "Отказ от претензий" }
   ]
 }

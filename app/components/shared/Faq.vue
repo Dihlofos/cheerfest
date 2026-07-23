@@ -71,7 +71,7 @@ function isOpen(index) {
 .faq {
   position: relative;
   z-index: 2;
-  padding-block: 8rem 16rem;
+  padding-block: 8rem 15.5rem;
 
   @media (max-width: $tablet) {
     padding-block: 4rem 8rem;
