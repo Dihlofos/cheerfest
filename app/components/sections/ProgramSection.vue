@@ -77,6 +77,10 @@ const duplicatedEvents = computed(() => [...props.events, ...props.events])
     height: 90rem;
     padding-left: 6.4rem;
 
+    @media (max-width: $tablet) {
+      padding-left: 3.4rem;
+    }
+
 
 
     /* Ширина всего скроллбара */
@@ -97,6 +101,10 @@ const duplicatedEvents = computed(() => [...props.events, ...props.events])
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.7rem;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__card {
@@ -114,6 +122,10 @@ const duplicatedEvents = computed(() => [...props.events, ...props.events])
     gap: 2rem;
     padding: 3.4rem 2.9rem 5rem;
     min-width: 0;
+
+    @media (max-width: $tablet) {
+      padding: 2.4rem 1.9rem 3rem;
+    }
   }
 
   &__card-title {

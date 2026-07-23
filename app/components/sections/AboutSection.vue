@@ -48,6 +48,10 @@ const props = defineProps({
   position: relative;
   padding: 10rem 0 10rem;
 
+  @media (max-width: $mobile) {
+    padding: 5rem 0;
+  }
+
   &__title {
     margin: 0 0 3.5rem;
   }
@@ -81,6 +85,10 @@ const props = defineProps({
         width: 28rem;
       }
     }
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
 
   &__text {
@@ -92,6 +100,12 @@ const props = defineProps({
     max-width: 100rem;
     margin: 0 auto 7rem;
     z-index: 5;
+
+    @media (max-width: $tablet) {
+      font-size: 1.8rem;
+      margin: 0 auto 4rem;
+      max-width: 60rem;
+    }
 
     p {
       margin: 0;
@@ -113,6 +127,13 @@ const props = defineProps({
     position: relative;
     clip-path: polygon(3rem 0, 100% 0, 100% 100%, 0 100%);
     overflow: hidden;
+    flex-shrink: 0;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      height: 22rem;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
 
     .about__item-image {
       display: block;
@@ -128,6 +149,10 @@ const props = defineProps({
     gap: 2.5rem;
     position: relative;
     z-index: 1;
+
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__item {
@@ -139,11 +164,21 @@ const props = defineProps({
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 12px;
     overflow: hidden;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      border-radius: 20px;
+    }
   }
 
   &__item-left {
     padding: 3.8rem 2rem 4.1rem 4.2rem;
     max-width: 31rem;
+
+    @media (max-width: $tablet) {
+      max-width: 100%;
+      padding: 3rem 2rem 2rem;
+    }
   }
 
   &__item-title {
@@ -152,6 +187,10 @@ const props = defineProps({
     line-height: 1.1;
     text-transform: uppercase;
     margin: 0 0 1.6rem;
+
+    @media (max-width: $tablet) {
+      font-size: 2rem;
+    }
   }
 
   &__item-text {
@@ -159,6 +198,9 @@ const props = defineProps({
     font-weight: 500;
     line-height: 1.1;
 
+    @media (max-width: $tablet) {
+      font-size: 1.6rem;
+    }
   }
 
 }

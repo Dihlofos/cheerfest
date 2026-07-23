@@ -33,6 +33,10 @@ const props = defineProps({
   border-radius: 2rem;
   background: linear-gradient(90deg, $magenta 0.18%, #CC137A 12.18%, #661368 56.18%, #25135D 86.17%, $darkBlue 100.17%);
 
+  @media (max-width: $tablet) {
+    padding: 1.3rem 1.9rem;
+  }
+
   &__icon {
     position: relative;
     flex-shrink: 0;
@@ -43,6 +47,7 @@ const props = defineProps({
     flex-direction: column;
     margin-left: 1.6rem;
     min-width: 0;
+
   }
 
   &__title {
@@ -52,6 +57,10 @@ const props = defineProps({
     line-height: 1.1;
     text-transform: uppercase;
     color: $white;
+
+    @media (max-width: $tablet) {
+      font-size: 2rem;
+    }
   }
 
   &__subtitle {

@@ -36,16 +36,31 @@ onUnmounted(() => {
   padding: 2.6rem 0;
   background-color: $magenta;
 
+  @media (max-width: $tablet) {
+    background: transparent;
+    padding: 0;
+  }
+
   &--scrolled {
     backdrop-filter: blur(8px);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     padding: 0.8rem 0;
+
+    @media (max-width: $tablet) {
+      padding: 0;
+      backdrop-filter: none;
+      box-shadow: none;
+    }
   }
 
   &__inner {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: $tablet) {
+      min-height: 0;
+    }
   }
 
   &__logo {

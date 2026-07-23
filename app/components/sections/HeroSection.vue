@@ -147,6 +147,10 @@ const props = defineProps({
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
 
+  @media (max-width: $tablet) {
+    margin-top: 0;
+  }
+
 
   &__top {
     position: relative;
@@ -171,10 +175,9 @@ const props = defineProps({
     }
 
     @media (max-width: $tablet) {
-      gap: 2.7rem;
-      padding: 0 1rem;
+      gap: 2rem;
+      padding: 0 6rem 0 0;
       max-width: 50rem;
-      margin: 0 auto;
     }
   }
 
@@ -187,7 +190,7 @@ const props = defineProps({
     }
 
     @media (max-width: $tablet) {
-      padding: 4.9rem 0 4.1rem;
+      padding: 2rem 0 4.1rem;
 
       .container {
         padding: 0 1.6rem;
@@ -349,6 +352,11 @@ const props = defineProps({
     transform: translateX(-45.4%);
     margin-top: -27.3rem;
     margin-bottom: -31.6rem;
+
+    @media (max-width: $tablet) {
+      margin-top: -38.3rem;
+      margin-bottom: -16.6rem;
+    }
 
 
   }
