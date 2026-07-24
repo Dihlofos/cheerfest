@@ -115,6 +115,7 @@ const props = defineProps({
     &:nth-child(odd) {
       background: linear-gradient(90deg, $darkBlue 0.18%, #25135D 14.18%, #661368 44.18%, #CC137A 88.18%, $magenta 100.17%);
     }
+
   }
 }
 </style>

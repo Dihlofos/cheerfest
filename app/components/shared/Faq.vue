@@ -131,7 +131,7 @@ function isOpen(index) {
       font-size: 1.6rem;
 
       &.active {
-        padding-bottom: 0.5rem;
+        padding: 2.2rem 1.8rem 0.5rem;
       }
     }
   }

@@ -101,12 +101,20 @@ const duplicatedItems = computed(() => [...props.items, ...props.items])
       border-radius: 10px;
       z-index: 2;
     }
+
+    @media (max-width: $tablet) {
+      padding-left: 2.4rem;
+    }
   }
 
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+    }
 
     // Чередование градиента: нечётные элементы — реверсный градиент
     .legend-item {

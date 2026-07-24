@@ -52,6 +52,10 @@ const props = defineProps({
 
   &__title {
     margin: 0 0 59rem;
+
+    @media (max-width: $tablet) {
+      margin: 0 0 49rem;
+    }
   }
 
   &__title-logo {
@@ -86,6 +90,11 @@ const props = defineProps({
     bottom: 0;
     z-index: 5;
     max-width: unset;
+
+    @media (max-width: $tablet) {
+      width: 132rem;
+      right: -11.2rem;
+    }
   }
 
   &__girl {
@@ -94,6 +103,10 @@ const props = defineProps({
     left: 2.5rem;
     width: 68rem;
     z-index:6;
+
+    @media (max-width: $tablet) {
+      width: 65rem;
+    }
   }
 
   &__info {
@@ -108,6 +121,10 @@ const props = defineProps({
     min-height: 35.2rem;
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: $tablet) {
+      z-index: 10;
+    }
 
   }
 
@@ -138,6 +155,14 @@ const props = defineProps({
       left: 0;
       width: 100%;
       height: 100%;
+
+      @media (max-width: $tablet) {
+        right: 0;
+        left: auto;
+        width: 129%;
+        height: 100%;
+        max-width: unset;
+      }
     }
   }
 

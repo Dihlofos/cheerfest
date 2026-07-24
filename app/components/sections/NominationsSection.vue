@@ -37,6 +37,10 @@ const props = defineProps({
 .nominations {
   padding: 12.1rem 0 10rem;
 
+  @media (max-width: $tablet) {
+        padding: 12.1rem 0 5rem;
+  }
+
   &__header {
     display: flex;
     justify-content: center;
@@ -67,6 +71,7 @@ const props = defineProps({
     align-items: center;
     justify-content: center;
     gap: 3.7rem;
+    flex-wrap: wrap;
   }
 
   &__prize-label {

@@ -157,7 +157,6 @@ const nextRef = ref(null)
   &__native {
     display: flex;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     gap: 1.2rem;
     padding: 0 var(--container-padding, 2rem);
