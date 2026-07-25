@@ -168,6 +168,7 @@ const props = defineProps({
     @media (max-width: $mobile) {
       flex-direction: column;
       border-radius: 20px;
+      background: linear-gradient(90deg, #EB1380 0.18%, #CC137A 12.18%, #661368 70%, #25135D 110%);
     }
   }
 
@@ -178,6 +179,10 @@ const props = defineProps({
     @media (max-width: $tablet) {
       max-width: 100%;
       padding: 3rem 2rem 2rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 2rem 2rem 2rem;
     }
   }
 
@@ -191,6 +196,10 @@ const props = defineProps({
     @media (max-width: $tablet) {
       font-size: 2rem;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 1.8rem;
+    }
   }
 
   &__item-text {
@@ -200,6 +209,10 @@ const props = defineProps({
 
     @media (max-width: $tablet) {
       font-size: 1.6rem;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
     }
   }
 

@@ -56,6 +56,11 @@ const props = defineProps({
     justify-content: center;
     gap: 3.5rem;
     margin: 0 0 5rem;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__title {

@@ -13,14 +13,16 @@ defineProps({
 
 <style lang="scss">
 .title {
-  font-family: $monserrat;
-  font-size: 6rem;
-  font-style: italic;
-  font-weight: 700;
-  line-height: 1.1;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 0 6rem;
+  :where(&) {
+    font-family: $monserrat;
+    font-size: 6rem;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 0 6rem;
+  }
 
   &--white { color: $white; }
 
