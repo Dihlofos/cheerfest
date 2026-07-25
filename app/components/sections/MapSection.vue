@@ -3,6 +3,7 @@ const props = defineProps({
   title: { type: String, required: true },
   buttons: { type: Array, default: () => [] },
   mapImage: { type: String, default: '' },
+  mapImageMobile: { type: String, default: '' },
   legend: { type: Array, default: () => [] },
 })
 </script>
@@ -29,6 +30,7 @@ const props = defineProps({
         <Image
           class="map__image"
           :src="mapImage"
+          :sources="[ { media: '(max-width: 768px)', srcset: mapImageMobile } ]"
           alt=""
           width="1400"
           height="491"
@@ -50,6 +52,10 @@ const props = defineProps({
 <style lang="scss">
 .map {
   padding: 7.4rem 0 10rem;
+
+  @media (max-width: $mobile) {
+    padding: 2.4rem 0 2rem;
+  }
 
   &__header {
     display: flex;
@@ -113,14 +119,19 @@ const props = defineProps({
     flex-wrap: wrap;
     gap: 2.5rem;
     row-gap: 1rem;
-  }
 
-
-  .legend-item {
-    &:nth-child(odd) {
-      background: linear-gradient(90deg, $darkBlue 0.18%, #25135D 14.18%, #661368 44.18%, #CC137A 88.18%, $magenta 100.17%);
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
     }
-
   }
+
+  @media (min-width: 768px) {
+    .legend-item {
+      &:nth-child(odd) {
+        background: linear-gradient(90deg, $darkBlue 0.18%, #25135D 14.18%, #661368 44.18%, #CC137A 88.18%, $magenta 100.17%);
+      }
+    }
+  }
+
 }
 </style>

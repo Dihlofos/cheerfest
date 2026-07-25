@@ -35,6 +35,7 @@ const props = defineProps({
 
   @media (max-width: $tablet) {
     padding: 1.3rem 1.9rem;
+    min-height: auto;
   }
 
   &__icon {
@@ -77,20 +78,40 @@ const props = defineProps({
     min-height: 18.1rem;
     padding: 3rem 3rem 3rem 4.1rem;
 
+    @media (max-width: $mobile) {
+      padding: 2rem;
+      min-height: unset;
+      gap: 2rem;
+    }
+
     .legend-item__icon {
       width: 12rem;
       height: 12rem;
+      @media (max-width: $mobile) {
+        width: 6rem;
+        height: 6rem;
+      }
+
     }
 
     .legend-item__text {
       margin-left: 3.9rem;
       gap: 2.3rem;
+
+      @media (max-width: $mobile) {
+        margin-left: 0;
+        gap: 1.2rem;
+      }
     }
 
     .legend-item__title {
       font-size: 2.2rem;
       font-weight: 700;
       line-height: 1.1;
+
+      @media (max-width: $mobile) {
+        font-size: 1.8rem;
+      }
     }
 
     .legend-item__subtitle {
@@ -101,6 +122,10 @@ const props = defineProps({
       color: $white;
       margin-top: 0;
       opacity: 1;
+
+      @media (max-width: $mobile) {
+        font-size: 1.4rem;
+      }
     }
   }
 }

@@ -131,7 +131,7 @@ const props = defineProps({
 
     @media (max-width: $mobile) {
       width: 100%;
-      height: 22rem;
+      height: auto;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 

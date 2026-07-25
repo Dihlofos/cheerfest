@@ -185,6 +185,11 @@ import footerData from '~/../data/sections/footer.json'
     display: flex;
     gap: 4rem;
     align-items: flex-end;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   &__socials {

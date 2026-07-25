@@ -58,6 +58,10 @@ const props = defineProps({
     @media (max-width: $tablet) {
       margin: 0 0 49rem;
     }
+
+    @media (max-width: $tablet) {
+      margin: 0 0 4rem;
+    }
   }
 
   &__title-logo {
@@ -65,6 +69,12 @@ const props = defineProps({
     top: -7.5rem;
     right: 7rem;
     z-index: 6;
+
+    @media (max-width: $mobile) {
+      position: static;
+      width: 95%;
+      margin: 0 auto 4rem;
+    }
   }
 
   &__text {
@@ -72,6 +82,10 @@ const props = defineProps({
     line-height: 1.1;
     font-weight: 500;
     margin: 0 0 3.7rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.8  rem;
+    }
   }
 
   &__button {
@@ -97,6 +111,10 @@ const props = defineProps({
       width: 132rem;
       right: -11.2rem;
     }
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
   }
 
   &__girl {
@@ -108,6 +126,10 @@ const props = defineProps({
 
     @media (max-width: $tablet) {
       width: 65rem;
+    }
+
+    @media (max-width: $mobile) {
+      display: none;
     }
   }
 
@@ -126,6 +148,11 @@ const props = defineProps({
 
     @media (max-width: $tablet) {
       z-index: 10;
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      padding: 3rem;
     }
 
   }
@@ -164,6 +191,10 @@ const props = defineProps({
         width: 129%;
         height: 100%;
         max-width: unset;
+      }
+
+      @media (max-width: $mobile) {
+        width: 108%;
       }
     }
   }

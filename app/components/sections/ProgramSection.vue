@@ -34,7 +34,7 @@ const duplicatedEvents = computed(() => [...props.events, ...props.events])
                 />
               </div>
               <div class="program__card-text">
-                <div class="program__card-title" v-html="sanitizeText(event.title)"></div>
+                <div class="program__card-title" v-html="sanitizeText(event.title)" />
                 <div class="program__card-time">{{ event.time }}</div>
                 <div class="program__card-desc">{{ event.description }}</div>
               </div>
@@ -81,7 +81,9 @@ const duplicatedEvents = computed(() => [...props.events, ...props.events])
       padding-left: 3.4rem;
     }
 
-
+    @media (max-width: $mobile) {
+      padding-left: 1.4rem;
+    }
 
     /* Ширина всего скроллбара */
     &::-webkit-scrollbar {
@@ -113,6 +115,11 @@ const duplicatedEvents = computed(() => [...props.events, ...props.events])
     border-radius: 20px;
     overflow: hidden;
     background: linear-gradient(90deg, $darkBlue 0.18%, #25135D 14.18%, #661368 44.18%, #CC137A 88.18%, $magenta 100.17%);
+
+     @media (max-width: $mobile) {
+      flex-direction: column;
+      display: flex;
+    }
   }
 
   &__card-text {
@@ -135,6 +142,16 @@ const duplicatedEvents = computed(() => [...props.events, ...props.events])
     line-height: 1.1;
     text-transform: uppercase;
     color: $white;
+
+    @media (max-width: $mobile) {
+      br {
+        content: '';
+      }
+
+      br::after {
+        content: ' ';
+      }
+    }
   }
 
   &__card-time {
@@ -167,6 +184,10 @@ const duplicatedEvents = computed(() => [...props.events, ...props.events])
   &__card-photo-wrap {
     clip-path: polygon(0 0, 100% 0, calc(100% - 3rem) 100%, 0 100%);
     overflow: hidden;
+
+    @media (max-width: $mobile) {
+      clip-path: none;
+    }
   }
 
   &__card-photo {

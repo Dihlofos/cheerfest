@@ -8,6 +8,7 @@
     }
   ],
   "mapImage": "/images/map/map.jpg",
+  "mapImageMobile": "/images/map/map-mobile.jpg",
   "legend": [
     {
       "name": "Главная сцена",

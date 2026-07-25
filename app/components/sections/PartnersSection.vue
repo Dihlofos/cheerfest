@@ -33,8 +33,16 @@ const props = defineProps({
 .partners {
   padding: 6rem 0 8rem;
 
+  @media (max-width: $mobile) {
+    padding: 0rem 0 3rem;
+  }
+
   &__title {
     margin: 0 0 3.9rem;
+
+    @media (max-width: $mobile) {
+      margin: 0 0 3.5rem;
+    }
   }
 
   &__list {

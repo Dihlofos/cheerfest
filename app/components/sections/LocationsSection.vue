@@ -45,6 +45,11 @@ const duplicatedItems = computed(() => [...props.items, ...props.items])
     justify-content: center;
     gap: 3.7em;
     margin: 0 0 7.2rem;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      margin: 0 0 5.2rem;
+    }
   }
 
   &__title {
@@ -104,6 +109,10 @@ const duplicatedItems = computed(() => [...props.items, ...props.items])
 
     @media (max-width: $tablet) {
       padding-left: 2.4rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding-left: 1.4rem;
     }
   }
 

@@ -1,4 +1,6 @@
 <script setup>
+import { sanitizeText } from '~/utils/sanitize'
+
 const props = defineProps({
   title: { type: String, required: true },
   nominations: { type: Array, default: () => [] },
@@ -27,7 +29,7 @@ const props = defineProps({
       <div class="nominations__prize">
         <span class="nominations__prize-label">{{ prizeLabel }}</span>
         <span class="nominations__prize-amount">{{ prizeAmount }}</span>
-        <span class="nominations__prize-note">{{ prizeNote }}</span>
+        <span class="nominations__prize-note" v-html="sanitizeText(prizeNote)" />
       </div>
     </Container>
   </section>
@@ -38,7 +40,11 @@ const props = defineProps({
   padding: 12.1rem 0 10rem;
 
   @media (max-width: $tablet) {
-        padding: 12.1rem 0 5rem;
+    padding: 12.1rem 0 5rem;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 3.1rem 0 5rem;
   }
 
   &__header {
@@ -59,10 +65,16 @@ const props = defineProps({
     row-gap: 1.2rem;
     margin: 0 0 4.8rem;
 
-    .legend-item {
-      &:nth-child(odd) {
-        background: linear-gradient(90deg, $darkBlue 0.18%, #25135D 14.18%, #661368 44.18%, #CC137A 88.18%, $magenta 100.17%);
+     @media (min-width: 768px) {
+      .legend-item {
+        &:nth-child(odd) {
+          background: linear-gradient(90deg, $darkBlue 0.18%, #25135D 14.18%, #661368 44.18%, #CC137A 88.18%, $magenta 100.17%);
+        }
       }
+    }
+
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
     }
   }
 
@@ -82,6 +94,10 @@ const props = defineProps({
     text-transform: uppercase;
     color: $white;
     text-align: center;
+
+    @media (max-width: $mobile) {
+      font-size: 2.8rem;
+    }
   }
 
   &__prize-amount {
@@ -107,6 +123,12 @@ const props = defineProps({
     text-transform: uppercase;
     color: $white;
     max-width: 31.4rem;
+
+    @media (max-width: $mobile) {
+      font-size: 1.8rem;
+      text-align: center;
+      max-width: 100%;
+    }
   }
 }
 </style>
