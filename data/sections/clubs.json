@@ -3,8 +3,9 @@
   "title": "Состязания чирлидинг-команд",
   "text": "Продемонстрируйте мощную энергетику и сложные элементы на главной арене фестиваля и поборитесь за призовой фонд",
   "button": {
-    "link": "https://fest-dance-cheerleading.timepad.ru/event/4084236/",
-    "text": "Подать заявку"
+    "link": "https://fest-dance-cheerleading.timepad.ru/event/4099869/",
+    "text": "Подать заявку",
+    "target": "_blank"
   },
   "girl": "/images/clubs/girl.png",
   "titleImg": "/images/clubs/title.svg",

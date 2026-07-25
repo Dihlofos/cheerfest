@@ -1,10 +1,12 @@
 <script setup>
 import HeroSection from '~/components/sections/HeroSection.vue';
+import DanceSection from '~/components/sections/DanceSection.vue';
 import heroData from '~/../data/sections/hero.json';
 import aboutData from '~/../data/sections/about.json';
 import mapData from '~/../data/sections/map.json';
 import programData from '~/../data/sections/program.json';
 import clubsData from '~/../data/sections/clubs.json';
+import danceData from '~/../data/sections/dance.json';
 import nominationsData from '~/../data/sections/nominations.json';
 import participantsData from '~/../data/sections/participants.json';
 import juryData from '~/../data/sections/jury.json';
@@ -24,6 +26,7 @@ useHead({
     <AboutSection v-bind="aboutData" />
     <MapSection v-bind="mapData" />
     <ProgramSection v-bind="programData" />
+    <DanceSection v-bind="danceData" />
     <ClubsSection v-bind="clubsData" />
     <NominationsSection v-bind="nominationsData" />
     <SliderSection v-bind="participantsData" />

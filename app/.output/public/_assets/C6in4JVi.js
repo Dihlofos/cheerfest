@@ -1,5 +1,5 @@
-import { _ as _sfc_main$4, a as _sfc_main$5 } from "./C-32J4Hb.js";
-import { o as onMounted, _ as __vitePreload, W as onUnmounted, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, O as createBlock, I as Fragment, J as renderList, E as toDisplayString, F as createVNode, N as normalizeClass, i as ref, G as withCtx, P as renderSlot } from "./TmoIGfol.js";
+import { _ as _sfc_main$4, a as _sfc_main$5 } from "./e6evKozL.js";
+import { o as onMounted, _ as __vitePreload, W as onUnmounted, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, O as createBlock, I as Fragment, J as renderList, E as toDisplayString, F as createVNode, N as normalizeClass, i as ref, G as withCtx, P as renderSlot } from "./CG9B_jKx.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
 const navItems = [{ "label": "О событии ", "link": "#about" }, { "label": "Карта", "link": "#map" }, { "label": "Программа сцены", "link": "#program" }, { "label": "Конкурс", "link": "#contest" }, { "label": "Локации", "link": "#locations" }, { "label": "Вопросы и ответы", "link": "#faq" }, { "label": "Контакты", "link": "#footer" }];
 const images = { "burger": "/images/burger.svg", "close": "/images/close.svg", "girls": "/images/hero/girls.png" };

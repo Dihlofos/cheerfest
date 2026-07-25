@@ -1,5 +1,5 @@
 import { _ as _export_sfc } from "./1tPrXgE0.js";
-import { B as openBlock, C as createElementBlock, P as renderSlot } from "./TmoIGfol.js";
+import { B as openBlock, C as createElementBlock, P as renderSlot } from "./CG9B_jKx.js";
 const _sfc_main = {};
 const _hoisted_1 = { class: "page" };
 function _sfc_render(_ctx, _cache) {

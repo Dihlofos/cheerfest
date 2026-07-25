@@ -4,8 +4,8 @@ import Title from '~/components/ui/Title.vue'
 const props = defineProps({
   title: { type: String, required: true },
   text: { type: String, required: true },
-  girl: { type: String, required: true },
   titleImg: { type: String, required: true },
+  girl: { type: String, required: true },
   bg: { type: String, required: true },
   decorTop: { type: String, required: true },
   button: {
@@ -19,45 +19,42 @@ const props = defineProps({
 </script>
 
 <template>
-  <section id="contest" class="clubs">
+  <section id="dance" class="dance">
 
     <Container>
-      <Title class="clubs__title">{{ title }}</Title>
-      <div class="clubs__info">
-        <Image class="clubs__decor" :src="decorTop" width="1494" height="900" />
-        <Image class="clubs__girl" :src="girl" alt="Girl" width="681" height="853" />
+      <Title class="dance__title" white>{{ title }}</Title>
+      <div class="dance__info">
+        <Image class="dance__decor" :src="decorTop" width="1494" height="900" />
+        <Image class="dance__girls" :src="girl" alt="Girls" width="681" height="853" />
 
-        <div class="clubs__content">
-          <Image class="clubs__title-logo" :src="titleImg" alt="Title" />
-          <div class="clubs__bg">
-            <Image :src="bg" alt="Background" width="1400" height="352"/>
+        <div class="dance__content">
+          <div class="dance__bg">
+            <Image :src="bg" alt="Background" width="1400" height="352" />
           </div>
-          <div class="clubs__text-content">
-            <h2 class="clubs__text text">{{ text }}</h2>
-            <a :href="button.link" class="clubs__button" :target="button.target">{{ button.text }}</a>
+          <Image class="dance__title-logo" :src="titleImg" alt="Title" />
+          <div class="dance__text-content">
+            <p class="dance__text text">{{ text }}</p>
+            <a :href="button.link" class="dance__button" :target="button.target">{{ button.text }}</a>
           </div>
         </div>
       </div>
 
-
     </Container>
 
   </section>
-
 </template>
 
 <style lang="scss">
-.clubs {
+.dance {
   position: relative;
-  padding: 11.7rem 0 5rem;
-
-  @media (max-width: $mobile) {
-    padding: 2.7rem 0 5rem;
-  }
-
+  padding: 5.4rem 0 5rem;
 
   &__title {
-    margin: 0 0 54rem;
+    margin: 0 0 59rem;
+
+    @media (max-width: $tablet) {
+      margin: 0 0 45rem;
+    }
 
     @media (max-width: $mobile) {
       margin: 0 0 4rem;
@@ -67,8 +64,12 @@ const props = defineProps({
   &__title-logo {
     position: absolute;
     top: -7.5rem;
-    right: 5rem;
+    left: 11rem;
     z-index: 6;
+
+    @media (max-width: $tablet) {
+      left: 0;
+    }
 
     @media (max-width: $mobile) {
       position: static;
@@ -82,10 +83,16 @@ const props = defineProps({
     line-height: 1.1;
     font-weight: 500;
     margin: 0 0 3.7rem;
-    max-width: 54rem;
+    padding-right: 2rem;
+    color: $white;
+
+    @media (max-width: $tablet) {
+      padding: 0 4rem;
+    }
 
     @media (max-width: $mobile) {
       font-size: 1.8rem;
+      padding: 0
     }
   }
 
@@ -101,10 +108,10 @@ const props = defineProps({
   }
 
   &__decor {
-    width: 156rem;
-    right: -10.5rem;
+    width: 157rem;
+    right: -8rem;
     position: absolute;
-    bottom: 3rem;
+    bottom: -2.9rem;
     z-index: 5;
     max-width: unset;
 
@@ -118,12 +125,12 @@ const props = defineProps({
     }
   }
 
-  &__girl {
+  &__girls {
     position: absolute;
-    bottom: -0.6rem;
-    left: 1.6rem;
+    bottom: 0.2rem;
+    right: 2rem;
     width: 68rem;
-    z-index:6;
+    z-index: 6;
 
     @media (max-width: $tablet) {
       width: 65rem;
@@ -145,7 +152,7 @@ const props = defineProps({
     border-radius: 20px;
     min-height: 35.2rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 
     @media (max-width: $tablet) {
       z-index: 10;
@@ -161,17 +168,20 @@ const props = defineProps({
   &__text-content {
     position: relative;
     z-index: 10;
-    max-width: 73.9rem;
-    text-align: center;
+    max-width: 80.9rem;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-right: 12rem;
+    padding-left: 8.5rem;
+    text-align: center;
 
     @media (max-width: $tablet) {
-      padding-right: 0;
-      max-width: 100%;
-      width: 100%;
+      padding: 0 0 2rem;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 0;
     }
   }
 
@@ -194,9 +204,9 @@ const props = defineProps({
       height: 100%;
 
       @media (max-width: $tablet) {
-        right: 0;
-        left: auto;
-        width: 129%;
+        right: auto;
+        left: 0;
+        width: 104%;
         height: 100%;
         max-width: unset;
       }

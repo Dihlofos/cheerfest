@@ -1,18 +1,18 @@
-import { _ as _sfc_main$f, a as _sfc_main$g } from "./C-32J4Hb.js";
-import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as createCommentVNode, N as normalizeClass, O as createBlock, _ as __vitePreload, l as unref, m as computed, P as renderSlot, Q as resolveDynamicComponent, H as createTextVNode, d as defineComponent, o as onMounted, R as onBeforeUpdate, S as onUpdated, c as onBeforeUnmount, T as provide, h, i as ref, U as watch, V as nextTick$1, s as shallowRef, A as useHead, K as normalizeProps, L as guardReactiveProps } from "./TmoIGfol.js";
+import { _ as _sfc_main$g, a as _sfc_main$h } from "./e6evKozL.js";
+import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as createCommentVNode, N as normalizeClass, O as createBlock, _ as __vitePreload, l as unref, m as computed, P as renderSlot, Q as resolveDynamicComponent, H as createTextVNode, d as defineComponent, o as onMounted, R as onBeforeUpdate, S as onUpdated, c as onBeforeUnmount, T as provide, h, i as ref, U as watch, V as nextTick$1, s as shallowRef, A as useHead, K as normalizeProps, L as guardReactiveProps } from "./CG9B_jKx.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
-const _hoisted_1$c = {
+const _hoisted_1$d = {
   id: "about",
   class: "about"
 };
-const _hoisted_2$c = { class: "about__title title" };
-const _hoisted_3$b = { class: "about__text" };
-const _hoisted_4$a = { class: "about__items" };
-const _hoisted_5$8 = { class: "about__item-left" };
-const _hoisted_6$7 = { class: "about__item-title" };
-const _hoisted_7$7 = { class: "about__item-text" };
+const _hoisted_2$d = { class: "about__title title" };
+const _hoisted_3$c = { class: "about__text" };
+const _hoisted_4$b = { class: "about__items" };
+const _hoisted_5$9 = { class: "about__item-left" };
+const _hoisted_6$8 = { class: "about__item-title" };
+const _hoisted_7$8 = { class: "about__item-text" };
 const _hoisted_8$4 = { class: "about__item-image-wrap" };
-const _sfc_main$e = {
+const _sfc_main$f = {
   __name: "AboutSection",
   props: {
     title: { type: String, required: true },
@@ -26,9 +26,9 @@ const _sfc_main$e = {
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      const _component_Image = _sfc_main$f;
-      const _component_Container = _sfc_main$g;
-      return openBlock(), createElementBlock("section", _hoisted_1$c, [
+      const _component_Image = _sfc_main$g;
+      const _component_Container = _sfc_main$h;
+      return openBlock(), createElementBlock("section", _hoisted_1$d, [
         createVNode(_component_Image, {
           class: "about__decor about__decor--left",
           src: __props.decorLeft,
@@ -45,21 +45,21 @@ const _sfc_main$e = {
         }, null, 8, ["src"]),
         createVNode(_component_Container, null, {
           default: withCtx(() => [
-            createBaseVNode("h2", _hoisted_2$c, toDisplayString(__props.title), 1),
-            createBaseVNode("div", _hoisted_3$b, [
+            createBaseVNode("h2", _hoisted_2$d, toDisplayString(__props.title), 1),
+            createBaseVNode("div", _hoisted_3$c, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(__props.paragraphs, (paragraph, index) => {
                 return openBlock(), createElementBlock("p", { key: index }, toDisplayString(paragraph), 1);
               }), 128))
             ]),
-            createBaseVNode("div", _hoisted_4$a, [
+            createBaseVNode("div", _hoisted_4$b, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(__props.bullets, (item, index) => {
                 return openBlock(), createElementBlock("div", {
                   class: "about__item",
                   key: index
                 }, [
-                  createBaseVNode("div", _hoisted_5$8, [
-                    createBaseVNode("div", _hoisted_6$7, toDisplayString(item.title), 1),
-                    createBaseVNode("div", _hoisted_7$7, toDisplayString(item.text), 1)
+                  createBaseVNode("div", _hoisted_5$9, [
+                    createBaseVNode("div", _hoisted_6$8, toDisplayString(item.title), 1),
+                    createBaseVNode("div", _hoisted_7$8, toDisplayString(item.text), 1)
                   ]),
                   createBaseVNode("div", _hoisted_8$4, [
                     createVNode(_component_Image, {
@@ -80,14 +80,14 @@ const _sfc_main$e = {
     };
   }
 };
-const _hoisted_1$b = { class: "legend-item__icon" };
-const _hoisted_2$b = { class: "legend-item__text" };
-const _hoisted_3$a = { class: "legend-item__title" };
-const _hoisted_4$9 = {
+const _hoisted_1$c = { class: "legend-item__icon" };
+const _hoisted_2$c = { class: "legend-item__text" };
+const _hoisted_3$b = { class: "legend-item__title" };
+const _hoisted_4$a = {
   key: 0,
   class: "legend-item__subtitle"
 };
-const _sfc_main$d = {
+const _sfc_main$e = {
   __name: "LegendItem",
   props: {
     icon: { type: String, required: true },
@@ -97,11 +97,11 @@ const _sfc_main$d = {
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      const _component_Image = _sfc_main$f;
+      const _component_Image = _sfc_main$g;
       return openBlock(), createElementBlock("div", {
         class: normalizeClass(["legend-item", { "legend-item--extended": __props.isExtended }])
       }, [
-        createBaseVNode("div", _hoisted_1$b, [
+        createBaseVNode("div", _hoisted_1$c, [
           createVNode(_component_Image, {
             src: __props.icon,
             alt: "",
@@ -109,25 +109,25 @@ const _sfc_main$d = {
             height: __props.isExtended ? 120 : 44
           }, null, 8, ["src", "width", "height"])
         ]),
-        createBaseVNode("div", _hoisted_2$b, [
-          createBaseVNode("span", _hoisted_3$a, toDisplayString(__props.title), 1),
-          __props.isExtended && __props.subtitle ? (openBlock(), createElementBlock("span", _hoisted_4$9, toDisplayString(__props.subtitle), 1)) : createCommentVNode("", true)
+        createBaseVNode("div", _hoisted_2$c, [
+          createBaseVNode("span", _hoisted_3$b, toDisplayString(__props.title), 1),
+          __props.isExtended && __props.subtitle ? (openBlock(), createElementBlock("span", _hoisted_4$a, toDisplayString(__props.subtitle), 1)) : createCommentVNode("", true)
         ])
       ], 2);
     };
   }
 };
-const _hoisted_1$a = {
+const _hoisted_1$b = {
   id: "map",
   class: "map"
 };
-const _hoisted_2$a = { class: "map__header" };
-const _hoisted_3$9 = { class: "map__title title" };
-const _hoisted_4$8 = { class: "map__buttons" };
-const _hoisted_5$7 = ["href"];
-const _hoisted_6$6 = { class: "map__image-wrap" };
-const _hoisted_7$6 = { class: "map__legend" };
-const _sfc_main$c = {
+const _hoisted_2$b = { class: "map__header" };
+const _hoisted_3$a = { class: "map__title title" };
+const _hoisted_4$9 = { class: "map__buttons" };
+const _hoisted_5$8 = ["href"];
+const _hoisted_6$7 = { class: "map__image-wrap" };
+const _hoisted_7$7 = { class: "map__legend" };
+const _sfc_main$d = {
   __name: "MapSection",
   props: {
     title: { type: String, required: true },
@@ -138,26 +138,26 @@ const _sfc_main$c = {
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      const _component_Image = _sfc_main$f;
-      const _component_LegendItem = _sfc_main$d;
-      const _component_Container = _sfc_main$g;
-      return openBlock(), createElementBlock("section", _hoisted_1$a, [
+      const _component_Image = _sfc_main$g;
+      const _component_LegendItem = _sfc_main$e;
+      const _component_Container = _sfc_main$h;
+      return openBlock(), createElementBlock("section", _hoisted_1$b, [
         createVNode(_component_Container, null, {
           default: withCtx(() => [
-            createBaseVNode("div", _hoisted_2$a, [
-              createBaseVNode("h2", _hoisted_3$9, toDisplayString(__props.title), 1),
-              createBaseVNode("div", _hoisted_4$8, [
+            createBaseVNode("div", _hoisted_2$b, [
+              createBaseVNode("h2", _hoisted_3$a, toDisplayString(__props.title), 1),
+              createBaseVNode("div", _hoisted_4$9, [
                 (openBlock(true), createElementBlock(Fragment, null, renderList(__props.buttons, (btn, index) => {
                   return openBlock(), createElementBlock("a", {
                     key: index,
                     href: btn.link,
                     class: "map__button",
                     target: "_blank"
-                  }, toDisplayString(btn.text), 9, _hoisted_5$7);
+                  }, toDisplayString(btn.text), 9, _hoisted_5$8);
                 }), 128))
               ])
             ]),
-            createBaseVNode("div", _hoisted_6$6, [
+            createBaseVNode("div", _hoisted_6$7, [
               createVNode(_component_Image, {
                 class: "map__image",
                 src: __props.mapImage,
@@ -167,7 +167,7 @@ const _sfc_main$c = {
                 height: "491"
               }, null, 8, ["src", "sources"])
             ]),
-            createBaseVNode("div", _hoisted_7$6, [
+            createBaseVNode("div", _hoisted_7$7, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(__props.legend, (item, index) => {
                 return openBlock(), createBlock(_component_LegendItem, {
                   key: index,
@@ -197,26 +197,26 @@ function sanitizeText(text2) {
   }
   return text2.replace(/<[^>]+>/g, "");
 }
-const _hoisted_1$9 = {
+const _hoisted_1$a = {
   id: "program",
   class: "program"
 };
-const _hoisted_2$9 = { class: "program__title title" };
-const _hoisted_3$8 = { class: "program__wrapper" };
-const _hoisted_4$7 = {
+const _hoisted_2$a = { class: "program__title title" };
+const _hoisted_3$9 = { class: "program__wrapper" };
+const _hoisted_4$8 = {
   class: "program__scroll",
   dir: "rtl"
 };
-const _hoisted_5$6 = {
+const _hoisted_5$7 = {
   class: "program__cards",
   dir: "ltr"
 };
-const _hoisted_6$5 = { class: "program__card-photo-wrap" };
-const _hoisted_7$5 = { class: "program__card-text" };
+const _hoisted_6$6 = { class: "program__card-photo-wrap" };
+const _hoisted_7$6 = { class: "program__card-text" };
 const _hoisted_8$3 = ["innerHTML"];
 const _hoisted_9$2 = { class: "program__card-time" };
 const _hoisted_10$1 = { class: "program__card-desc" };
-const _sfc_main$b = {
+const _sfc_main$c = {
   __name: "ProgramSection",
   props: {
     title: { type: String, required: true },
@@ -226,21 +226,21 @@ const _sfc_main$b = {
     const props = __props;
     const duplicatedEvents = computed(() => [...props.events, ...props.events]);
     return (_ctx, _cache) => {
-      const _component_Image = _sfc_main$f;
-      const _component_Container = _sfc_main$g;
-      return openBlock(), createElementBlock("section", _hoisted_1$9, [
+      const _component_Image = _sfc_main$g;
+      const _component_Container = _sfc_main$h;
+      return openBlock(), createElementBlock("section", _hoisted_1$a, [
         createVNode(_component_Container, null, {
           default: withCtx(() => [
-            createBaseVNode("h2", _hoisted_2$9, toDisplayString(__props.title), 1),
-            createBaseVNode("div", _hoisted_3$8, [
-              createBaseVNode("div", _hoisted_4$7, [
-                createBaseVNode("div", _hoisted_5$6, [
+            createBaseVNode("h2", _hoisted_2$a, toDisplayString(__props.title), 1),
+            createBaseVNode("div", _hoisted_3$9, [
+              createBaseVNode("div", _hoisted_4$8, [
+                createBaseVNode("div", _hoisted_5$7, [
                   (openBlock(true), createElementBlock(Fragment, null, renderList(duplicatedEvents.value, (event, index) => {
                     return openBlock(), createElementBlock("div", {
                       key: index,
                       class: "program__card"
                     }, [
-                      createBaseVNode("div", _hoisted_6$5, [
+                      createBaseVNode("div", _hoisted_6$6, [
                         createVNode(_component_Image, {
                           class: "program__card-photo",
                           src: event.image,
@@ -249,7 +249,7 @@ const _sfc_main$b = {
                           height: "268"
                         }, null, 8, ["src"])
                       ]),
-                      createBaseVNode("div", _hoisted_7$5, [
+                      createBaseVNode("div", _hoisted_7$6, [
                         createBaseVNode("div", {
                           class: "program__card-title",
                           innerHTML: unref(sanitizeText)(event.title)
@@ -269,7 +269,7 @@ const _sfc_main$b = {
     };
   }
 };
-const _sfc_main$a = {
+const _sfc_main$b = {
   __name: "Title",
   props: {
     tag: { type: String, default: "h2" },
@@ -288,17 +288,17 @@ const _sfc_main$a = {
     };
   }
 };
-const _hoisted_1$8 = {
+const _hoisted_1$9 = {
   id: "contest",
   class: "clubs"
 };
-const _hoisted_2$8 = { class: "clubs__info" };
-const _hoisted_3$7 = { class: "clubs__content" };
-const _hoisted_4$6 = { class: "clubs__bg" };
-const _hoisted_5$5 = { class: "clubs__text-content" };
-const _hoisted_6$4 = { class: "clubs__text text" };
-const _hoisted_7$4 = ["href"];
-const _sfc_main$9 = {
+const _hoisted_2$9 = { class: "clubs__info" };
+const _hoisted_3$8 = { class: "clubs__content" };
+const _hoisted_4$7 = { class: "clubs__bg" };
+const _hoisted_5$6 = { class: "clubs__text-content" };
+const _hoisted_6$5 = { class: "clubs__text text" };
+const _hoisted_7$5 = ["href"];
+const _sfc_main$a = {
   __name: "ClubsSection",
   props: {
     title: { type: String, required: true },
@@ -317,18 +317,18 @@ const _sfc_main$9 = {
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      const _component_Image = _sfc_main$f;
-      const _component_Container = _sfc_main$g;
-      return openBlock(), createElementBlock("section", _hoisted_1$8, [
+      const _component_Image = _sfc_main$g;
+      const _component_Container = _sfc_main$h;
+      return openBlock(), createElementBlock("section", _hoisted_1$9, [
         createVNode(_component_Container, null, {
           default: withCtx(() => [
-            createVNode(_sfc_main$a, { class: "clubs__title" }, {
+            createVNode(_sfc_main$b, { class: "clubs__title" }, {
               default: withCtx(() => [
                 createTextVNode(toDisplayString(__props.title), 1)
               ]),
               _: 1
             }),
-            createBaseVNode("div", _hoisted_2$8, [
+            createBaseVNode("div", _hoisted_2$9, [
               createVNode(_component_Image, {
                 class: "clubs__decor",
                 src: __props.decorTop,
@@ -342,13 +342,13 @@ const _sfc_main$9 = {
                 width: "681",
                 height: "853"
               }, null, 8, ["src"]),
-              createBaseVNode("div", _hoisted_3$7, [
+              createBaseVNode("div", _hoisted_3$8, [
                 createVNode(_component_Image, {
                   class: "clubs__title-logo",
                   src: __props.titleImg,
                   alt: "Title"
                 }, null, 8, ["src"]),
-                createBaseVNode("div", _hoisted_4$6, [
+                createBaseVNode("div", _hoisted_4$7, [
                   createVNode(_component_Image, {
                     src: __props.bg,
                     alt: "Background",
@@ -356,12 +356,12 @@ const _sfc_main$9 = {
                     height: "352"
                   }, null, 8, ["src"])
                 ]),
-                createBaseVNode("div", _hoisted_5$5, [
-                  createBaseVNode("h2", _hoisted_6$4, toDisplayString(__props.text), 1),
+                createBaseVNode("div", _hoisted_5$6, [
+                  createBaseVNode("h2", _hoisted_6$5, toDisplayString(__props.text), 1),
                   createBaseVNode("a", {
                     href: __props.button.link,
                     class: "clubs__button"
-                  }, toDisplayString(__props.button.text), 9, _hoisted_7$4)
+                  }, toDisplayString(__props.button.text), 9, _hoisted_7$5)
                 ])
               ])
             ])
@@ -372,18 +372,18 @@ const _sfc_main$9 = {
     };
   }
 };
-const _hoisted_1$7 = {
+const _hoisted_1$8 = {
   id: "nominations",
   class: "nominations"
 };
-const _hoisted_2$7 = { class: "nominations__header" };
-const _hoisted_3$6 = { class: "nominations__title title" };
-const _hoisted_4$5 = { class: "nominations__list" };
-const _hoisted_5$4 = { class: "nominations__prize" };
-const _hoisted_6$3 = { class: "nominations__prize-label" };
-const _hoisted_7$3 = { class: "nominations__prize-amount" };
+const _hoisted_2$8 = { class: "nominations__header" };
+const _hoisted_3$7 = { class: "nominations__title title" };
+const _hoisted_4$6 = { class: "nominations__list" };
+const _hoisted_5$5 = { class: "nominations__prize" };
+const _hoisted_6$4 = { class: "nominations__prize-label" };
+const _hoisted_7$4 = { class: "nominations__prize-amount" };
 const _hoisted_8$2 = ["innerHTML"];
-const _sfc_main$8 = {
+const _sfc_main$9 = {
   __name: "NominationsSection",
   props: {
     title: { type: String, required: true },
@@ -394,15 +394,15 @@ const _sfc_main$8 = {
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      const _component_LegendItem = _sfc_main$d;
-      const _component_Container = _sfc_main$g;
-      return openBlock(), createElementBlock("section", _hoisted_1$7, [
+      const _component_LegendItem = _sfc_main$e;
+      const _component_Container = _sfc_main$h;
+      return openBlock(), createElementBlock("section", _hoisted_1$8, [
         createVNode(_component_Container, null, {
           default: withCtx(() => [
-            createBaseVNode("div", _hoisted_2$7, [
-              createBaseVNode("h2", _hoisted_3$6, toDisplayString(__props.title), 1)
+            createBaseVNode("div", _hoisted_2$8, [
+              createBaseVNode("h2", _hoisted_3$7, toDisplayString(__props.title), 1)
             ]),
-            createBaseVNode("div", _hoisted_4$5, [
+            createBaseVNode("div", _hoisted_4$6, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(__props.nominations, (item, index) => {
                 return openBlock(), createBlock(_component_LegendItem, {
                   key: index,
@@ -411,9 +411,9 @@ const _sfc_main$8 = {
                 }, null, 8, ["icon", "title"]);
               }), 128))
             ]),
-            createBaseVNode("div", _hoisted_5$4, [
-              createBaseVNode("span", _hoisted_6$3, toDisplayString(__props.prizeLabel), 1),
-              createBaseVNode("span", _hoisted_7$3, toDisplayString(__props.prizeAmount), 1),
+            createBaseVNode("div", _hoisted_5$5, [
+              createBaseVNode("span", _hoisted_6$4, toDisplayString(__props.prizeLabel), 1),
+              createBaseVNode("span", _hoisted_7$4, toDisplayString(__props.prizeAmount), 1),
               createBaseVNode("span", {
                 class: "nominations__prize-note",
                 innerHTML: unref(sanitizeText)(__props.prizeNote)
@@ -5485,17 +5485,17 @@ const Navigation = ({ swiper, extendParams, on, emit }) => {
     destroy
   });
 };
-const _hoisted_1$6 = { class: "slider" };
-const _hoisted_2$6 = {
+const _hoisted_1$7 = { class: "slider" };
+const _hoisted_2$7 = {
   key: 0,
   class: "slider__desktop"
 };
-const _hoisted_3$5 = { class: "slider__viewport" };
-const _hoisted_4$4 = {
+const _hoisted_3$6 = { class: "slider__viewport" };
+const _hoisted_4$5 = {
   key: 1,
   class: "slider__native"
 };
-const _sfc_main$7 = {
+const _sfc_main$8 = {
   __name: "Slider",
   props: {
     items: { type: Array, required: true },
@@ -5522,9 +5522,9 @@ const _sfc_main$7 = {
     const prevRef = ref(null);
     const nextRef = ref(null);
     return (_ctx, _cache) => {
-      const _component_Image = _sfc_main$f;
-      return openBlock(), createElementBlock("div", _hoisted_1$6, [
-        isDesktop.value ? (openBlock(), createElementBlock("div", _hoisted_2$6, [
+      const _component_Image = _sfc_main$g;
+      return openBlock(), createElementBlock("div", _hoisted_1$7, [
+        isDesktop.value ? (openBlock(), createElementBlock("div", _hoisted_2$7, [
           createBaseVNode("button", {
             ref_key: "prevRef",
             ref: prevRef,
@@ -5539,7 +5539,7 @@ const _sfc_main$7 = {
               height: "57"
             }, null, 8, ["src"])
           ], 512),
-          createBaseVNode("div", _hoisted_3$5, [
+          createBaseVNode("div", _hoisted_3$6, [
             createVNode(unref(Swiper2), {
               modules: [unref(Navigation)],
               "slides-per-view": 3,
@@ -5583,7 +5583,7 @@ const _sfc_main$7 = {
               height: "57"
             }, null, 8, ["src"])
           ], 512)
-        ])) : (openBlock(), createElementBlock("div", _hoisted_4$4, [
+        ])) : (openBlock(), createElementBlock("div", _hoisted_4$5, [
           (openBlock(true), createElementBlock(Fragment, null, renderList(__props.items, (item, index) => {
             return openBlock(), createElementBlock("div", {
               key: index,
@@ -5600,12 +5600,12 @@ const _sfc_main$7 = {
     };
   }
 };
-const _hoisted_1$5 = { class: "slider-section" };
-const _hoisted_2$5 = { class: "slider-section__title title" };
-const _hoisted_3$4 = { class: "slider-section__card" };
-const _hoisted_4$3 = { class: "slider-section__card-name-wrap" };
-const _hoisted_5$3 = { class: "slider-section__card-name" };
-const _sfc_main$6 = {
+const _hoisted_1$6 = { class: "slider-section" };
+const _hoisted_2$6 = { class: "slider-section__title title" };
+const _hoisted_3$5 = { class: "slider-section__card" };
+const _hoisted_4$4 = { class: "slider-section__card-name-wrap" };
+const _hoisted_5$4 = { class: "slider-section__card-name" };
+const _sfc_main$7 = {
   __name: "SliderSection",
   props: {
     title: { type: String, required: true },
@@ -5613,20 +5613,20 @@ const _sfc_main$6 = {
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      const _component_Image = _sfc_main$f;
-      const _component_Slider = _sfc_main$7;
-      const _component_Container = _sfc_main$g;
-      return openBlock(), createElementBlock("section", _hoisted_1$5, [
+      const _component_Image = _sfc_main$g;
+      const _component_Slider = _sfc_main$8;
+      const _component_Container = _sfc_main$h;
+      return openBlock(), createElementBlock("section", _hoisted_1$6, [
         createVNode(_component_Container, null, {
           default: withCtx(() => [
-            createBaseVNode("h2", _hoisted_2$5, toDisplayString(__props.title), 1),
+            createBaseVNode("h2", _hoisted_2$6, toDisplayString(__props.title), 1),
             createVNode(_component_Slider, {
               items: __props.cards,
               "arrow-left": "/images/shared/arrow-left.svg",
               "arrow-right": "/images/shared/arrow-right.svg"
             }, {
               slide: withCtx(({ item }) => [
-                createBaseVNode("div", _hoisted_3$4, [
+                createBaseVNode("div", _hoisted_3$5, [
                   createVNode(_component_Image, {
                     class: "slider-section__card-photo",
                     src: item.photo,
@@ -5634,8 +5634,8 @@ const _sfc_main$6 = {
                     width: "380",
                     height: "393"
                   }, null, 8, ["src"]),
-                  createBaseVNode("div", _hoisted_4$3, [
-                    createBaseVNode("p", _hoisted_5$3, toDisplayString(item.name), 1)
+                  createBaseVNode("div", _hoisted_4$4, [
+                    createBaseVNode("p", _hoisted_5$4, toDisplayString(item.name), 1)
                   ])
                 ])
               ]),
@@ -5648,23 +5648,23 @@ const _sfc_main$6 = {
     };
   }
 };
-const _hoisted_1$4 = {
+const _hoisted_1$5 = {
   id: "locations",
   class: "locations"
 };
-const _hoisted_2$4 = { class: "locations__header" };
-const _hoisted_3$3 = ["innerHTML"];
-const _hoisted_4$2 = ["innerHTML"];
-const _hoisted_5$2 = { class: "locations__wrapper" };
-const _hoisted_6$2 = {
+const _hoisted_2$5 = { class: "locations__header" };
+const _hoisted_3$4 = ["innerHTML"];
+const _hoisted_4$3 = ["innerHTML"];
+const _hoisted_5$3 = { class: "locations__wrapper" };
+const _hoisted_6$3 = {
   class: "locations__scroll",
   dir: "rtl"
 };
-const _hoisted_7$2 = {
+const _hoisted_7$3 = {
   class: "locations__grid",
   dir: "ltr"
 };
-const _sfc_main$5 = {
+const _sfc_main$6 = {
   __name: "LocationsSection",
   props: {
     title: { type: String, required: true },
@@ -5675,24 +5675,24 @@ const _sfc_main$5 = {
     const props = __props;
     const duplicatedItems = computed(() => [...props.items, ...props.items]);
     return (_ctx, _cache) => {
-      const _component_LegendItem = _sfc_main$d;
-      const _component_Container = _sfc_main$g;
-      return openBlock(), createElementBlock("section", _hoisted_1$4, [
+      const _component_LegendItem = _sfc_main$e;
+      const _component_Container = _sfc_main$h;
+      return openBlock(), createElementBlock("section", _hoisted_1$5, [
         createVNode(_component_Container, null, {
           default: withCtx(() => [
-            createBaseVNode("div", _hoisted_2$4, [
+            createBaseVNode("div", _hoisted_2$5, [
               createBaseVNode("h2", {
                 class: "locations__title title",
                 innerHTML: ("sanitizeText" in _ctx ? _ctx.sanitizeText : unref(sanitizeText))(__props.title)
-              }, null, 8, _hoisted_3$3),
+              }, null, 8, _hoisted_3$4),
               createBaseVNode("span", {
                 class: "locations__time-badge",
                 innerHTML: ("sanitizeText" in _ctx ? _ctx.sanitizeText : unref(sanitizeText))(__props.timeBadge)
-              }, null, 8, _hoisted_4$2)
+              }, null, 8, _hoisted_4$3)
             ]),
-            createBaseVNode("div", _hoisted_5$2, [
-              createBaseVNode("div", _hoisted_6$2, [
-                createBaseVNode("div", _hoisted_7$2, [
+            createBaseVNode("div", _hoisted_5$3, [
+              createBaseVNode("div", _hoisted_6$3, [
+                createBaseVNode("div", _hoisted_7$3, [
                   (openBlock(true), createElementBlock(Fragment, null, renderList(unref(duplicatedItems), (item, index) => {
                     return openBlock(), createBlock(_component_LegendItem, {
                       key: index,
@@ -5712,13 +5712,13 @@ const _sfc_main$5 = {
     };
   }
 };
-const _hoisted_1$3 = {
+const _hoisted_1$4 = {
   id: "partners",
   class: "partners"
 };
-const _hoisted_2$3 = { class: "partners__title title" };
-const _hoisted_3$2 = { class: "partners__list" };
-const _sfc_main$4 = {
+const _hoisted_2$4 = { class: "partners__title title" };
+const _hoisted_3$3 = { class: "partners__list" };
+const _sfc_main$5 = {
   __name: "PartnersSection",
   props: {
     title: { type: String, required: true },
@@ -5726,13 +5726,13 @@ const _sfc_main$4 = {
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      const _component_Image = _sfc_main$f;
-      const _component_Container = _sfc_main$g;
-      return openBlock(), createElementBlock("section", _hoisted_1$3, [
+      const _component_Image = _sfc_main$g;
+      const _component_Container = _sfc_main$h;
+      return openBlock(), createElementBlock("section", _hoisted_1$4, [
         createVNode(_component_Container, null, {
           default: withCtx(() => [
-            createBaseVNode("h2", _hoisted_2$3, toDisplayString(__props.title), 1),
-            createBaseVNode("div", _hoisted_3$2, [
+            createBaseVNode("h2", _hoisted_2$4, toDisplayString(__props.title), 1),
+            createBaseVNode("div", _hoisted_3$3, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(__props.logos, (logo, index) => {
                 return openBlock(), createElementBlock("div", {
                   key: index,
@@ -5755,22 +5755,22 @@ const _sfc_main$4 = {
     };
   }
 };
-const _hoisted_1$2 = {
+const _hoisted_1$3 = {
   id: "faq",
   class: "faq"
 };
-const _hoisted_2$2 = { class: "faq__title title" };
-const _hoisted_3$1 = { class: "faq__accordion" };
-const _hoisted_4$1 = ["aria-expanded", "aria-controls", "onClick"];
-const _hoisted_5$1 = {
+const _hoisted_2$3 = { class: "faq__title title" };
+const _hoisted_3$2 = { class: "faq__accordion" };
+const _hoisted_4$2 = ["aria-expanded", "aria-controls", "onClick"];
+const _hoisted_5$2 = {
   class: "faq__icon",
   "aria-hidden": "true"
 };
-const _hoisted_6$1 = ["src"];
-const _hoisted_7$1 = ["src"];
+const _hoisted_6$2 = ["src"];
+const _hoisted_7$2 = ["src"];
 const _hoisted_8$1 = ["id"];
 const _hoisted_9$1 = ["innerHTML"];
-const _sfc_main$3 = {
+const _sfc_main$4 = {
   __name: "Faq",
   props: {
     title: { type: String, required: true },
@@ -5794,12 +5794,12 @@ const _sfc_main$3 = {
       return !!openState.value[index];
     }
     return (_ctx, _cache) => {
-      const _component_Container = _sfc_main$g;
-      return openBlock(), createElementBlock("section", _hoisted_1$2, [
+      const _component_Container = _sfc_main$h;
+      return openBlock(), createElementBlock("section", _hoisted_1$3, [
         createVNode(_component_Container, null, {
           default: withCtx(() => [
-            createBaseVNode("h2", _hoisted_2$2, toDisplayString(__props.title), 1),
-            createBaseVNode("div", _hoisted_3$1, [
+            createBaseVNode("h2", _hoisted_2$3, toDisplayString(__props.title), 1),
+            createBaseVNode("div", _hoisted_3$2, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(__props.items, (item, index) => {
                 return openBlock(), createElementBlock("div", {
                   key: index,
@@ -5812,23 +5812,23 @@ const _sfc_main$3 = {
                     onClick: ($event) => toggle(index)
                   }, [
                     createTextVNode(toDisplayString(item.question) + " ", 1),
-                    createBaseVNode("span", _hoisted_5$1, [
+                    createBaseVNode("span", _hoisted_5$2, [
                       createBaseVNode("img", {
                         src: __props.images.arrowDown,
                         alt: "",
                         class: "faq__down",
                         width: "36",
                         height: "36"
-                      }, null, 8, _hoisted_6$1),
+                      }, null, 8, _hoisted_6$2),
                       createBaseVNode("img", {
                         src: __props.images.arrowUp,
                         alt: "",
                         class: "faq__up",
                         width: "36",
                         height: "36"
-                      }, null, 8, _hoisted_7$1)
+                      }, null, 8, _hoisted_7$2)
                     ])
-                  ], 10, _hoisted_4$1),
+                  ], 10, _hoisted_4$2),
                   createBaseVNode("div", {
                     id: `faq-content-${index}`,
                     class: normalizeClass(["faq__content", { active: isOpen(index) }]),
@@ -5848,10 +5848,10 @@ const _sfc_main$3 = {
     };
   }
 };
-const __nuxt_component_8 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-23f8a061"]]);
-const _hoisted_1$1 = ["href"];
-const _hoisted_2$1 = ["disabled", "type"];
-const _sfc_main$2 = {
+const __nuxt_component_8 = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-23f8a061"]]);
+const _hoisted_1$2 = ["href"];
+const _hoisted_2$2 = ["disabled", "type"];
+const _sfc_main$3 = {
   __name: "Button",
   props: {
     variant: { type: String, default: "primary" },
@@ -5868,32 +5868,32 @@ const _sfc_main$2 = {
         class: normalizeClass(["button", `button--${__props.variant}`, `button--${__props.size}`])
       }, [
         renderSlot(_ctx.$slots, "default")
-      ], 10, _hoisted_1$1)) : (openBlock(), createElementBlock("button", {
+      ], 10, _hoisted_1$2)) : (openBlock(), createElementBlock("button", {
         key: 1,
         class: normalizeClass(["button", `button--${__props.variant}`, `button--${__props.size}`]),
         disabled: __props.disabled,
         type: __props.type
       }, [
         renderSlot(_ctx.$slots, "default")
-      ], 10, _hoisted_2$1));
+      ], 10, _hoisted_2$2));
     };
   }
 };
-const _hoisted_1 = {
+const _hoisted_1$1 = {
   id: "hero",
   class: "hero"
 };
-const _hoisted_2 = { class: "visually-hidden" };
-const _hoisted_3 = { class: "hero__content" };
-const _hoisted_4 = { class: "hero__info" };
-const _hoisted_5 = { class: "hero__main" };
-const _hoisted_6 = { class: "hero__logos" };
-const _hoisted_7 = ["href"];
+const _hoisted_2$1 = { class: "visually-hidden" };
+const _hoisted_3$1 = { class: "hero__content" };
+const _hoisted_4$1 = { class: "hero__info" };
+const _hoisted_5$1 = { class: "hero__main" };
+const _hoisted_6$1 = { class: "hero__logos" };
+const _hoisted_7$1 = ["href"];
 const _hoisted_8 = { class: "hero__date-wrapper tablet" };
 const _hoisted_9 = { class: "hero__links" };
 const _hoisted_10 = { class: "hero__right" };
 const _hoisted_11 = { class: "hero__date-wrapper" };
-const _sfc_main$1 = {
+const _sfc_main$2 = {
   __name: "HeroSection",
   props: {
     title: { type: String, required: true },
@@ -5919,12 +5919,12 @@ const _sfc_main$1 = {
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      const _component_Image = _sfc_main$f;
-      const _component_Button = _sfc_main$2;
-      const _component_Container = _sfc_main$g;
-      return openBlock(), createElementBlock("section", _hoisted_1, [
-        createBaseVNode("h1", _hoisted_2, toDisplayString(__props.title), 1),
-        createBaseVNode("div", _hoisted_3, [
+      const _component_Image = _sfc_main$g;
+      const _component_Button = _sfc_main$3;
+      const _component_Container = _sfc_main$h;
+      return openBlock(), createElementBlock("section", _hoisted_1$1, [
+        createBaseVNode("h1", _hoisted_2$1, toDisplayString(__props.title), 1),
+        createBaseVNode("div", _hoisted_3$1, [
           createVNode(_component_Image, {
             class: "hero__decor hero__decor--left",
             src: __props.images.decorLeft,
@@ -5962,9 +5962,9 @@ const _sfc_main$1 = {
           }, null, 8, ["src"]),
           createVNode(_component_Container, null, {
             default: withCtx(() => [
-              createBaseVNode("div", _hoisted_4, [
-                createBaseVNode("div", _hoisted_5, [
-                  createBaseVNode("div", _hoisted_6, [
+              createBaseVNode("div", _hoisted_4$1, [
+                createBaseVNode("div", _hoisted_5$1, [
+                  createBaseVNode("div", _hoisted_6$1, [
                     (openBlock(true), createElementBlock(Fragment, null, renderList(__props.logos, (logo, index) => {
                       return openBlock(), createElementBlock("a", {
                         key: index,
@@ -5977,7 +5977,7 @@ const _sfc_main$1 = {
                           width: logo.width,
                           height: logo.height
                         }, null, 8, ["src", "alt", "width", "height"])
-                      ], 8, _hoisted_7);
+                      ], 8, _hoisted_7$1);
                     }), 128))
                   ]),
                   createVNode(_component_Image, {
@@ -6045,69 +6045,174 @@ const _sfc_main$1 = {
     };
   }
 };
-const type$a = "hero";
-const title$a = "Фестиваль танцев и чирлидинга — 15 августа";
+const _hoisted_1 = {
+  id: "dance",
+  class: "dance"
+};
+const _hoisted_2 = { class: "dance__info" };
+const _hoisted_3 = { class: "dance__content" };
+const _hoisted_4 = { class: "dance__bg" };
+const _hoisted_5 = { class: "dance__text-content" };
+const _hoisted_6 = { class: "dance__text text" };
+const _hoisted_7 = ["href"];
+const _sfc_main$1 = {
+  __name: "DanceSection",
+  props: {
+    title: { type: String, required: true },
+    text: { type: String, required: true },
+    titleImg: { type: String, required: true },
+    girl: { type: String, required: true },
+    bg: { type: String, required: true },
+    decorTop: { type: String, required: true },
+    button: {
+      type: Object,
+      default: () => ({
+        link: "#",
+        text: "Подать заявку"
+      })
+    }
+  },
+  setup(__props) {
+    return (_ctx, _cache) => {
+      const _component_Image = _sfc_main$g;
+      const _component_Container = _sfc_main$h;
+      return openBlock(), createElementBlock("section", _hoisted_1, [
+        createVNode(_component_Container, null, {
+          default: withCtx(() => [
+            createVNode(_sfc_main$b, {
+              class: "dance__title",
+              white: ""
+            }, {
+              default: withCtx(() => [
+                createTextVNode(toDisplayString(__props.title), 1)
+              ]),
+              _: 1
+            }),
+            createBaseVNode("div", _hoisted_2, [
+              createVNode(_component_Image, {
+                class: "dance__decor",
+                src: __props.decorTop,
+                width: "1494",
+                height: "900"
+              }, null, 8, ["src"]),
+              createVNode(_component_Image, {
+                class: "dance__girls",
+                src: __props.girl,
+                alt: "Girls",
+                width: "681",
+                height: "853"
+              }, null, 8, ["src"]),
+              createBaseVNode("div", _hoisted_3, [
+                createBaseVNode("div", _hoisted_4, [
+                  createVNode(_component_Image, {
+                    src: __props.bg,
+                    alt: "Background",
+                    width: "1400",
+                    height: "352"
+                  }, null, 8, ["src"])
+                ]),
+                createVNode(_component_Image, {
+                  class: "dance__title-logo",
+                  src: __props.titleImg,
+                  alt: "Title"
+                }, null, 8, ["src"]),
+                createBaseVNode("div", _hoisted_5, [
+                  createBaseVNode("p", _hoisted_6, toDisplayString(__props.text), 1),
+                  createBaseVNode("a", {
+                    href: __props.button.link,
+                    class: "dance__button"
+                  }, toDisplayString(__props.button.text), 9, _hoisted_7)
+                ])
+              ])
+            ])
+          ]),
+          _: 1
+        })
+      ]);
+    };
+  }
+};
+const type$b = "hero";
+const title$b = "Фестиваль танцев и чирлидинга — 15 августа";
 const links = [{ "text": "Смотреть программу", "class": "magenta", "href": "#programm" }, { "text": "Участвовать в конкурсе", "class": "white", "href": "#contest" }];
 const logos$1 = [{ "src": "/images/hero/major.svg", "alt": "Проект мэра", "link": "https://www.mos.ru/city/projects/", "width": 97, "height": 49 }, { "src": "/images/hero/summer.svg", "alt": "Лето в Москве", "link": "https://leto.mos.ru/", "width": 110, "height": 47 }, { "src": "/images/hero/dep.svg", "alt": "Департамент Москвы", "link": "https://www.mos.ru/moskomsport/", "width": 138, "height": 47 }, { "src": "/images/hero/mossport.svg", "alt": "Московский спорт", "link": "https://sport.mos.ru", "width": 164, "height": 49 }];
 const images$1 = { "decorLeft": "/images/hero/decor-left.png", "decorTop": "/images/hero/decor-top.png", "decorRight": "/images/hero/decor-right.png", "mobileDecor": "/images/hero/mobile-decor.png", "bg": "/images/hero/bg.jpg", "logo": "/images/hero/logo.svg", "dateDesktop": "/images/hero/date.svg", "dateMobile": "/images/hero/date-mobile.svg", "girl": "/images/hero/girl.png", "girls": "/images/hero/girls.png" };
 const heroData = {
-  type: type$a,
-  title: title$a,
+  type: type$b,
+  title: title$b,
   links,
   logos: logos$1,
   images: images$1
 };
-const type$9 = "about";
-const title$9 = "О событии";
+const type$a = "about";
+const title$a = "О событии";
 const paragraphs = ["На один день Лужники превратятся в большой танцпол под открытым небом", "Переходите между площадками, пробуйте новые направления, смотрите выступления и оставайтесь на вечерний концерт."];
 const decorLeft = "/images/about/decor-left.png";
 const decorRight = "/images/about/decor-right.png";
 const bullets = [{ "title": "5 танцевальных направлений", "text": "От бальных танцев до чирлидинга и хип-хопа", "image": "/images/about/about1.jpg" }, { "title": "Открытые мастер-классы", "text": "Со звездными танцорами и тренерами", "image": "/images/about/about2.jpg" }, { "title": "Конкурс среди танцоров", "text": "Соревнования танцевальных клубов", "image": "/images/about/about3.jpg" }, { "title": "Большой концерт", "text": "Выступления артистов и концерт NILETTO", "image": "/images/about/about4.jpg" }];
 const aboutData = {
-  type: type$9,
-  title: title$9,
+  type: type$a,
+  title: title$a,
   paragraphs,
   decorLeft,
   decorRight,
   bullets
 };
-const type$8 = "map";
-const title$8 = "карта площадки";
+const type$9 = "map";
+const title$9 = "карта площадки";
 const buttons = [{ "text": "Построить маршрут", "link": "https://yandex.com/maps/-/CTV3MZJw" }];
 const mapImage = "/images/map/map.jpg";
 const mapImageMobile = "/images/map/map-mobile.jpg";
 const legend = [{ "name": "Главная сцена", "icon": "/images/shared/icon-main-stage.svg" }, { "name": "Акробатическая дорожка", "icon": "/images/shared/icon-acro.svg" }, { "name": "Зона разминки", "icon": "/images/shared/icon-stretch.svg" }, { "name": "Мейкап и кастомизация костюмов", "icon": "/images/shared/icon-costumes.svg" }, { "name": "Зона чирлидинга", "icon": "/images/shared/icon-cheerleading.svg" }, { "name": "Пространство для батлов", "icon": "/images/shared/icon-swords.svg" }, { "name": "Судейская зона", "icon": "/images/shared/icon-sud.svg" }, { "name": "Фотозоны", "icon": "/images/shared/icon-photo.svg" }, { "name": "Зона спортивных танцев", "icon": "/images/shared/icon-children.svg" }, { "name": "Мастер-классы на льду", "icon": "/images/shared/icon-ice.svg" }];
 const mapData = {
-  type: type$8,
-  title: title$8,
+  type: type$9,
+  title: title$9,
   buttons,
   mapImage,
   mapImageMobile,
   legend
 };
-const type$7 = "program";
-const title$7 = "программа сцены";
+const type$8 = "program";
+const title$8 = "программа сцены";
 const events = [{ "title": "Открытие фестиваля", "time": "11:00–11:30", "description": "DJ-сет, приветствие гостей и старт работы фестиваля", "image": "/images/program/event-01.jpg" }, { "title": "Мастер-класс по&nbsp;чир&nbsp;спорту", "time": "11:30–12:30", "description": "Научитесь базовым элементам зрелищного вида танца", "image": "/images/program/event-02.jpg" }, { "title": "Мастер-класс (уличные&nbsp;танцы)", "time": "12:30–13:30", "description": "Открытый мастер-класс с участием приглашенного артиста", "image": "/images/program/event-03.jpg" }, { "title": "Мастер-класс (современные&nbsp;танцы)", "time": "13:30–14:30", "description": "Изучите современные танцевальные движения вместе с хореографами", "image": "/images/program/event-04.jpg" }, { "title": "Викторина и розыгрыш призов", "time": "14:30–15:00", "description": "Конкурсы, интерактивы и подарки от ведущего", "image": "/images/program/event-05.jpg" }, { "title": "Конкурс танцевальных клубов", "time": "15:00–17:00", "description": "Батл среди танцевальных клубов — победителей выбирает звездное жюри", "image": "/images/program/event-06.jpg" }];
 const programData = {
-  type: type$7,
-  title: title$7,
+  type: type$8,
+  title: title$8,
   events
 };
-const type$6 = "clubs";
+const type$7 = "clubs";
+const title$7 = "Состязания чирлидинг-команд";
+const text$1 = "Продемонстрируйте мощную энергетику и сложные элементы на главной арене фестиваля и поборитесь за призовой фонд";
+const button$1 = { "link": "https://fest-dance-cheerleading.timepad.ru/event/4084236/", "text": "Подать заявку" };
+const girl$1 = "/images/clubs/girl.png";
+const titleImg$1 = "/images/clubs/title.svg";
+const bg$1 = "/images/clubs/bg.png";
+const decorTop$1 = "/images/clubs/decor-top.png";
+const clubsData = {
+  type: type$7,
+  title: title$7,
+  text: text$1,
+  button: button$1,
+  girl: girl$1,
+  titleImg: titleImg$1,
+  bg: bg$1,
+  decorTop: decorTop$1
+};
+const type$6 = "dance";
 const title$6 = "Конкурс танцевальных клубов";
 const text = "Покажите свой номер на главной сцене фестиваля и поборитесь за победу в одной из пяти номинаций. Победителей определяет звездное жюри, а лучшие команды получают денежные призы";
-const button = { "link": "#", "text": "Подать заявку" };
-const girl = "/images/clubs/girl.png";
-const titleImg = "/images/clubs/title.svg";
-const bg = "/images/clubs/bg.png";
-const decorTop = "/images/clubs/decor-top.png";
-const clubsData = {
+const titleImg = "/images/dance/title.svg";
+const button = { "link": "https://fest-dance-cheerleading.timepad.ru/event/4084236/", "text": "Подать заявку" };
+const girl = "/images/dance/girls.png";
+const bg = "/images/dance/bg.png";
+const decorTop = "/images/dance/decor-top.svg";
+const danceData = {
   type: type$6,
   title: title$6,
   text,
+  titleImg,
   button,
   girl,
-  titleImg,
   bg,
   decorTop
 };
@@ -6176,21 +6281,22 @@ const _sfc_main = {
       title: ""
     });
     return (_ctx, _cache) => {
-      const _component_AboutSection = _sfc_main$e;
-      const _component_MapSection = _sfc_main$c;
-      const _component_ProgramSection = _sfc_main$b;
-      const _component_ClubsSection = _sfc_main$9;
-      const _component_NominationsSection = _sfc_main$8;
-      const _component_SliderSection = _sfc_main$6;
-      const _component_LocationsSection = _sfc_main$5;
-      const _component_PartnersSection = _sfc_main$4;
+      const _component_AboutSection = _sfc_main$f;
+      const _component_MapSection = _sfc_main$d;
+      const _component_ProgramSection = _sfc_main$c;
+      const _component_ClubsSection = _sfc_main$a;
+      const _component_NominationsSection = _sfc_main$9;
+      const _component_SliderSection = _sfc_main$7;
+      const _component_LocationsSection = _sfc_main$6;
+      const _component_PartnersSection = _sfc_main$5;
       const _component_Faq = __nuxt_component_8;
       return openBlock(), createElementBlock("main", null, [
-        createVNode(_sfc_main$1, normalizeProps(guardReactiveProps(unref(heroData))), null, 16),
+        createVNode(_sfc_main$2, normalizeProps(guardReactiveProps(unref(heroData))), null, 16),
         createVNode(_component_AboutSection, normalizeProps(guardReactiveProps(unref(aboutData))), null, 16),
         createVNode(_component_MapSection, normalizeProps(guardReactiveProps(unref(mapData))), null, 16),
         createVNode(_component_ProgramSection, normalizeProps(guardReactiveProps(unref(programData))), null, 16),
         createVNode(_component_ClubsSection, normalizeProps(guardReactiveProps(unref(clubsData))), null, 16),
+        createVNode(_sfc_main$1, normalizeProps(guardReactiveProps(unref(danceData))), null, 16),
         createVNode(_component_NominationsSection, normalizeProps(guardReactiveProps(unref(nominationsData))), null, 16),
         createVNode(_component_SliderSection, normalizeProps(guardReactiveProps(unref(participantsData))), null, 16),
         createVNode(_component_SliderSection, normalizeProps(guardReactiveProps(unref(juryData))), null, 16),
