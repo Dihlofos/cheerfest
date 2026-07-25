@@ -34,8 +34,10 @@ jobs:
       - name: Rewrite static asset paths for GitHub Pages subpath
         run: |
           cd app/.output/public
+          # /images/ → /cheerfest/images/, но только для абсолютных путей
+          # (чтобы не сломать относительные пути в CSS: ../images/...)
           find . -type f \( -name '*.html' -o -name '*.js' -o -name '*.css' \) \
-            -exec sed -i 's|/images/|/cheerfest/images/|g' {} +
+            -exec sed -i -E 's|(["'"'"'\( ])/images/|\1/cheerfest/images/|g' {} +
           find . -type f \( -name '*.html' -o -name '*.js' -o -name '*.css' \) \
             -exec sed -i 's|/docs/|/cheerfest/docs/|g' {} +
 
