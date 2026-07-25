@@ -82,6 +82,7 @@ const props = defineProps({
     line-height: 1.1;
     font-weight: 500;
     margin: 0 0 3.7rem;
+    padding-right: 2rem;
 
     @media (max-width: $mobile) {
       font-size: 1.8  rem;
