@@ -2,6 +2,7 @@
 import { navItems, images } from '~/../data/navigation.json'
 
 const mobileOpen = ref(false)
+let smoothScroll = null
 
 function toggleMobile() {
   mobileOpen.value = !mobileOpen.value
@@ -10,6 +11,18 @@ function toggleMobile() {
 function closeMobile() {
   mobileOpen.value = false
 }
+
+onMounted(async () => {
+  const SmoothScroll = (await import('smooth-scroll')).default
+  smoothScroll = new SmoothScroll('.nav__link', {
+    speed: 200,
+    offset: 45,
+  })
+})
+
+onUnmounted(() => {
+  smoothScroll?.destroy()
+})
 </script>
 
 <template>

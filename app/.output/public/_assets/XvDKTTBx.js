@@ -1,6 +1,7 @@
-import { B as openBlock, C as createElementBlock, D as createBaseVNode, K as normalizeProps, L as guardReactiveProps, Y as mergeProps, m as computed, P as renderSlot, N as normalizeClass } from "./U6c9FMge.js";
+import { B as openBlock, C as createElementBlock, I as Fragment, J as renderList, M as createCommentVNode, D as createBaseVNode, K as normalizeProps, L as guardReactiveProps, Y as mergeProps, m as computed, P as renderSlot, N as normalizeClass } from "./D0AU3f6f.js";
 const _hoisted_1 = { key: 0 };
-const _hoisted_2 = ["srcset"];
+const _hoisted_2 = ["media", "srcset", "type"];
+const _hoisted_3 = ["srcset"];
 const _sfc_main$1 = {
   __name: "Image",
   props: {
@@ -12,7 +13,24 @@ const _sfc_main$1 = {
     decoding: { type: String, default: "async" },
     fetchpriority: { type: String, default: null },
     class: { type: [String, Array, Object], default: null },
-    imgAttrs: { type: Object, default: () => ({}) }
+    imgAttrs: { type: Object, default: () => ({}) },
+    /**
+     * Массив источников для тега <source> внутри <picture>.
+     * Позволяет показывать разные изображения на разных разрешениях.
+     *
+     * @example
+     * :sources="[
+     *   { media: '(max-width: 768px)', srcset: '/images/hero-mobile.jpg' },
+     * ]"
+     *
+     * Для растровых форматов WebP-вариант генерируется автоматически.
+     * Если нужно переопределить type — укажите его явно, тогда
+     * WebP-конвертация не применяется.
+     */
+    sources: {
+      type: Array,
+      default: () => []
+    }
   },
   setup(__props) {
     const props = __props;
@@ -40,6 +58,24 @@ const _sfc_main$1 = {
     });
     const isRaster = computed(() => ext.value && RASTER_EXTS.has(`.${ext.value}`));
     const webpSrc = computed(() => isRaster.value ? getWebpSrc(props.src) : null);
+    const processedSources = computed(() => {
+      return props.sources.flatMap((source) => {
+        if (source.type) return [source];
+        const srcExt = getExtension(source.srcset);
+        const isRasterExt = srcExt && RASTER_EXTS.has(`.${srcExt}`);
+        if (!isExternalUrl(source.srcset) && isRasterExt) {
+          const webpSrcset = getWebpSrc(source.srcset);
+          return [
+            { media: source.media, srcset: webpSrcset, type: "image/webp" },
+            { media: source.media, srcset: source.srcset }
+          ];
+        }
+        return [source];
+      });
+    });
+    const usePicture = computed(
+      () => isRaster.value && webpSrc.value || props.sources.length > 0
+    );
     const imgBindings = computed(() => {
       const bindings = {
         src: props.src,
@@ -54,11 +90,20 @@ const _sfc_main$1 = {
       return { ...bindings, ...props.imgAttrs };
     });
     return (_ctx, _cache) => {
-      return isRaster.value && webpSrc.value ? (openBlock(), createElementBlock("picture", _hoisted_1, [
-        createBaseVNode("source", {
+      return usePicture.value ? (openBlock(), createElementBlock("picture", _hoisted_1, [
+        (openBlock(true), createElementBlock(Fragment, null, renderList(processedSources.value, (source, index) => {
+          return openBlock(), createElementBlock("source", {
+            key: index,
+            media: source.media,
+            srcset: source.srcset,
+            type: source.type
+          }, null, 8, _hoisted_2);
+        }), 128)),
+        webpSrc.value ? (openBlock(), createElementBlock("source", {
+          key: 0,
           srcset: webpSrc.value,
           type: "image/webp"
-        }, null, 8, _hoisted_2),
+        }, null, 8, _hoisted_3)) : createCommentVNode("", true),
         createBaseVNode("img", normalizeProps(guardReactiveProps(imgBindings.value)), null, 16)
       ])) : (openBlock(), createElementBlock("img", normalizeProps(mergeProps({ key: 1 }, imgBindings.value)), null, 16));
     };

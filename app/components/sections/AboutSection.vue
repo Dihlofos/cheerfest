@@ -47,6 +47,7 @@ const props = defineProps({
 .about {
   position: relative;
   padding: 10rem 0 10rem;
+  scroll-padding-top: 10rem;
 
   @media (max-width: $mobile) {
     padding: 5rem 0;

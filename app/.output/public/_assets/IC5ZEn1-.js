@@ -1,7 +1,7 @@
-import { _ as _sfc_main$4, a as _sfc_main$5 } from "./B1pc8eql.js";
-import { B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, O as createBlock, I as Fragment, J as renderList, E as toDisplayString, F as createVNode, N as normalizeClass, i as ref, o as onMounted, W as onUnmounted, G as withCtx, X as publicAssetsURL, P as renderSlot } from "./U6c9FMge.js";
+import { o as onMounted, _ as __vitePreload, W as onUnmounted, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, O as createBlock, I as Fragment, J as renderList, E as toDisplayString, F as createVNode, N as normalizeClass, i as ref, G as withCtx, X as publicAssetsURL, P as renderSlot } from "./D0AU3f6f.js";
+import { _ as _sfc_main$4, a as _sfc_main$5 } from "./XvDKTTBx.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
-const navItems = [{ "label": "О событии ", "link": "#about" }, { "label": "Карта", "link": "#map" }, { "label": "Программа сцены", "link": "#programm" }, { "label": "Конкурс", "link": "#contest" }, { "label": "Локации", "link": "#locations" }, { "label": "Вопросы и ответы", "link": "#faq" }, { "label": "Контакты", "link": "#contacts" }];
+const navItems = [{ "label": "О событии ", "link": "#about" }, { "label": "Карта", "link": "#map" }, { "label": "Программа сцены", "link": "#program" }, { "label": "Конкурс", "link": "#contest" }, { "label": "Локации", "link": "#locations" }, { "label": "Вопросы и ответы", "link": "#faq" }, { "label": "Контакты", "link": "#footer" }];
 const images = { "burger": "/images/burger.svg", "close": "/images/close.svg", "girls": "/images/hero/girls.png" };
 const _hoisted_1$3 = { class: "nav__overlay" };
 const _hoisted_2$2 = { class: "nav__list" };
@@ -10,12 +10,26 @@ const _sfc_main$3 = {
   __name: "Navigation",
   setup(__props) {
     const mobileOpen = ref(false);
+    let smoothScroll = null;
     function toggleMobile() {
       mobileOpen.value = !mobileOpen.value;
     }
     function closeMobile() {
       mobileOpen.value = false;
     }
+    onMounted(async () => {
+      const SmoothScroll = (await __vitePreload(async () => {
+        const { default: __vite_default__ } = await import("./CSbmv_7n.js").then((n) => n.s);
+        return { default: __vite_default__ };
+      }, true ? [] : void 0, import.meta.url)).default;
+      smoothScroll = new SmoothScroll(".nav__link", {
+        speed: 800,
+        offset: 100
+      });
+    });
+    onUnmounted(() => {
+      smoothScroll?.destroy();
+    });
     return (_ctx, _cache) => {
       const _component_Image = _sfc_main$4;
       return openBlock(), createElementBlock("nav", {
@@ -205,7 +219,7 @@ const _sfc_main$1 = {
     };
   }
 };
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-40ff81dd"]]);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-227fb415"]]);
 const _imports_0 = publicAssetsURL("/images/bg.svg");
 const _sfc_main = {};
 const _hoisted_1 = { class: "page" };

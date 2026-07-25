@@ -1,5 +1,5 @@
-import { _ as _sfc_main$f, a as _sfc_main$g } from "./B1pc8eql.js";
-import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as createCommentVNode, N as normalizeClass, O as createBlock, _ as __vitePreload, l as unref, m as computed, P as renderSlot, Q as resolveDynamicComponent, H as createTextVNode, d as defineComponent, o as onMounted, R as onBeforeUpdate, S as onUpdated, c as onBeforeUnmount, T as provide, h, i as ref, U as watch, V as nextTick$1, s as shallowRef, A as useHead, K as normalizeProps, L as guardReactiveProps } from "./U6c9FMge.js";
+import { _ as _sfc_main$f, a as _sfc_main$g } from "./XvDKTTBx.js";
+import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as createCommentVNode, N as normalizeClass, O as createBlock, _ as __vitePreload, l as unref, m as computed, P as renderSlot, Q as resolveDynamicComponent, H as createTextVNode, d as defineComponent, o as onMounted, R as onBeforeUpdate, S as onUpdated, c as onBeforeUnmount, T as provide, h, i as ref, U as watch, V as nextTick$1, s as shallowRef, A as useHead, K as normalizeProps, L as guardReactiveProps } from "./D0AU3f6f.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
 const _hoisted_1$c = {
   id: "about",
@@ -133,6 +133,7 @@ const _sfc_main$c = {
     title: { type: String, required: true },
     buttons: { type: Array, default: () => [] },
     mapImage: { type: String, default: "" },
+    mapImageMobile: { type: String, default: "" },
     legend: { type: Array, default: () => [] }
   },
   setup(__props) {
@@ -160,10 +161,11 @@ const _sfc_main$c = {
               createVNode(_component_Image, {
                 class: "map__image",
                 src: __props.mapImage,
+                sources: [{ media: "(max-width: 768px)", srcset: __props.mapImageMobile }],
                 alt: "",
                 width: "1400",
                 height: "491"
-              }, null, 8, ["src"])
+              }, null, 8, ["src", "sources"])
             ]),
             createBaseVNode("div", _hoisted_7$6, [
               (openBlock(true), createElementBlock(Fragment, null, renderList(__props.legend, (item, index) => {
@@ -287,7 +289,7 @@ const _sfc_main$a = {
   }
 };
 const _hoisted_1$8 = {
-  id: "clubs",
+  id: "contest",
   class: "clubs"
 };
 const _hoisted_2$8 = { class: "clubs__info" };
@@ -380,7 +382,7 @@ const _hoisted_4$5 = { class: "nominations__list" };
 const _hoisted_5$4 = { class: "nominations__prize" };
 const _hoisted_6$3 = { class: "nominations__prize-label" };
 const _hoisted_7$3 = { class: "nominations__prize-amount" };
-const _hoisted_8$2 = { class: "nominations__prize-note" };
+const _hoisted_8$2 = ["innerHTML"];
 const _sfc_main$8 = {
   __name: "NominationsSection",
   props: {
@@ -412,7 +414,10 @@ const _sfc_main$8 = {
             createBaseVNode("div", _hoisted_5$4, [
               createBaseVNode("span", _hoisted_6$3, toDisplayString(__props.prizeLabel), 1),
               createBaseVNode("span", _hoisted_7$3, toDisplayString(__props.prizeAmount), 1),
-              createBaseVNode("span", _hoisted_8$2, toDisplayString(__props.prizeNote), 1)
+              createBaseVNode("span", {
+                class: "nominations__prize-note",
+                innerHTML: unref(sanitizeText)(__props.prizeNote)
+              }, null, 8, _hoisted_8$2)
             ])
           ]),
           _: 1
@@ -6070,17 +6075,19 @@ const type$8 = "map";
 const title$8 = "карта площадки";
 const buttons = [{ "text": "Построить маршрут", "link": "https://yandex.com/maps/-/CTV3MZJw" }];
 const mapImage = "/images/map/map.jpg";
+const mapImageMobile = "/images/map/map-mobile.jpg";
 const legend = [{ "name": "Главная сцена", "icon": "/images/shared/icon-main-stage.svg" }, { "name": "Акробатическая дорожка", "icon": "/images/shared/icon-acro.svg" }, { "name": "Зона разминки", "icon": "/images/shared/icon-stretch.svg" }, { "name": "Мейкап и кастомизация костюмов", "icon": "/images/shared/icon-costumes.svg" }, { "name": "Зона чирлидинга", "icon": "/images/shared/icon-cheerleading.svg" }, { "name": "Пространство для батлов", "icon": "/images/shared/icon-swords.svg" }, { "name": "Судейская зона", "icon": "/images/shared/icon-sud.svg" }, { "name": "Фотозоны", "icon": "/images/shared/icon-photo.svg" }, { "name": "Зона спортивных танцев", "icon": "/images/shared/icon-children.svg" }, { "name": "Мастер-классы на льду", "icon": "/images/shared/icon-ice.svg" }];
 const mapData = {
   type: type$8,
   title: title$8,
   buttons,
   mapImage,
+  mapImageMobile,
   legend
 };
 const type$7 = "program";
 const title$7 = "программа сцены";
-const events = [{ "title": "Открытие<br/>фестиваля", "time": "11:00–11:30", "description": "DJ-сет, приветствие гостей и старт работы фестиваля", "image": "/images/program/event-01.jpg" }, { "title": "Мастер-класс<br/>по чир спорту", "time": "11:30–12:30", "description": "Научитесь базовым элементам зрелищного вида танца", "image": "/images/program/event-02.jpg" }, { "title": "Мастер-класс<br/>(уличные танцы)", "time": "12:30–13:30", "description": "Открытый мастер-класс с участием приглашенного артиста", "image": "/images/program/event-03.jpg" }, { "title": "Мастер-класс<br/>(современные танцы)", "time": "13:30–14:30", "description": "Изучите современные танцевальные движения вместе с хореографами", "image": "/images/program/event-04.jpg" }, { "title": "Викторина<br/>и розыгрыш призов", "time": "14:30–15:00", "description": "Конкурсы, интерактивы и подарки от ведущего", "image": "/images/program/event-05.jpg" }, { "title": "Конкурс<br/>танцевальных клубов", "time": "15:00–17:00", "description": "Батл среди танцевальных клубов — победителей выбирает звездное жюри", "image": "/images/program/event-06.jpg" }];
+const events = [{ "title": "Открытие фестиваля", "time": "11:00–11:30", "description": "DJ-сет, приветствие гостей и старт работы фестиваля", "image": "/images/program/event-01.jpg" }, { "title": "Мастер-класс по&nbsp;чир&nbsp;спорту", "time": "11:30–12:30", "description": "Научитесь базовым элементам зрелищного вида танца", "image": "/images/program/event-02.jpg" }, { "title": "Мастер-класс (уличные&nbsp;танцы)", "time": "12:30–13:30", "description": "Открытый мастер-класс с участием приглашенного артиста", "image": "/images/program/event-03.jpg" }, { "title": "Мастер-класс (современные&nbsp;танцы)", "time": "13:30–14:30", "description": "Изучите современные танцевальные движения вместе с хореографами", "image": "/images/program/event-04.jpg" }, { "title": "Викторина и розыгрыш призов", "time": "14:30–15:00", "description": "Конкурсы, интерактивы и подарки от ведущего", "image": "/images/program/event-05.jpg" }, { "title": "Конкурс танцевальных клубов", "time": "15:00–17:00", "description": "Батл среди танцевальных клубов — победителей выбирает звездное жюри", "image": "/images/program/event-06.jpg" }];
 const programData = {
   type: type$7,
   title: title$7,
@@ -6109,7 +6116,7 @@ const title$5 = "Номинации";
 const nominations = [{ "name": "Современный танец", "icon": "/images/shared/icon-main-stage.svg" }, { "name": "Спортивный танец", "icon": "/images/shared/icon-children.svg" }, { "name": "Уличный танец", "icon": "/images/shared/icon-stretch.svg" }, { "name": "Чирлидинг", "icon": "/images/shared/icon-cheerleading.svg" }];
 const prizeLabel = "ПРИЗОВОЙ ФОНД";
 const prizeAmount = "350 000 ₽";
-const prizeNote = "команде-победителю в каждой номинации";
+const prizeNote = "команде-победителю в&nbsp;каждой номинации";
 const nominationsData = {
   type: type$5,
   title: title$5,

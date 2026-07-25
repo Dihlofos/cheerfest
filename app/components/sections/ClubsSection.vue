@@ -19,7 +19,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <section id="clubs" class="clubs">
+  <section id="contest" class="clubs">
 
     <Container>
       <Title class="clubs__title">{{ title }}</Title>

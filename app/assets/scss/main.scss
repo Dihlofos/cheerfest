@@ -6,6 +6,10 @@
 @use 'reset';
 @use 'typography';
 
+html {
+  scroll-padding-top: 4.5rem;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
