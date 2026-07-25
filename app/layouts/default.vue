@@ -3,7 +3,7 @@
 
 <template>
   <div class="page">
-    <img class="body-bg" src="/images/bg.svg" alt="" width="1920" height="10264">
+    <Image class="body-bg" src="/images/bg.svg" alt="" width="1920" height="10264" />
     <div class="top">
       <Header />
     </div>

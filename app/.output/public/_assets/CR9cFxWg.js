@@ -1,5 +1,5 @@
-import { o as onMounted, _ as __vitePreload, W as onUnmounted, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, O as createBlock, I as Fragment, J as renderList, E as toDisplayString, F as createVNode, N as normalizeClass, i as ref, G as withCtx, X as publicAssetsURL, P as renderSlot } from "./D0AU3f6f.js";
-import { _ as _sfc_main$4, a as _sfc_main$5 } from "./XvDKTTBx.js";
+import { _ as _sfc_main$4, a as _sfc_main$5 } from "./C-32J4Hb.js";
+import { o as onMounted, _ as __vitePreload, W as onUnmounted, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, O as createBlock, I as Fragment, J as renderList, E as toDisplayString, F as createVNode, N as normalizeClass, i as ref, G as withCtx, P as renderSlot } from "./TmoIGfol.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
 const navItems = [{ "label": "О событии ", "link": "#about" }, { "label": "Карта", "link": "#map" }, { "label": "Программа сцены", "link": "#program" }, { "label": "Конкурс", "link": "#contest" }, { "label": "Локации", "link": "#locations" }, { "label": "Вопросы и ответы", "link": "#faq" }, { "label": "Контакты", "link": "#footer" }];
 const images = { "burger": "/images/burger.svg", "close": "/images/close.svg", "girls": "/images/hero/girls.png" };
@@ -23,8 +23,8 @@ const _sfc_main$3 = {
         return { default: __vite_default__ };
       }, true ? [] : void 0, import.meta.url)).default;
       smoothScroll = new SmoothScroll(".nav__link", {
-        speed: 800,
-        offset: 100
+        speed: 200,
+        offset: 45
       });
     });
     onUnmounted(() => {
@@ -113,7 +113,7 @@ const _sfc_main$2 = {
     };
   }
 };
-const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-6865a282"]]);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-6865a282"]]);
 const type = "footer";
 const title = "Контакты";
 const contacts = [{ "label": "По вопросам регистрации", "email": "ano@mossport.ru" }, { "label": "Для СМИ", "email": "press@moscow.sport" }];
@@ -219,22 +219,22 @@ const _sfc_main$1 = {
     };
   }
 };
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-227fb415"]]);
-const _imports_0 = publicAssetsURL("/images/bg.svg");
+const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-227fb415"]]);
 const _sfc_main = {};
 const _hoisted_1 = { class: "page" };
 const _hoisted_2 = { class: "top" };
 function _sfc_render(_ctx, _cache) {
-  const _component_Header = __nuxt_component_0;
-  const _component_Footer = __nuxt_component_1;
+  const _component_Image = _sfc_main$4;
+  const _component_Header = __nuxt_component_1;
+  const _component_Footer = __nuxt_component_2;
   return openBlock(), createElementBlock("div", _hoisted_1, [
-    _cache[0] || (_cache[0] = createBaseVNode("img", {
+    createVNode(_component_Image, {
       class: "body-bg",
-      src: _imports_0,
+      src: "/images/bg.svg",
       alt: "",
       width: "1920",
       height: "10264"
-    }, null, -1)),
+    }),
     createBaseVNode("div", _hoisted_2, [
       createVNode(_component_Header)
     ]),
@@ -242,7 +242,7 @@ function _sfc_render(_ctx, _cache) {
     createVNode(_component_Footer)
   ]);
 }
-const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-30e63b94"]]);
+const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-260bdb63"]]);
 export {
   _default as default
 };
