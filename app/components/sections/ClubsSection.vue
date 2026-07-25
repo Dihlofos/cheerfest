@@ -1,4 +1,6 @@
 <script setup>
+import Title from '~/components/ui/Title.vue'
+
 const props = defineProps({
   title: { type: String, required: true },
   text: { type: String, required: true },
@@ -20,7 +22,7 @@ const props = defineProps({
   <section id="clubs" class="clubs">
 
     <Container>
-      <h2 class="title clubs__title">{{ title }}</h2>
+      <Title class="clubs__title">{{ title }}</Title>
       <div class="clubs__info">
         <Image class="clubs__decor" :src="decorTop" width="1494" height="900" />
         <Image class="clubs__girl" :src="girl" alt="Girl" width="681" height="853" />

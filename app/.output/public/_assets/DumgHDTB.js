@@ -1,70 +1,5 @@
-import { _ as _sfc_main$3 } from "./G61y4HPH.js";
-import { B as openBlock, C as createElementBlock, D as createBaseVNode, I as normalizeProps, J as guardReactiveProps, K as mergeProps, m as computed, E as toDisplayString, F as createVNode, G as withCtx, L as Fragment, M as renderList } from "./DB-GrZ3G.js";
-const _hoisted_1$2 = { key: 0 };
-const _hoisted_2$2 = ["srcset"];
-const _sfc_main$2 = {
-  __name: "Image",
-  props: {
-    src: { type: String, required: true },
-    alt: { type: String, default: "" },
-    width: { type: [Number, String], default: null },
-    height: { type: [Number, String], default: null },
-    loading: { type: String, default: "lazy" },
-    decoding: { type: String, default: "async" },
-    fetchpriority: { type: String, default: null },
-    class: { type: [String, Array, Object], default: null },
-    imgAttrs: { type: Object, default: () => ({}) }
-  },
-  setup(__props) {
-    const props = __props;
-    const RASTER_EXTS = /* @__PURE__ */ new Set([".png", ".jpg", ".jpeg"]);
-    function cleanPath(src) {
-      return src.split("?")[0].split("#")[0];
-    }
-    function getExtension(src) {
-      const path = cleanPath(src);
-      const match = path.match(/\.(\w+)$/);
-      return match ? match[1].toLowerCase() : null;
-    }
-    function isExternalUrl(src) {
-      return /^https?:\/\//.test(src) || /^\/\//.test(src) || /^data:/.test(src);
-    }
-    function getWebpSrc(src) {
-      const [path, rest] = src.split("?");
-      const [pathOnly] = path.split("#");
-      const webpPath = pathOnly.replace(/\.\w+$/, ".webp");
-      return rest ? `${webpPath}?${rest}` : webpPath;
-    }
-    const ext = computed(() => {
-      if (isExternalUrl(props.src)) return null;
-      return getExtension(props.src);
-    });
-    const isRaster = computed(() => ext.value && RASTER_EXTS.has(`.${ext.value}`));
-    const webpSrc = computed(() => isRaster.value ? getWebpSrc(props.src) : null);
-    const imgBindings = computed(() => {
-      const bindings = {
-        src: props.src,
-        alt: props.alt,
-        loading: props.loading,
-        decoding: props.decoding
-      };
-      if (props.width != null) bindings.width = props.width;
-      if (props.height != null) bindings.height = props.height;
-      if (props.fetchpriority) bindings.fetchpriority = props.fetchpriority;
-      if (props.class) bindings.class = props.class;
-      return { ...bindings, ...props.imgAttrs };
-    });
-    return (_ctx, _cache) => {
-      return isRaster.value && webpSrc.value ? (openBlock(), createElementBlock("picture", _hoisted_1$2, [
-        createBaseVNode("source", {
-          srcset: webpSrc.value,
-          type: "image/webp"
-        }, null, 8, _hoisted_2$2),
-        createBaseVNode("img", normalizeProps(guardReactiveProps(imgBindings.value)), null, 16)
-      ])) : (openBlock(), createElementBlock("img", normalizeProps(mergeProps({ key: 1 }, imgBindings.value)), null, 16));
-    };
-  }
-};
+import { _ as _sfc_main$3, a as _sfc_main$4 } from "./B1pc8eql.js";
+import { B as openBlock, C as createElementBlock, D as createBaseVNode, E as toDisplayString, F as createVNode, G as withCtx, I as Fragment, J as renderList, A as useHead, K as normalizeProps, L as guardReactiveProps, l as unref } from "./U6c9FMge.js";
 const _hoisted_1$1 = {
   id: "dummy",
   class: "dummy"
@@ -81,7 +16,7 @@ const _hoisted_10$1 = { class: "dummy__main-text" };
 const _hoisted_11 = { class: "dummy__subtext" };
 const _hoisted_12 = { class: "dummy__right" };
 const _hoisted_13 = { class: "dummy__date-wrapper" };
-const _sfc_main$1 = {
+const _sfc_main$2 = {
   __name: "DummyHeroSection",
   props: {
     title: { type: String, required: true },
@@ -106,8 +41,8 @@ const _sfc_main$1 = {
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      const _component_Image = _sfc_main$2;
-      const _component_Container = _sfc_main$3;
+      const _component_Image = _sfc_main$3;
+      const _component_Container = _sfc_main$4;
       return openBlock(), createElementBlock("section", _hoisted_1$1, [
         createBaseVNode("h1", _hoisted_2$1, toDisplayString(__props.title), 1),
         createBaseVNode("div", _hoisted_3$1, [
@@ -241,7 +176,7 @@ const _hoisted_7 = { class: "contest__text" };
 const _hoisted_8 = ["href", "target"];
 const _hoisted_9 = { class: "contest__policy-links" };
 const _hoisted_10 = ["href", "target"];
-const _sfc_main = {
+const _sfc_main$1 = {
   __name: "ContestSection",
   props: {
     title: { type: String, required: true },
@@ -262,8 +197,8 @@ const _sfc_main = {
   },
   setup(__props) {
     return (_ctx, _cache) => {
-      const _component_Image = _sfc_main$2;
-      const _component_Container = _sfc_main$3;
+      const _component_Image = _sfc_main$3;
+      const _component_Container = _sfc_main$4;
       return openBlock(), createElementBlock("section", _hoisted_1, [
         createVNode(_component_Image, {
           class: "contest__decor contest__decor--left",
@@ -354,9 +289,22 @@ const contestData = {
   policyLinks,
   images
 };
+const _sfc_main = {
+  __name: "dummy",
+  setup(__props) {
+    useHead({
+      title: ""
+    });
+    return (_ctx, _cache) => {
+      const _component_DummyHeroSection = _sfc_main$2;
+      const _component_ContestSection = _sfc_main$1;
+      return openBlock(), createElementBlock("main", null, [
+        createVNode(_component_DummyHeroSection, normalizeProps(guardReactiveProps(unref(dummyData))), null, 16),
+        createVNode(_component_ContestSection, normalizeProps(guardReactiveProps(unref(contestData))), null, 16)
+      ]);
+    };
+  }
+};
 export {
-  _sfc_main$1 as _,
-  _sfc_main as a,
-  contestData as c,
-  dummyData as d
+  _sfc_main as default
 };

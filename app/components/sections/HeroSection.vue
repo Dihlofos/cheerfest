@@ -151,6 +151,11 @@ const props = defineProps({
     margin-top: 0;
   }
 
+  @media (max-width: $mobile) {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
 
   &__top {
     position: relative;
@@ -179,6 +184,8 @@ const props = defineProps({
       padding: 0 6rem 0 0;
       max-width: 50rem;
     }
+
+
   }
 
   &__content {
@@ -211,6 +218,13 @@ const props = defineProps({
     display: flex;
     gap: 2rem;
     margin-left: 6.9rem;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      margin-left: 0;
+      max-width: 36rem;
+      margin: 0 auto;
+    }
   }
 
   &__button {
@@ -229,6 +243,10 @@ const props = defineProps({
     @media (max-width: $tablet) {
       margin: 0 0 3rem;
       max-width: 50rem;
+    }
+
+    @media (max-width: $mobile) {
+      max-width: 100%;
     }
   }
 
@@ -356,6 +374,12 @@ const props = defineProps({
     @media (max-width: $tablet) {
       margin-top: -38.3rem;
       margin-bottom: -16.6rem;
+    }
+
+    @media (max-width: $mobile) {
+      margin-top: -20.3rem;
+      margin-bottom: -13.6rem;
+      width: 53rem;
     }
 
 

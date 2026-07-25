@@ -227,6 +227,7 @@ import footerData from '~/../data/sections/footer.json'
     @media (max-width: $tablet) {
       flex-direction: column;
       gap: 0.6rem;
+      padding-bottom: 0;
     }
   }
 

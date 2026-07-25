@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./C4IRkccF.js","./Co8AT8gl.js","./G61y4HPH.js","./Container.DkCdO9_H.css","./contest.BXppqpvp.css","./BGxUVzYa.js","./4Azyi9fY.js","./1tPrXgE0.js","./default.4VKLukua.css","./D1Hb6zKO.js","./empty.9NtWlCq8.css","./HE_WYy6L.js","./error-404.Dv2pyLoR.css","./DOBTK2gy.js","./error-500.C2XaBLWY.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./DumgHDTB.js","./B1pc8eql.js","./Container.Bawxe59D.css","./dummy.BXppqpvp.css","./ZDGuhuVH.js","./1tPrXgE0.js","./index.BP3F5Izz.css","./D5uKaJmT.js","./default.D6o_tMlV.css","./DhjMefUa.js","./empty.9NtWlCq8.css","./nGuqqWkk.js","./error-404.Dv2pyLoR.css","./CMBLEO1S.js","./error-500.C2XaBLWY.css"])))=>i.map(i=>d[i]);
 (function polyfill() {
   const relList = document.createElement("link").relList;
   if (relList && relList.supports && relList.supports("modulepreload")) return;
@@ -4012,6 +4012,7 @@ function renderSlot(slots, name, props = {}, fallback, noSlotted, branchKey) {
   if (currentRenderingInstance.ce || currentRenderingInstance.parent && isAsyncWrapper(currentRenderingInstance.parent) && currentRenderingInstance.parent.ce) {
     const slotProps = props;
     const hasProps = Object.keys(slotProps).length > 0;
+    if (name !== "default") slotProps.name = name;
     return openBlock(), createBlock(
       Fragment,
       null,
@@ -13551,9 +13552,6 @@ const __vitePreload = function preload(baseModule, deps, importerUrl) {
     return baseModule().catch(handlePreloadError);
   });
 };
-const __nuxt_page_meta$1 = {
-  layout: "empty"
-};
 const __nuxt_page_meta = {
   layout: "empty"
 };
@@ -13561,14 +13559,14 @@ const _routes = [
   {
     name: "dummy",
     path: "/dummy",
-    meta: __nuxt_page_meta$1 || {},
-    component: () => __vitePreload(() => import("./C4IRkccF.js"), true ? __vite__mapDeps([0,1,2,3,4]) : void 0, import.meta.url)
+    meta: __nuxt_page_meta || {},
+    component: () => __vitePreload(() => import("./DumgHDTB.js"), true ? __vite__mapDeps([0,1,2,3]) : void 0, import.meta.url)
   },
   {
     name: "index",
     path: "/",
-    meta: __nuxt_page_meta || {},
-    component: () => __vitePreload(() => import("./BGxUVzYa.js"), true ? __vite__mapDeps([5,1,2,3,4]) : void 0, import.meta.url)
+    meta: {},
+    component: () => __vitePreload(() => import("./ZDGuhuVH.js"), true ? __vite__mapDeps([4,1,2,5,6]) : void 0, import.meta.url)
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -14112,8 +14110,8 @@ const components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4 = /* @__PURE
   name: "nuxt:global-components"
 });
 const layouts = {
-  default: /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./4Azyi9fY.js"), true ? __vite__mapDeps([6,7,2,3,8]) : void 0, import.meta.url).then((m) => m.default || m)),
-  empty: /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./D1Hb6zKO.js"), true ? __vite__mapDeps([9,7,10]) : void 0, import.meta.url).then((m) => m.default || m))
+  default: /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./D5uKaJmT.js"), true ? __vite__mapDeps([7,1,2,5,8]) : void 0, import.meta.url).then((m) => m.default || m)),
+  empty: /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./DhjMefUa.js"), true ? __vite__mapDeps([9,5,10]) : void 0, import.meta.url).then((m) => m.default || m))
 };
 function _loadAsyncComponent(component) {
   if (component?.__asyncLoader && !component.__asyncResolved) {
@@ -14680,8 +14678,8 @@ const _sfc_main$1 = {
     const statusText = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description2 = _error.message || _error.toString();
     const stack2 = void 0;
-    const _Error404 = /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./HE_WYy6L.js"), true ? __vite__mapDeps([11,7,12]) : void 0, import.meta.url));
-    const _Error = /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./DOBTK2gy.js"), true ? __vite__mapDeps([13,7,14]) : void 0, import.meta.url));
+    const _Error404 = /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./nGuqqWkk.js"), true ? __vite__mapDeps([11,5,12]) : void 0, import.meta.url));
+    const _Error = /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./CMBLEO1S.js"), true ? __vite__mapDeps([13,5,14]) : void 0, import.meta.url));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _cache) => {
       return openBlock(), createBlock(unref(ErrorTemplate), normalizeProps$1(guardReactiveProps({ status: unref(status), statusText: unref(statusText), statusCode: unref(status), statusMessage: unref(statusText), description: unref(description2), stack: unref(stack2) })), null, 16);
@@ -14801,15 +14799,24 @@ export {
   createVNode as F,
   withCtx as G,
   createTextVNode as H,
-  normalizeProps$1 as I,
-  guardReactiveProps as J,
-  mergeProps as K,
-  Fragment as L,
-  renderList as M,
+  Fragment as I,
+  renderList as J,
+  normalizeProps$1 as K,
+  guardReactiveProps as L,
+  createCommentVNode as M,
   normalizeClass as N,
-  onUnmounted as O,
-  publicAssetsURL as P,
-  renderSlot as Q,
+  createBlock as O,
+  renderSlot as P,
+  resolveDynamicComponent as Q,
+  onBeforeUpdate as R,
+  onUpdated as S,
+  provide as T,
+  watch as U,
+  nextTick as V,
+  onUnmounted as W,
+  publicAssetsURL as X,
+  mergeProps as Y,
+  __vitePreload as _,
   useNuxtApp as a,
   onNuxtReady as b,
   onBeforeUnmount as c,

@@ -1,37 +1,9 @@
+import { _ as _sfc_main$4, a as _sfc_main$5 } from "./B1pc8eql.js";
+import { B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, O as createBlock, I as Fragment, J as renderList, E as toDisplayString, F as createVNode, N as normalizeClass, i as ref, o as onMounted, W as onUnmounted, G as withCtx, X as publicAssetsURL, P as renderSlot } from "./U6c9FMge.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
-import { B as openBlock, C as createElementBlock, D as createBaseVNode, E as toDisplayString, l as unref, L as Fragment, M as renderList, N as normalizeClass, i as ref, o as onMounted, O as onUnmounted, F as createVNode, G as withCtx, P as publicAssetsURL, Q as renderSlot } from "./DB-GrZ3G.js";
-import { _ as _sfc_main$4 } from "./G61y4HPH.js";
-const navItems = [
-  {
-    label: "О событии ",
-    link: "#about"
-  },
-  {
-    label: "Карта",
-    link: "#map"
-  },
-  {
-    label: "Программа сцены",
-    link: "#programm"
-  },
-  {
-    label: "Конкурс",
-    link: "#contest"
-  },
-  {
-    label: "Локации",
-    link: "#locations"
-  },
-  {
-    label: "Вопросы и ответы",
-    link: "#faq"
-  },
-  {
-    label: "Контакты",
-    link: "#contacts"
-  }
-];
-const _hoisted_1$3 = { class: "nav__toggle-icon" };
+const navItems = [{ "label": "О событии ", "link": "#about" }, { "label": "Карта", "link": "#map" }, { "label": "Программа сцены", "link": "#programm" }, { "label": "Конкурс", "link": "#contest" }, { "label": "Локации", "link": "#locations" }, { "label": "Вопросы и ответы", "link": "#faq" }, { "label": "Контакты", "link": "#contacts" }];
+const images = { "burger": "/images/burger.svg", "close": "/images/close.svg", "girls": "/images/hero/girls.png" };
+const _hoisted_1$3 = { class: "nav__overlay" };
 const _hoisted_2$2 = { class: "nav__list" };
 const _hoisted_3$1 = ["href"];
 const _sfc_main$3 = {
@@ -45,6 +17,7 @@ const _sfc_main$3 = {
       mobileOpen.value = false;
     }
     return (_ctx, _cache) => {
+      const _component_Image = _sfc_main$4;
       return openBlock(), createElementBlock("nav", {
         class: normalizeClass(["nav", { "nav--open": unref(mobileOpen) }])
       }, [
@@ -53,27 +26,47 @@ const _sfc_main$3 = {
           onClick: toggleMobile,
           "aria-label": "Меню"
         }, [
-          createBaseVNode("span", _hoisted_1$3, toDisplayString(unref(mobileOpen) ? "✕" : "☰"), 1)
+          !unref(mobileOpen) ? (openBlock(), createBlock(_component_Image, {
+            key: 0,
+            src: unref(images).burger,
+            alt: "Открыть меню",
+            width: "44",
+            height: "44"
+          }, null, 8, ["src"])) : (openBlock(), createBlock(_component_Image, {
+            key: 1,
+            src: unref(images).close,
+            alt: "Закрыть меню",
+            width: "35",
+            height: "35"
+          }, null, 8, ["src"]))
         ]),
-        createBaseVNode("ul", _hoisted_2$2, [
-          (openBlock(true), createElementBlock(Fragment, null, renderList(unref(navItems), (item) => {
-            return openBlock(), createElementBlock("li", {
-              key: item.link,
-              class: "nav__item"
-            }, [
-              createBaseVNode("a", {
-                href: item.link,
-                class: "nav__link",
-                onClick: closeMobile
-              }, toDisplayString(item.label), 9, _hoisted_3$1)
-            ]);
-          }), 128))
+        createBaseVNode("div", _hoisted_1$3, [
+          createBaseVNode("ul", _hoisted_2$2, [
+            (openBlock(true), createElementBlock(Fragment, null, renderList(unref(navItems), (item) => {
+              return openBlock(), createElementBlock("li", {
+                key: item.link,
+                class: "nav__item"
+              }, [
+                createBaseVNode("a", {
+                  href: item.link,
+                  class: "nav__link",
+                  onClick: closeMobile
+                }, toDisplayString(item.label), 9, _hoisted_3$1)
+              ]);
+            }), 128))
+          ]),
+          createVNode(_component_Image, {
+            class: "nav__girls",
+            src: unref(images).girls,
+            alt: "",
+            width: "888",
+            height: "662"
+          }, null, 8, ["src"])
         ])
       ], 2);
     };
   }
 };
-const __nuxt_component_0$1 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-f3d3e891"]]);
 const _hoisted_1$2 = { class: "header__inner" };
 const _sfc_main$2 = {
   __name: "Header",
@@ -89,8 +82,8 @@ const _sfc_main$2 = {
       window.removeEventListener("scroll", onScroll);
     });
     return (_ctx, _cache) => {
-      const _component_Navigation = __nuxt_component_0$1;
-      const _component_Container = _sfc_main$4;
+      const _component_Navigation = _sfc_main$3;
+      const _component_Container = _sfc_main$5;
       return openBlock(), createElementBlock("header", {
         class: normalizeClass(["header", { "header--scrolled": unref(scrolled) }])
       }, [
@@ -106,17 +99,19 @@ const _sfc_main$2 = {
     };
   }
 };
-const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-c1e15669"]]);
+const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-6865a282"]]);
 const type = "footer";
 const title = "Контакты";
-const contacts = [{ "label": "По вопросам регистрации", "email": "name@mail.ru" }, { "label": "Для СМИ", "email": "pressame@mail.ru" }];
+const contacts = [{ "label": "По вопросам регистрации", "email": "ano@mossport.ru" }, { "label": "Для СМИ", "email": "press@moscow.sport" }];
 const info = { "text": "Для аккредитации на событие отправьте письмо на электронный адрес со следующей информацией:", "items": ["название СМИ и программы, планируемая дата выхода материала;", "ФИО корреспондента / всех участников съемочной группы с контактными телефонами."] };
-const docs = [{ "href": "/docs/policy.pdf", "label": "Политика конфиденциальности" }, { "href": "/docs/reject.pdf", "label": "Отказ от претензий от участника" }, { "href": "/docs/reject_child.pdf", "label": "Отказ от претензий от опекуна ребенка" }];
+const socials = [{ "icon": "/images/footer/icon-tg.svg", "href": "#", "alt": "Telegram" }, { "icon": "/images/footer/icon-vk.svg", "href": "#", "alt": "VK" }, { "icon": "/images/footer/icon-rutube.svg", "href": "#", "alt": "Rutube" }, { "icon": "/images/footer/icon-max.svg", "href": "#", "alt": "Max" }];
+const docs = [{ "href": "#", "label": "Политика конфиденциальности" }, { "href": "#", "label": "Политика обработки персональных данных" }, { "href": "#", "label": "Отказ от претензий" }];
 const footerData = {
   type,
   title,
   contacts,
   info,
+  socials,
   docs
 };
 const _hoisted_1$1 = {
@@ -131,15 +126,21 @@ const _hoisted_6 = { class: "footer__contacts-label" };
 const _hoisted_7 = ["href"];
 const _hoisted_8 = { class: "footer__info" };
 const _hoisted_9 = { class: "footer__info-text" };
-const _hoisted_10 = { class: "footer__docs" };
-const _hoisted_11 = ["href"];
+const _hoisted_10 = { class: "footer__bottom" };
+const _hoisted_11 = { class: "footer__socials" };
+const _hoisted_12 = ["href"];
+const _hoisted_13 = ["src", "alt"];
+const _hoisted_14 = { class: "footer__docs" };
+const _hoisted_15 = ["href"];
 const _sfc_main$1 = {
   __name: "Footer",
   setup(__props) {
     return (_ctx, _cache) => {
-      const _component_Container = _sfc_main$4;
+      const _component_Container = _sfc_main$5;
       return openBlock(), createElementBlock("footer", _hoisted_1$1, [
-        createVNode(_component_Container, null, {
+        _cache[0] || (_cache[0] = createBaseVNode("div", { class: "footer__bg" }, null, -1)),
+        _cache[1] || (_cache[1] = createBaseVNode("div", { class: "footer__overlay" }, null, -1)),
+        createVNode(_component_Container, { wide: "" }, {
           default: withCtx(() => [
             createBaseVNode("div", _hoisted_2$1, [
               createBaseVNode("div", _hoisted_3, [
@@ -168,13 +169,32 @@ const _sfc_main$1 = {
                   ])
                 ]),
                 createBaseVNode("div", _hoisted_10, [
-                  (openBlock(true), createElementBlock(Fragment, null, renderList(unref(footerData).docs, (doc) => {
-                    return openBlock(), createElementBlock("a", {
-                      key: doc.href,
-                      href: doc.href,
-                      target: "_blank"
-                    }, toDisplayString(doc.label), 9, _hoisted_11);
-                  }), 128))
+                  createBaseVNode("div", _hoisted_11, [
+                    (openBlock(true), createElementBlock(Fragment, null, renderList(unref(footerData).socials, (social) => {
+                      return openBlock(), createElementBlock("a", {
+                        key: social.alt,
+                        href: social.href,
+                        target: "_blank",
+                        class: "footer__socials-link"
+                      }, [
+                        createBaseVNode("img", {
+                          src: social.icon,
+                          alt: social.alt,
+                          class: "footer__socials-icon"
+                        }, null, 8, _hoisted_13)
+                      ], 8, _hoisted_12);
+                    }), 128))
+                  ]),
+                  createBaseVNode("div", _hoisted_14, [
+                    (openBlock(true), createElementBlock(Fragment, null, renderList(unref(footerData).docs, (doc) => {
+                      return openBlock(), createElementBlock("a", {
+                        key: doc.href,
+                        href: doc.href,
+                        target: "_blank",
+                        class: "footer__docs-link"
+                      }, toDisplayString(doc.label), 9, _hoisted_15);
+                    }), 128))
+                  ])
                 ])
               ])
             ])
@@ -185,7 +205,7 @@ const _sfc_main$1 = {
     };
   }
 };
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-5e16d18f"]]);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-40ff81dd"]]);
 const _imports_0 = publicAssetsURL("/images/bg.svg");
 const _sfc_main = {};
 const _hoisted_1 = { class: "page" };

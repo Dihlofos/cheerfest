@@ -1,9 +1,16 @@
-[
-  { "label": "О событии ", "link": "#about" },
-  { "label": "Карта", "link": "#map" },
-  { "label": "Программа сцены", "link": "#programm" },
-  { "label": "Конкурс", "link": "#contest" },
-  { "label": "Локации", "link": "#locations" },
-  { "label": "Вопросы и ответы", "link": "#faq" },
-  { "label": "Контакты", "link": "#contacts" }
-]
+{
+  "navItems":[
+    { "label": "О событии ", "link": "#about" },
+    { "label": "Карта", "link": "#map" },
+    { "label": "Программа сцены", "link": "#programm" },
+    { "label": "Конкурс", "link": "#contest" },
+    { "label": "Локации", "link": "#locations" },
+    { "label": "Вопросы и ответы", "link": "#faq" },
+    { "label": "Контакты", "link": "#contacts" }
+  ],
+  "images": {
+    "burger": "/images/burger.svg",
+    "close": "/images/close.svg",
+    "girls": "/images/hero/girls.png"
+  }
+}
