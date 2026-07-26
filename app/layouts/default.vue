@@ -25,12 +25,15 @@
 .body-bg {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
   height: auto;
   object-fit: cover;
   user-select: none;
   pointer-events: none;
+  max-width: unset;
+  width: 192rem;
 }
 
 // Ensure content pushes footer down
