@@ -107,9 +107,10 @@ const props = defineProps({
               <Button
                 v-for="(link, index) in links"
                 :key="index"
-                class="hero__button"
+                v-anchor
                 :class="link.class"
                 :href="link.href"
+                class="hero__button"
               >
                 {{ link.text }}
               </Button>

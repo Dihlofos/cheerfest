@@ -3,7 +3,7 @@
     { "label": "О событии ", "link": "#about" },
     { "label": "Карта", "link": "#map" },
     { "label": "Программа сцены", "link": "#program" },
-    { "label": "Конкурс", "link": "#contest" },
+    { "label": "Конкурс", "link": "#dance" },
     { "label": "Локации", "link": "#locations" },
     { "label": "Вопросы и ответы", "link": "#faq" },
     { "label": "Контакты", "link": "#footer" }

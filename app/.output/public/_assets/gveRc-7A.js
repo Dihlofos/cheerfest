@@ -1,5 +1,5 @@
-import { _ as _sfc_main$g, a as _sfc_main$h } from "./e6evKozL.js";
-import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as createCommentVNode, N as normalizeClass, O as createBlock, _ as __vitePreload, l as unref, m as computed, P as renderSlot, Q as resolveDynamicComponent, H as createTextVNode, d as defineComponent, o as onMounted, R as onBeforeUpdate, S as onUpdated, c as onBeforeUnmount, T as provide, h, i as ref, U as watch, V as nextTick$1, s as shallowRef, A as useHead, K as normalizeProps, L as guardReactiveProps } from "./CG9B_jKx.js";
+import { _ as _sfc_main$g, a as _sfc_main$h } from "./CbR5XRje.js";
+import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as createCommentVNode, N as normalizeClass, O as createBlock, _ as __vitePreload, l as unref, m as computed, P as renderSlot, Q as resolveDynamicComponent, H as createTextVNode, d as defineComponent, o as onMounted, R as onBeforeUpdate, S as onUpdated, c as onBeforeUnmount, T as provide, h, i as ref, U as watch, V as nextTick$1, s as shallowRef, A as useHead, K as normalizeProps, L as guardReactiveProps } from "./CplBFERc.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
 const _hoisted_1$d = {
   id: "about",
@@ -297,7 +297,7 @@ const _hoisted_3$8 = { class: "clubs__content" };
 const _hoisted_4$7 = { class: "clubs__bg" };
 const _hoisted_5$6 = { class: "clubs__text-content" };
 const _hoisted_6$5 = { class: "clubs__text text" };
-const _hoisted_7$5 = ["href"];
+const _hoisted_7$5 = ["href", "target"];
 const _sfc_main$a = {
   __name: "ClubsSection",
   props: {
@@ -360,7 +360,8 @@ const _sfc_main$a = {
                   createBaseVNode("h2", _hoisted_6$5, toDisplayString(__props.text), 1),
                   createBaseVNode("a", {
                     href: __props.button.link,
-                    class: "clubs__button"
+                    class: "clubs__button",
+                    target: __props.button.target
                   }, toDisplayString(__props.button.text), 9, _hoisted_7$5)
                 ])
               ])
@@ -6054,7 +6055,7 @@ const _hoisted_3 = { class: "dance__content" };
 const _hoisted_4 = { class: "dance__bg" };
 const _hoisted_5 = { class: "dance__text-content" };
 const _hoisted_6 = { class: "dance__text text" };
-const _hoisted_7 = ["href"];
+const _hoisted_7 = ["href", "target"];
 const _sfc_main$1 = {
   __name: "DanceSection",
   props: {
@@ -6120,7 +6121,8 @@ const _sfc_main$1 = {
                   createBaseVNode("p", _hoisted_6, toDisplayString(__props.text), 1),
                   createBaseVNode("a", {
                     href: __props.button.link,
-                    class: "dance__button"
+                    class: "dance__button",
+                    target: __props.button.target
                   }, toDisplayString(__props.button.text), 9, _hoisted_7)
                 ])
               ])
@@ -6183,7 +6185,7 @@ const programData = {
 const type$7 = "clubs";
 const title$7 = "Состязания чирлидинг-команд";
 const text$1 = "Продемонстрируйте мощную энергетику и сложные элементы на главной арене фестиваля и поборитесь за призовой фонд";
-const button$1 = { "link": "https://fest-dance-cheerleading.timepad.ru/event/4084236/", "text": "Подать заявку" };
+const button$1 = { "link": "https://fest-dance-cheerleading.timepad.ru/event/4099869/", "text": "Подать заявку", "target": "_blank" };
 const girl$1 = "/images/clubs/girl.png";
 const titleImg$1 = "/images/clubs/title.svg";
 const bg$1 = "/images/clubs/bg.png";
@@ -6202,10 +6204,10 @@ const type$6 = "dance";
 const title$6 = "Конкурс танцевальных клубов";
 const text = "Покажите свой номер на главной сцене фестиваля и поборитесь за победу в одной из пяти номинаций. Победителей определяет звездное жюри, а лучшие команды получают денежные призы";
 const titleImg = "/images/dance/title.svg";
-const button = { "link": "https://fest-dance-cheerleading.timepad.ru/event/4084236/", "text": "Подать заявку" };
+const button = { "link": "https://fest-dance-cheerleading.timepad.ru/event/4084236/", "text": "Подать заявку", "target": "_blank" };
 const girl = "/images/dance/girls.png";
 const bg = "/images/dance/bg.png";
-const decorTop = "/images/dance/decor-top.svg";
+const decorTop = "/images/dance/decor-top.png";
 const danceData = {
   type: type$6,
   title: title$6,
@@ -6295,8 +6297,8 @@ const _sfc_main = {
         createVNode(_component_AboutSection, normalizeProps(guardReactiveProps(unref(aboutData))), null, 16),
         createVNode(_component_MapSection, normalizeProps(guardReactiveProps(unref(mapData))), null, 16),
         createVNode(_component_ProgramSection, normalizeProps(guardReactiveProps(unref(programData))), null, 16),
-        createVNode(_component_ClubsSection, normalizeProps(guardReactiveProps(unref(clubsData))), null, 16),
         createVNode(_sfc_main$1, normalizeProps(guardReactiveProps(unref(danceData))), null, 16),
+        createVNode(_component_ClubsSection, normalizeProps(guardReactiveProps(unref(clubsData))), null, 16),
         createVNode(_component_NominationsSection, normalizeProps(guardReactiveProps(unref(nominationsData))), null, 16),
         createVNode(_component_SliderSection, normalizeProps(guardReactiveProps(unref(participantsData))), null, 16),
         createVNode(_component_SliderSection, normalizeProps(guardReactiveProps(unref(juryData))), null, 16),

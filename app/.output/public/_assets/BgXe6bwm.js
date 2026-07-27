@@ -1,5 +1,5 @@
-import { _ as _sfc_main$4, a as _sfc_main$5 } from "./e6evKozL.js";
-import { o as onMounted, _ as __vitePreload, W as onUnmounted, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, O as createBlock, I as Fragment, J as renderList, E as toDisplayString, F as createVNode, N as normalizeClass, i as ref, G as withCtx, P as renderSlot } from "./CG9B_jKx.js";
+import { _ as _sfc_main$4, a as _sfc_main$5 } from "./CbR5XRje.js";
+import { o as onMounted, _ as __vitePreload, W as onUnmounted, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, O as createBlock, I as Fragment, J as renderList, E as toDisplayString, F as createVNode, N as normalizeClass, i as ref, G as withCtx, P as renderSlot } from "./CplBFERc.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
 const navItems = [{ "label": "О событии ", "link": "#about" }, { "label": "Карта", "link": "#map" }, { "label": "Программа сцены", "link": "#program" }, { "label": "Конкурс", "link": "#contest" }, { "label": "Локации", "link": "#locations" }, { "label": "Вопросы и ответы", "link": "#faq" }, { "label": "Контакты", "link": "#footer" }];
 const images = { "burger": "/images/burger.svg", "close": "/images/close.svg", "girls": "/images/hero/girls.png" };
@@ -242,7 +242,7 @@ function _sfc_render(_ctx, _cache) {
     createVNode(_component_Footer)
   ]);
 }
-const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-260bdb63"]]);
+const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-1e9b1853"]]);
 export {
   _default as default
 };

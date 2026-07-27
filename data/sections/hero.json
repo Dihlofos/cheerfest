@@ -5,12 +5,12 @@
     {
       "text": "Смотреть программу",
       "class": "magenta",
-      "href": "#programm"
+      "href": "#program"
     },
     {
       "text": "Участвовать в конкурсе",
       "class": "white",
-      "href": "#contest"
+      "href": "#dance"
     }
   ],
   "logos": [

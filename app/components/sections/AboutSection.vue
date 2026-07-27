@@ -38,7 +38,6 @@ const props = defineProps({
         </div>
       </div>
     </Container>
-
   </section>
 
 </template>
@@ -216,7 +215,5 @@ const props = defineProps({
       font-size: 1.4rem;
     }
   }
-
 }
-
 </style>
