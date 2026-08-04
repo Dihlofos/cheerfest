@@ -1,5 +1,5 @@
-import { _ as _sfc_main$g, a as _sfc_main$h } from "./CbR5XRje.js";
-import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as createCommentVNode, N as normalizeClass, O as createBlock, _ as __vitePreload, l as unref, m as computed, P as renderSlot, Q as resolveDynamicComponent, H as createTextVNode, d as defineComponent, o as onMounted, R as onBeforeUpdate, S as onUpdated, c as onBeforeUnmount, T as provide, h, i as ref, U as watch, V as nextTick$1, s as shallowRef, A as useHead, K as normalizeProps, L as guardReactiveProps } from "./CplBFERc.js";
+import { _ as _sfc_main$g, a as _sfc_main$h } from "./D98wPNy_.js";
+import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as createCommentVNode, N as normalizeClass, O as createBlock, _ as __vitePreload, l as unref, m as computed, P as renderSlot, Q as resolveDynamicComponent, H as createTextVNode, d as defineComponent, o as onMounted, R as onBeforeUpdate, S as onUpdated, c as onBeforeUnmount, T as provide, h, i as ref, U as watch, V as nextTick$1, s as shallowRef, W as resolveDirective, X as withDirectives, A as useHead, K as normalizeProps, L as guardReactiveProps } from "./BB8A7Zdb.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
 const _hoisted_1$d = {
   id: "about",
@@ -5923,6 +5923,7 @@ const _sfc_main$2 = {
       const _component_Image = _sfc_main$g;
       const _component_Button = _sfc_main$3;
       const _component_Container = _sfc_main$h;
+      const _directive_anchor = resolveDirective("anchor");
       return openBlock(), createElementBlock("section", _hoisted_1$1, [
         createBaseVNode("h1", _hoisted_2$1, toDisplayString(__props.title), 1),
         createBaseVNode("div", _hoisted_3$1, [
@@ -6006,16 +6007,18 @@ const _sfc_main$2 = {
                   }, null, 8, ["src"]),
                   createBaseVNode("div", _hoisted_9, [
                     (openBlock(true), createElementBlock(Fragment, null, renderList(__props.links, (link, index) => {
-                      return openBlock(), createBlock(_component_Button, {
+                      return withDirectives((openBlock(), createBlock(_component_Button, {
                         key: index,
-                        class: normalizeClass(["hero__button", link.class]),
+                        class: normalizeClass([link.class, "hero__button"]),
                         href: link.href
                       }, {
                         default: withCtx(() => [
                           createTextVNode(toDisplayString(link.text), 1)
                         ]),
                         _: 2
-                      }, 1032, ["class", "href"]);
+                      }, 1032, ["class", "href"])), [
+                        [_directive_anchor]
+                      ]);
                     }), 128))
                   ])
                 ]),
@@ -6136,7 +6139,7 @@ const _sfc_main$1 = {
 };
 const type$b = "hero";
 const title$b = "Фестиваль танцев и чирлидинга — 15 августа";
-const links = [{ "text": "Смотреть программу", "class": "magenta", "href": "#programm" }, { "text": "Участвовать в конкурсе", "class": "white", "href": "#contest" }];
+const links = [{ "text": "Смотреть программу", "class": "magenta", "href": "#program" }, { "text": "Участвовать в конкурсе", "class": "white", "href": "#dance" }];
 const logos$1 = [{ "src": "/images/hero/major.svg", "alt": "Проект мэра", "link": "https://www.mos.ru/city/projects/", "width": 97, "height": 49 }, { "src": "/images/hero/summer.svg", "alt": "Лето в Москве", "link": "https://leto.mos.ru/", "width": 110, "height": 47 }, { "src": "/images/hero/dep.svg", "alt": "Департамент Москвы", "link": "https://www.mos.ru/moskomsport/", "width": 138, "height": 47 }, { "src": "/images/hero/mossport.svg", "alt": "Московский спорт", "link": "https://sport.mos.ru", "width": 164, "height": 49 }];
 const images$1 = { "decorLeft": "/images/hero/decor-left.png", "decorTop": "/images/hero/decor-top.png", "decorRight": "/images/hero/decor-right.png", "mobileDecor": "/images/hero/mobile-decor.png", "bg": "/images/hero/bg.jpg", "logo": "/images/hero/logo.svg", "dateDesktop": "/images/hero/date.svg", "dateMobile": "/images/hero/date-mobile.svg", "girl": "/images/hero/girl.png", "girls": "/images/hero/girls.png" };
 const heroData = {
@@ -6269,7 +6272,7 @@ const partnersData = {
 const type = "faq";
 const title = "Вопросы и ответы";
 const images = { "decorLeft": "/images/faq/decor-left.svg", "decorRight": "/images/faq/decor-right.svg", "arrowDown": "/images/faq/arrow-down.svg", "arrowUp": "/images/faq/arrow-up.svg" };
-const items = [{ "question": "Нужно ли регистрироваться, чтобы посетить фестиваль?", "answer": "Нет, фестиваль открыт для всех желающих" }, { "question": "Можно ли участвовать в мастер-классах без подготовки?", "answer": "Вы можете выбрать и посетить любое количество активностей фестиваля. На некоторые понадобится регистрация — в расписании вы увидите кнопку «Регистрация»." }, { "question": "Где посмотреть расписание?", "answer": "Мы предоставим коврики, а другой специальный инвентарь не потребуется. Просто приходите в удобной одежде и обуви. И не забудьте взять с собой воду." }, { "question": "Как принять участие в конкурсе танцевальных клубов?", "answer": "На площадке нет раздевалок и камер хранения, поэтому приходите в спортивной одежде и обуви сразу." }, { "question": "Можно ли приходить с детьми?", "answer": "В случае опоздания забронированный слот аннулируется. Рекомендуем приходить на площадку за 15 минут до начала, чтобы успеть отметиться и занять место." }, { "question": "Можно ли прийти только на концерт?", "answer": "Да, для детей от 3 лет подготовлены специальные активности в детской зоне." }];
+const items = [{ "question": "Нужно&nbsp;ли регистрироваться, чтобы посетить фестиваль?", "answer": "Нет, фестиваль открыт для всех желающих." }, { "question": "Можно ли участвовать в мастер-классах без подготовки?", "answer": "Да, большинство мастер-классов рассчитаны на&nbsp;участников любого уровня подготовки." }, { "question": "Где посмотреть расписание?", "answer": "Полная программа доступна на&nbsp;этой странице. Также на&nbsp;площадке будут размещены информационные стенды с&nbsp;расписанием." }, { "question": "Как принять участие в конкурсе танцевальных клубов?", "answer": "Необходимо заранее зарегистрировать команду. Для этого подайте заявку на&nbsp;участие, получите подтверждение от&nbsp;организаторов и&nbsp;выступите на&nbsp;сцене фестиваля 15&nbsp;августа." }, { "question": "Можно ли приходить с детьми?", "answer": "Да, на фестивале предусмотрены активности для гостей всех возрастов." }, { "question": "Можно ли прийти только на концерт?", "answer": "Да, вы можете прийти на любое событие программы. " }];
 const faqData = {
   type,
   title,

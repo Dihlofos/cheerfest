@@ -25,8 +25,8 @@
     { "icon": "/images/footer/icon-max.svg", "href": "https://max.ru/MoscowSport", "alt": "Max" }
   ],
   "docs": [
-    { "href": "#", "label": "Политика конфиденциальности" },
-    { "href": "#", "label": "Политика обработки персональных данных" },
-    { "href": "#", "label": "Отказ от претензий" }
+    { "href": "/docs/policy.pdf", "label": "Политика конфиденциальности" },
+    { "href": "/docs/agreement.pdf", "label": "Отказ от претензий" },
+    { "href": "/docs/agreement-child.pdf", "label": "Отказ от претензий ребенка" }
   ]
 }

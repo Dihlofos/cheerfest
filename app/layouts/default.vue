@@ -9,6 +9,7 @@
     </div>
     <slot />
     <Footer />
+    <CookieModal />
   </div>
 </template>
 

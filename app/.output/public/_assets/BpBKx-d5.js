@@ -1,37 +1,24 @@
-import { _ as _sfc_main$4, a as _sfc_main$5 } from "./CbR5XRje.js";
-import { o as onMounted, _ as __vitePreload, W as onUnmounted, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, O as createBlock, I as Fragment, J as renderList, E as toDisplayString, F as createVNode, N as normalizeClass, i as ref, G as withCtx, P as renderSlot } from "./CplBFERc.js";
+import { _ as _sfc_main$5, a as _sfc_main$6 } from "./D98wPNy_.js";
+import { W as resolveDirective, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, O as createBlock, I as Fragment, J as renderList, X as withDirectives, H as createTextVNode, E as toDisplayString, F as createVNode, N as normalizeClass, i as ref, o as onMounted, Y as onUnmounted, G as withCtx, d as defineComponent, Z as vShow, P as renderSlot } from "./BB8A7Zdb.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
-const navItems = [{ "label": "О событии ", "link": "#about" }, { "label": "Карта", "link": "#map" }, { "label": "Программа сцены", "link": "#program" }, { "label": "Конкурс", "link": "#contest" }, { "label": "Локации", "link": "#locations" }, { "label": "Вопросы и ответы", "link": "#faq" }, { "label": "Контакты", "link": "#footer" }];
+const navItems = [{ "label": "О событии ", "link": "#about" }, { "label": "Карта", "link": "#map" }, { "label": "Программа сцены", "link": "#program" }, { "label": "Конкурс", "link": "#dance" }, { "label": "Локации", "link": "#locations" }, { "label": "Вопросы и ответы", "link": "#faq" }, { "label": "Контакты", "link": "#footer" }];
 const images = { "burger": "/images/burger.svg", "close": "/images/close.svg", "girls": "/images/hero/girls.png" };
-const _hoisted_1$3 = { class: "nav__overlay" };
+const _hoisted_1$4 = { class: "nav__overlay" };
 const _hoisted_2$2 = { class: "nav__list" };
 const _hoisted_3$1 = ["href"];
-const _sfc_main$3 = {
+const _sfc_main$4 = {
   __name: "Navigation",
   setup(__props) {
     const mobileOpen = ref(false);
-    let smoothScroll = null;
     function toggleMobile() {
       mobileOpen.value = !mobileOpen.value;
     }
     function closeMobile() {
       mobileOpen.value = false;
     }
-    onMounted(async () => {
-      const SmoothScroll = (await __vitePreload(async () => {
-        const { default: __vite_default__ } = await import("./CSbmv_7n.js").then((n) => n.s);
-        return { default: __vite_default__ };
-      }, true ? [] : void 0, import.meta.url)).default;
-      smoothScroll = new SmoothScroll(".nav__link", {
-        speed: 200,
-        offset: 45
-      });
-    });
-    onUnmounted(() => {
-      smoothScroll?.destroy();
-    });
     return (_ctx, _cache) => {
-      const _component_Image = _sfc_main$4;
+      const _component_Image = _sfc_main$5;
+      const _directive_anchor = resolveDirective("anchor");
       return openBlock(), createElementBlock("nav", {
         class: normalizeClass(["nav", { "nav--open": unref(mobileOpen) }])
       }, [
@@ -54,18 +41,22 @@ const _sfc_main$3 = {
             height: "35"
           }, null, 8, ["src"]))
         ]),
-        createBaseVNode("div", _hoisted_1$3, [
+        createBaseVNode("div", _hoisted_1$4, [
           createBaseVNode("ul", _hoisted_2$2, [
             (openBlock(true), createElementBlock(Fragment, null, renderList(unref(navItems), (item) => {
               return openBlock(), createElementBlock("li", {
                 key: item.link,
                 class: "nav__item"
               }, [
-                createBaseVNode("a", {
+                withDirectives((openBlock(), createElementBlock("a", {
                   href: item.link,
                   class: "nav__link",
                   onClick: closeMobile
-                }, toDisplayString(item.label), 9, _hoisted_3$1)
+                }, [
+                  createTextVNode(toDisplayString(item.label), 1)
+                ], 8, _hoisted_3$1)), [
+                  [_directive_anchor]
+                ])
               ]);
             }), 128))
           ]),
@@ -81,8 +72,8 @@ const _sfc_main$3 = {
     };
   }
 };
-const _hoisted_1$2 = { class: "header__inner" };
-const _sfc_main$2 = {
+const _hoisted_1$3 = { class: "header__inner" };
+const _sfc_main$3 = {
   __name: "Header",
   setup(__props) {
     const scrolled = ref(false);
@@ -96,14 +87,14 @@ const _sfc_main$2 = {
       window.removeEventListener("scroll", onScroll);
     });
     return (_ctx, _cache) => {
-      const _component_Navigation = _sfc_main$3;
-      const _component_Container = _sfc_main$5;
+      const _component_Navigation = _sfc_main$4;
+      const _component_Container = _sfc_main$6;
       return openBlock(), createElementBlock("header", {
         class: normalizeClass(["header", { "header--scrolled": unref(scrolled) }])
       }, [
         createVNode(_component_Container, null, {
           default: withCtx(() => [
-            createBaseVNode("div", _hoisted_1$2, [
+            createBaseVNode("div", _hoisted_1$3, [
               createVNode(_component_Navigation)
             ])
           ]),
@@ -113,12 +104,12 @@ const _sfc_main$2 = {
     };
   }
 };
-const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-6865a282"]]);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-6865a282"]]);
 const type = "footer";
 const title = "Контакты";
 const contacts = [{ "label": "По вопросам регистрации", "email": "ano@mossport.ru" }, { "label": "Для СМИ", "email": "press@moscow.sport" }];
 const info = { "text": "Для аккредитации на событие отправьте письмо на электронный адрес со следующей информацией:", "items": ["название СМИ и программы, планируемая дата выхода материала;", "ФИО корреспондента / всех участников съемочной группы с контактными телефонами."] };
-const socials = [{ "icon": "/images/footer/icon-tg.svg", "href": "#", "alt": "Telegram" }, { "icon": "/images/footer/icon-vk.svg", "href": "#", "alt": "VK" }, { "icon": "/images/footer/icon-rutube.svg", "href": "#", "alt": "Rutube" }, { "icon": "/images/footer/icon-max.svg", "href": "#", "alt": "Max" }];
+const socials = [{ "icon": "/images/footer/icon-tg.svg", "href": "https://t.me/moskomsport", "alt": "Telegram" }, { "icon": "/images/footer/icon-vk.svg", "href": "https://vk.com/moskomsport", "alt": "VK" }, { "icon": "/images/footer/icon-rutube.svg", "href": "https://rutube.ru/channel/24673075/", "alt": "Rutube" }, { "icon": "/images/footer/icon-max.svg", "href": "https://max.ru/MoscowSport", "alt": "Max" }];
 const docs = [{ "href": "#", "label": "Политика конфиденциальности" }, { "href": "#", "label": "Политика обработки персональных данных" }, { "href": "#", "label": "Отказ от претензий" }];
 const footerData = {
   type,
@@ -128,7 +119,7 @@ const footerData = {
   socials,
   docs
 };
-const _hoisted_1$1 = {
+const _hoisted_1$2 = {
   class: "footer",
   id: "footer"
 };
@@ -146,12 +137,12 @@ const _hoisted_12 = ["href"];
 const _hoisted_13 = ["src", "alt"];
 const _hoisted_14 = { class: "footer__docs" };
 const _hoisted_15 = ["href"];
-const _sfc_main$1 = {
+const _sfc_main$2 = {
   __name: "Footer",
   setup(__props) {
     return (_ctx, _cache) => {
-      const _component_Container = _sfc_main$5;
-      return openBlock(), createElementBlock("footer", _hoisted_1$1, [
+      const _component_Container = _sfc_main$6;
+      return openBlock(), createElementBlock("footer", _hoisted_1$2, [
         _cache[0] || (_cache[0] = createBaseVNode("div", { class: "footer__bg" }, null, -1)),
         _cache[1] || (_cache[1] = createBaseVNode("div", { class: "footer__overlay" }, null, -1)),
         createVNode(_component_Container, { wide: "" }, {
@@ -219,14 +210,46 @@ const _sfc_main$1 = {
     };
   }
 };
-const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-227fb415"]]);
+const __nuxt_component_2 = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-227fb415"]]);
+const _hoisted_1$1 = { class: "cookie-modal" };
+const STORAGE_KEY = "cheerfest-cookie-modal-shown";
+const _sfc_main$1 = /* @__PURE__ */ defineComponent({
+  __name: "CookieModal",
+  setup(__props) {
+    const isVisible = ref(false);
+    onMounted(() => {
+      if (!localStorage.getItem(STORAGE_KEY)) {
+        isVisible.value = true;
+      }
+    });
+    function accept() {
+      isVisible.value = false;
+      localStorage.setItem(STORAGE_KEY, "true");
+    }
+    return (_ctx, _cache) => {
+      return withDirectives((openBlock(), createElementBlock("div", _hoisted_1$1, [
+        _cache[0] || (_cache[0] = createBaseVNode("div", { class: "cookie-modal__text" }, [
+          createBaseVNode("p", null, " Продолжая пользоваться сайтом, вы соглашаетесь с условиями обработки cookie-файлов. Это необходимо для качественной работы сайта. Если вы не согласны, то установите специальные настройки в браузере. ")
+        ], -1)),
+        createBaseVNode("button", {
+          class: "cookie-modal__close",
+          onClick: accept
+        }, " Ok ")
+      ], 512)), [
+        [vShow, isVisible.value]
+      ]);
+    };
+  }
+});
+const __nuxt_component_3 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-3c2c8c69"]]);
 const _sfc_main = {};
 const _hoisted_1 = { class: "page" };
 const _hoisted_2 = { class: "top" };
 function _sfc_render(_ctx, _cache) {
-  const _component_Image = _sfc_main$4;
+  const _component_Image = _sfc_main$5;
   const _component_Header = __nuxt_component_1;
   const _component_Footer = __nuxt_component_2;
+  const _component_CookieModal = __nuxt_component_3;
   return openBlock(), createElementBlock("div", _hoisted_1, [
     createVNode(_component_Image, {
       class: "body-bg",
@@ -239,10 +262,11 @@ function _sfc_render(_ctx, _cache) {
       createVNode(_component_Header)
     ]),
     renderSlot(_ctx.$slots, "default", {}, void 0, true),
-    createVNode(_component_Footer)
+    createVNode(_component_Footer),
+    createVNode(_component_CookieModal)
   ]);
 }
-const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-1e9b1853"]]);
+const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["render", _sfc_render], ["__scopeId", "data-v-2dbc6084"]]);
 export {
   _default as default
 };
