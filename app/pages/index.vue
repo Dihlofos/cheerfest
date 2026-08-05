@@ -25,12 +25,12 @@ useHead({
     <HeroSection v-bind="heroData" />
     <AboutSection v-bind="aboutData" />
     <MapSection v-bind="mapData" />
-    <ProgramSection v-bind="programData" />
+    <!-- <ProgramSection v-bind="programData" /> -->
     <DanceSection v-bind="danceData" />
     <ClubsSection v-bind="clubsData" />
     <NominationsSection v-bind="nominationsData" />
-    <SliderSection v-bind="participantsData" />
-    <SliderSection v-bind="juryData" />
+    <!-- <SliderSection v-bind="participantsData" />
+    <SliderSection v-bind="juryData" /> -->
     <LocationsSection v-bind="locationsData" />
     <PartnersSection v-bind="partnersData" />
     <Faq v-bind="faqData" />

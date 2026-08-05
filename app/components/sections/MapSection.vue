@@ -11,74 +11,13 @@ const props = defineProps({
 <template>
   <section id="map" class="map">
     <Container>
-      <div class="map__header">
-        <h2 class="map__title title">{{ title }}</h2>
-        <div class="map__buttons">
-          <a
-            v-for="(btn, index) in buttons"
-            :key="index"
-            :href="btn.link"
-            class="map__button"
-            target="_blank"
-          >
-            {{ btn.text }}
-          </a>
-        </div>
-      </div>
 
-      <div class="map__image-wrap">
-        <Image
-          class="map__image"
-          :src="mapImage"
-          :sources="[ { media: '(max-width: 768px)', srcset: mapImageMobile } ]"
-          alt=""
-          width="1400"
-          height="491"
-        />
-      </div>
-
-      <div class="map__legend">
-        <LegendItem
-          v-for="(item, index) in legend"
-          :key="index"
-          :icon="item.icon"
-          :title="item.name"
-        />
-      </div>
     </Container>
   </section>
 </template>
 
 <style lang="scss">
 .map {
-  padding: 7.4rem 0 10rem;
-
-  @media (max-width: $mobile) {
-    padding: 2.4rem 0 2rem;
-  }
-
-  &__header {
-    display: flex;
-    justify-content: center;
-    gap: 3.5rem;
-    margin: 0 0 5rem;
-
-    @media (max-width: $mobile) {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-
-  &__title {
-    margin: 0;
-    line-height: 1;
-  }
-
-  &__buttons {
-    display: flex;
-    align-items: center;
-    gap: 2.5rem;
-  }
 
   &__button {
     display: inline-flex;
@@ -98,38 +37,6 @@ const props = defineProps({
 
     &:hover {
       background: $darkBlue;
-    }
-  }
-
-  &__image-wrap {
-    border-radius: 2rem;
-    overflow: hidden;
-    margin: 0 0 5rem;
-  }
-
-  &__image {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  &__legend {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    row-gap: 1rem;
-
-    @media (max-width: $mobile) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .legend-item {
-      &:nth-child(odd) {
-        background: linear-gradient(90deg, $darkBlue 0.18%, #25135D 14.18%, #661368 44.18%, #CC137A 88.18%, $magenta 100.17%);
-      }
     }
   }
 
