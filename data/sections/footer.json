@@ -19,8 +19,8 @@
     ]
   },
   "socials": [
-    { "icon": "/images/footer/icon-tg.svg", "href": "https://t.me/moskomsport", "alt": "Telegram" },
-    { "icon": "/images/footer/icon-vk.svg", "href": "https://vk.com/moskomsport", "alt": "VK" },
+    { "icon": "/images/footer/icon-tg.svg", "href": "https://t.me/MoscowSportOfficial", "alt": "Telegram" },
+    { "icon": "/images/footer/icon-vk.svg", "href": "https://vk.com/moscowsportofficial ", "alt": "VK" },
     { "icon": "/images/footer/icon-rutube.svg", "href": "https://rutube.ru/channel/24673075/", "alt": "Rutube" },
     { "icon": "/images/footer/icon-max.svg", "href": "https://max.ru/MoscowSport", "alt": "Max" }
   ],

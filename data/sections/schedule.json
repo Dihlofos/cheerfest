@@ -29,12 +29,6 @@
           "link": "https://fest-dance-cheerleading.timepad.ru/event/4084236/"
         },
         {
-          "title": "Финал соревнований чирлидеров",
-          "time": "17:00",
-          "registration": true,
-          "link": "https://fest-dance-cheerleading.timepad.ru/event/4099869/"
-        },
-        {
           "title": "Награждение победителей по&nbsp;танцам",
           "time": "17:30",
           "registration": false
@@ -148,7 +142,7 @@
         },
         {
           "title": "Активности с&nbsp;гостями и&nbsp;фото с&nbsp;чирлидерами",
-          "time": "18:10",
+          "time": "18:00",
           "registration": false
         }
       ]
