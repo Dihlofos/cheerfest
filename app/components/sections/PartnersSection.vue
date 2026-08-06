@@ -59,7 +59,7 @@ const props = defineProps({
     justify-content: center;
     width: 24.4rem;
     height: 10rem;
-    background: $white;
+    background: $magenta;
     border-radius: 1.6rem;
     padding: 1.8rem 4rem;
   }

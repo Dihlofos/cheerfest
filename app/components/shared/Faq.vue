@@ -46,7 +46,7 @@ function isOpen(index) {
             :aria-controls="`faq-content-${index}`"
             @click="toggle(index)"
           >
-            {{ item.question }}
+            <span v-html="sanitizeText(item.question)"></span>
             <span class="faq__icon" aria-hidden="true">
               <img :src="images.arrowDown" alt="" class="faq__down" width="36" height="36">
               <img :src="images.arrowUp" alt="" class="faq__up" width="36" height="36">
