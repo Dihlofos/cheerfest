@@ -4,6 +4,7 @@ import DanceSection from '~/components/sections/DanceSection.vue';
 import heroData from '~/../data/sections/hero.json';
 import aboutData from '~/../data/sections/about.json';
 import mapData from '~/../data/sections/map.json';
+import scheduleData from '~/../data/sections/schedule.json';
 import programData from '~/../data/sections/program.json';
 import clubsData from '~/../data/sections/clubs.json';
 import danceData from '~/../data/sections/dance.json';
@@ -25,6 +26,7 @@ useHead({
     <HeroSection v-bind="heroData" />
     <AboutSection v-bind="aboutData" />
     <MapSection v-bind="mapData" />
+    <ScheduleSection v-bind="scheduleData" />
     <!-- <ProgramSection v-bind="programData" /> -->
     <DanceSection v-bind="danceData" />
     <ClubsSection v-bind="clubsData" />

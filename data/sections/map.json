@@ -1,54 +1,55 @@
 {
   "type": "map",
-  "title": "карта площадки",
+  "title": "Карта",
+  "subtitle": "Все площадки фестиваля на одной карте",
   "buttons": [
     {
       "text": "Построить маршрут",
       "link": "https://yandex.com/maps/-/CTV3MZJw"
     }
   ],
-  "mapImage": "/images/map/map.jpg",
-  "mapImageMobile": "/images/map/map-mobile.jpg",
+  "mapImage": "/images/map/map.webp",
   "legend": [
     {
+      "number": 1,
       "name": "Главная сцена",
-      "icon": "/images/shared/icon-main-stage.svg"
+      "description": "мастер-классы, соревнования, выступление хедлайнера"
     },
     {
-      "name": "Акробатическая дорожка",
-      "icon": "/images/shared/icon-acro.svg"
+      "number": 2,
+      "name": "Зона чирлидинга и соревнования"
     },
     {
-      "name": "Зона разминки",
-      "icon": "/images/shared/icon-stretch.svg"
-    },
-        {
-      "name": "Мейкап и кастомизация костюмов",
-      "icon": "/images/shared/icon-costumes.svg"
+      "number": 3,
+      "name": "Зона современных танцев и пространство для батлов"
     },
     {
-      "name": "Зона чирлидинга",
-      "icon": "/images/shared/icon-cheerleading.svg"
-    },
-        {
-      "name": "Пространство для батлов",
-      "icon": "/images/shared/icon-swords.svg"
+      "number": 4,
+      "name": "Акробатическая дорожка"
     },
     {
-      "name": "Судейская зона",
-      "icon": "/images/shared/icon-sud.svg"
-    },
-        {
-      "name": "Фотозоны",
-      "icon": "/images/shared/icon-photo.svg"
+      "number": 5,
+      "name": "Каток"
     },
     {
-      "name": "Зона спортивных танцев",
-      "icon": "/images/shared/icon-children.svg"
+      "number": 6,
+      "name": "Зона танцевального мэйкапа и кастомизация костюмов"
     },
     {
-      "name": "Мастер-классы на льду",
-      "icon": "/images/shared/icon-ice.svg"
+      "number": 7,
+      "name": "Место для судей"
+    },
+    {
+      "number": 8,
+      "name": "Фотозоны"
+    },
+    {
+      "number": 9,
+      "name": "Зона разминки"
+    },
+    {
+      "number": 10,
+      "name": "Раздевалки"
     }
   ]
 }
