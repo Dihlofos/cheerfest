@@ -36,6 +36,7 @@ const activeTab = computed(() => props.tabs[activeIndex.value] || {})
           v-for="event in activeTab.events"
           :key="event.title"
           class="schedule__card"
+          :class="{ 'schedule__card--reg': event.registration }"
         >
 
           <div class="schedule__event-title" v-html="sanitizeText(event.title)"></div>
@@ -168,6 +169,10 @@ const activeTab = computed(() => props.tabs[activeIndex.value] || {})
     border-radius: 2rem;
     padding: 2.4rem;
     min-height: 18rem;
+
+    &--reg {
+      background: linear-gradient(271deg, #FFC200 -17.34%, #FF00C3 139.04%);
+    }
 
     @media (max-width: $tablet) {
       padding: 2.4rem 2rem;
