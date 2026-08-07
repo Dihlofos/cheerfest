@@ -45,6 +45,7 @@ const activeTab = computed(() => props.tabs[activeIndex.value] || {})
             <a
               v-if="event.registration"
               :href="event.link || '#'"
+              v-anchor="event.anchor ?? undefined"
               class="schedule__reg"
               target="_blank"
             >Регистрация</a>

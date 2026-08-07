@@ -2,7 +2,7 @@
   "navItems":[
     { "label": "О событии ", "link": "#about" },
     { "label": "Карта", "link": "#map" },
-    { "label": "Расписание", "link": "#program" },
+    { "label": "Расписание", "link": "#schedule" },
     { "label": "Конкурс", "link": "#dance" },
     { "label": "Локации", "link": "#locations" },
     { "label": "Вопросы и ответы", "link": "#faq" },
