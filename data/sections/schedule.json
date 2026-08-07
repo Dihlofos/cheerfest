@@ -32,7 +32,9 @@
         },
         {
           "title": "Мастер-класс с&nbsp;хореографом Артемом Глотовым и&nbsp;студией ART FORCE",
-          "time": "15:00"
+          "time": "15:00",
+          "registration": true,
+          "link": "https://fest-dance-cheerleading.timepad.ru/event/4128187/"
         },
         {
           "title": "Отборочные соревнования танцевальных клубов",

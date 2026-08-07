@@ -5,8 +5,6 @@ const props = defineProps({
   items: { type: Array, default: () => [] },
 })
 
-// Duplicate events so the scroll is visible
-const duplicatedItems = computed(() => [...props.items, ...props.items])
 </script>
 
 <template>
@@ -21,7 +19,7 @@ const duplicatedItems = computed(() => [...props.items, ...props.items])
         <div class="locations__scroll" dir="rtl">
           <div class="locations__grid" dir="ltr">
             <LegendItem
-              v-for="(item, index) in duplicatedItems"
+              v-for="(item, index) in items"
               :key="index"
               :icon="item.icon"
               :title="item.name"
@@ -76,45 +74,45 @@ const duplicatedItems = computed(() => [...props.items, ...props.items])
     position: relative;
 
     // Вертикальная линия таймлайна
-    &:before {
-      content: '';
-      position: absolute;
-      left: 0.6rem;
-      top: 0;
-      height: 100%;
-      width: 1px;
-      background-color: $white;
-      z-index: 1;
-    }
+  //   &:before {
+  //     content: '';
+  //     position: absolute;
+  //     left: 0.6rem;
+  //     top: 0;
+  //     height: 100%;
+  //     width: 1px;
+  //     background-color: $white;
+  //     z-index: 1;
+  //   }
   }
 
-  &__scroll {
-    position: relative;
-    z-index: 2;
-    overflow: auto;
-    height: 79.9rem;
-    padding-left: 6.4rem;
+  // &__scroll {
+  //   position: relative;
+  //   z-index: 2;
+  //   overflow: auto;
+  //   height: 79.9rem;
+  //   padding-left: 6.4rem;
 
-    // Кастомный скроллбар
-    &::-webkit-scrollbar {
-      width: 1.5rem;
-      background: transparent;
-    }
+  //   // Кастомный скроллбар
+  //   &::-webkit-scrollbar {
+  //     width: 1.5rem;
+  //     background: transparent;
+  //   }
 
-    &::-webkit-scrollbar-thumb {
-      background: $magenta;
-      border-radius: 10px;
-      z-index: 2;
-    }
+  //   &::-webkit-scrollbar-thumb {
+  //     background: $magenta;
+  //     border-radius: 10px;
+  //     z-index: 2;
+  //   }
 
-    @media (max-width: $tablet) {
-      padding-left: 2.4rem;
-    }
+  //   @media (max-width: $tablet) {
+  //     padding-left: 2.4rem;
+  //   }
 
-    @media (max-width: $mobile) {
-      padding-left: 1.4rem;
-    }
-  }
+  //   @media (max-width: $mobile) {
+  //     padding-left: 1.4rem;
+  //   }
+  // }
 
   &__grid {
     display: grid;

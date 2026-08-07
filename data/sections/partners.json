@@ -2,7 +2,8 @@
   "type": "partners",
   "title": "Организаторы и партнеры",
   "logos": [
+    { "src": "/images/partners/dep.svg", "alt": "Департамент спорта" },
     { "src": "/images/partners/mossport.svg", "alt": "Мосспорт" },
-    { "src": "/images/partners/dep.svg", "alt": "Департамент спорта" }
+    { "src": "/images/partners/fahrenheit.png", "alt": "Fahrenheit" }
   ]
 }
