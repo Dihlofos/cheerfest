@@ -4,6 +4,6 @@
   "logos": [
     { "src": "/images/partners/dep.svg", "alt": "Департамент спорта" },
     { "src": "/images/partners/mossport.svg", "alt": "Мосспорт" },
-    { "src": "/images/partners/fahrenheit.png", "alt": "Fahrenheit" }
+    { "src": "/images/partners/fahrenheit.png", "alt": "Fahrenheit", "link": "https://fahrenheit-plus.ru/" }
   ]
 }

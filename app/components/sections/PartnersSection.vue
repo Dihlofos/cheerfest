@@ -16,13 +16,19 @@ const props = defineProps({
           :key="index"
           class="partners__logo-wrap"
         >
-          <Image
-            class="partners__logo"
-            :src="logo.src"
-            :alt="logo.alt"
-            width="164"
-            height="49"
-          />
+          <component
+            :is="logo.link ? 'a' : 'span'"
+            :href="logo.link || undefined"
+            :target="logo.link ? '_blank' : undefined"
+          >
+            <Image
+              class="partners__logo"
+              :src="logo.src"
+              :alt="logo.alt"
+              width="164"
+              height="49"
+            />
+          </component>
         </div>
       </div>
     </Container>
