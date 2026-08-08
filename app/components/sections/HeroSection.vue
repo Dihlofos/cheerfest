@@ -216,9 +216,11 @@ const props = defineProps({
     }
   }
   &__links {
+    position: relative;
     display: flex;
     gap: 2rem;
     margin-left: 6.9rem;
+    z-index: 5;
 
     @media (max-width: $mobile) {
       flex-direction: column;
