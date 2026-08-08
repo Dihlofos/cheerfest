@@ -73,6 +73,7 @@ const props = defineProps({
 
   &__more {
     font-size: 2.4rem;
+    line-height: 1.2;
     text-align: center;
     padding-top: 3rem;
     font-weight: 700;
@@ -80,6 +81,10 @@ const props = defineProps({
     a {
       color: $white;
       text-decoration: underline;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 1.8rem;
     }
   }
 
