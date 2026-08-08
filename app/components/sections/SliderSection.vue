@@ -56,7 +56,7 @@ const props = defineProps({
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 99%;
     max-width: none;
     object-fit: cover;
     object-position: top center;
@@ -64,8 +64,8 @@ const props = defineProps({
 
   &__card-name-wrap {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: -1px;
+    width: 101%;
     bottom: 0;
     z-index: 2;
     display: flex;
