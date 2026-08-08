@@ -1,5 +1,5 @@
-import { _ as _sfc_main$5, a as _sfc_main$6 } from "./B44v1ulG.js";
-import { N as resolveDirective, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, R as createBlock, I as Fragment, J as renderList, Q as withDirectives, H as createTextVNode, E as toDisplayString, F as createVNode, O as normalizeClass, i as ref, o as onMounted, U as onUnmounted, G as withCtx, d as defineComponent, V as vShow, S as renderSlot } from "./B3TtNyV-.js";
+import { _ as _sfc_main$5, a as _sfc_main$6 } from "./CDIlPZcQ.js";
+import { N as resolveDirective, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, R as createBlock, I as Fragment, J as renderList, Q as withDirectives, H as createTextVNode, E as toDisplayString, F as createVNode, O as normalizeClass, i as ref, o as onMounted, U as onUnmounted, G as withCtx, d as defineComponent, V as vShow, S as renderSlot } from "./C_21koLZ.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
 const navItems = [{ "label": "О событии ", "link": "#about" }, { "label": "Карта", "link": "#map" }, { "label": "Расписание", "link": "#schedule" }, { "label": "Конкурс", "link": "#dance" }, { "label": "Локации", "link": "#locations" }, { "label": "Вопросы и ответы", "link": "#faq" }, { "label": "Контакты", "link": "#footer" }];
 const images = { "burger": "/images/burger.svg", "close": "/images/close.svg", "girls": "/images/hero/girls.png" };
@@ -110,7 +110,7 @@ const title = "Контакты";
 const contacts = [{ "label": "По вопросам регистрации", "email": "ano@mossport.ru" }, { "label": "Для СМИ", "email": "press@moscow.sport" }];
 const info = { "text": "Для аккредитации на событие отправьте письмо на электронный адрес со следующей информацией:", "items": ["название СМИ и программы, планируемая дата выхода материала;", "ФИО корреспондента / всех участников съемочной группы с контактными телефонами."] };
 const socials = [{ "icon": "/images/footer/icon-tg.svg", "href": "https://t.me/MoscowSportOfficial", "alt": "Telegram" }, { "icon": "/images/footer/icon-vk.svg", "href": "https://vk.com/moscowsportofficial ", "alt": "VK" }, { "icon": "/images/footer/icon-rutube.svg", "href": "https://rutube.ru/channel/24673075/", "alt": "Rutube" }, { "icon": "/images/footer/icon-max.svg", "href": "https://max.ru/MoscowSport", "alt": "Max" }];
-const docs = [{ "href": "/docs/policy.pdf", "label": "Политика конфиденциальности" }, { "href": "/docs/agreement.pdf", "label": "Отказ от претензий" }, { "href": "/docs/agreement-child.pdf", "label": "Отказ от претензий ребенка" }];
+const docs = [{ "href": "/docs/policy.pdf", "label": "Политика конфиденциальности" }, { "href": "/docs/agreement.pdf", "label": "Отказ от претензий" }, { "href": "/docs/agreement-child.pdf", "label": "Отказ от претензий ребенка" }, { "href": "/docs/reglament3.pdf", "label": "Регламент соревнований" }];
 const footerData = {
   type,
   title,

@@ -122,12 +122,15 @@ const props = defineProps({
     line-height: 1.1;
     text-transform: uppercase;
     color: $white;
-    max-width: 31.4rem;
+    max-width: 38.4rem;
+
+    @media (max-width: $tablet) {
+      max-width: 100%;
+      text-align: center;
+    }
 
     @media (max-width: $mobile) {
       font-size: 1.8rem;
-      text-align: center;
-      max-width: 100%;
     }
   }
 }

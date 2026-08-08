@@ -3,24 +3,40 @@
   "title": "Звездное жюри",
   "cards": [
     {
-      "name": "иМЯ\nфАМИЛИЯ",
-      "photo": "/images/shared/girl-placeholder.png"
+      "name": "Артем Глотов",
+      "photo": "/images/jury/glotov.jpg"
     },
     {
-      "name": "иМЯ\nфАМИЛИЯ",
-      "photo": "/images/shared/girl-placeholder.png"
+      "name": "Гарик Рудник",
+      "photo": "/images/jury/rudnik.jpg"
     },
     {
-      "name": "иМЯ\nфАМИЛИЯ",
-      "photo": "/images/shared/girl-placeholder.png"
+      "name": "Ильдар Гайнутдинов",
+      "photo": "/images/jury/ildar.jpg"
     },
     {
-      "name": "иМЯ\nфАМИЛИЯ",
-      "photo": "/images/shared/girl-placeholder.png"
+      "name": "DAHI",
+      "photo": "/images/jury/dashi.jpg"
     },
     {
-      "name": "иМЯ\nфАМИЛИЯ",
-      "photo": "/images/shared/girl-placeholder.png"
+      "name": "Александр Гиренко",
+      "photo": "/images/jury/girenko.jpg"
+    },
+    {
+      "name": "Александр Сычугов",
+      "photo": "/images/jury/sichugov.jpg"
+    },
+    {
+      "name": "Михаил и Алёна Нехолены",
+      "photo": "/images/jury/nekholeny.jpg"
+    },
+    {
+      "name": "Инна Некоровская",
+      "photo": "/images/jury/nekorovskaya.jpg"
+    },
+    {
+      "name": "Андрей Крылов",
+      "photo": "/images/jury/krylov.jpg"
     }
   ]
 }

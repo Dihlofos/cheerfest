@@ -31,6 +31,7 @@ const props = defineProps({
           </component>
         </div>
       </div>
+      <div class="partners__more">А также спортивный фестиваль в <a href="https://leto.sport.mos.ru" target="_blank">Лужниках</a></div>
     </Container>
   </section>
 </template>
@@ -68,6 +69,18 @@ const props = defineProps({
     background: $magenta;
     border-radius: 1.6rem;
     padding: 1.8rem 4rem;
+  }
+
+  &__more {
+    font-size: 2.4rem;
+    text-align: center;
+    padding-top: 3rem;
+    font-weight: 700;
+
+    a {
+      color: $white;
+      text-decoration: underline;
+    }
   }
 
   &__logo {

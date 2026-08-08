@@ -56,7 +56,7 @@ const props = defineProps({
     left: 0;
     top: 0;
     width: 100%;
-    height: 76%;
+    height: 100%;
     max-width: none;
     object-fit: cover;
     object-position: top center;
