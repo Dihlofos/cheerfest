@@ -1,5 +1,5 @@
-import { _ as _sfc_main$g, a as _sfc_main$h } from "./B41RtjaY.js";
-import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as createCommentVNode, _ as __vitePreload, N as resolveDirective, O as normalizeClass, P as normalizeStyle, l as unref, Q as withDirectives, H as createTextVNode, i as ref, m as computed, R as createBlock, S as renderSlot, T as resolveDynamicComponent, d as defineComponent, o as onMounted, U as onBeforeUpdate, V as onUpdated, c as onBeforeUnmount, W as provide, h, X as watch, Y as nextTick$1, s as shallowRef, A as useHead, K as normalizeProps, L as guardReactiveProps } from "./Dq52fpna.js";
+import { _ as _sfc_main$g, a as _sfc_main$h } from "./DOFwPVHe.js";
+import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as createCommentVNode, _ as __vitePreload, N as resolveDirective, O as normalizeClass, P as normalizeStyle, l as unref, Q as withDirectives, H as createTextVNode, i as ref, m as computed, R as createBlock, S as renderSlot, T as resolveDynamicComponent, d as defineComponent, o as onMounted, U as onBeforeUpdate, V as onUpdated, c as onBeforeUnmount, W as provide, h, X as watch, Y as nextTick$1, s as shallowRef, A as useHead, K as normalizeProps, L as guardReactiveProps } from "./CL4YLZce.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
 const _hoisted_1$d = {
   id: "about",
@@ -6269,7 +6269,7 @@ const nominationsData = {
 };
 const type$3 = "slider";
 const title$3 = "Звездное жюри";
-const cards = [{ "name": "Артем Глотов", "photo": "/images/jury/glotov.jpg" }, { "name": "Гарик Рудник", "photo": "/images/jury/rudnik.jpg" }, { "name": "Ильдар Гайнутдинов", "photo": "/images/jury/ildar.jpg" }, { "name": "DASHI", "photo": "/images/jury/dashi.jpg" }, { "name": "Александр Гиренко", "photo": "/images/jury/girenko.jpg" }, { "name": "Александр Сычугов", "photo": "/images/jury/sichugov.jpg" }, { "name": "Михаил и Алёна Нехолены", "photo": "/images/jury/nekholeny.jpg" }, { "name": "Инна Некоровская", "photo": "/images/jury/nekorovskaya.jpg" }, { "name": "Андрей Крылов", "photo": "/images/jury/krylov.jpg" }];
+const cards = [{ "name": "Артем Глотов", "photo": "/images/jury/glotov.jpg" }, { "name": "Гарик Рудник", "photo": "/images/jury/rudnik.jpg" }, { "name": "Ильдар Гайнутдинов", "photo": "/images/jury/ildar.jpg" }, { "name": "DASHI", "photo": "/images/jury/dashi.jpg" }, { "name": "Александр Гиренко", "photo": "/images/jury/girenko.jpg" }, { "name": "Александр Сычугов", "photo": "/images/jury/sichugov.jpg" }, { "name": "Михаил и Алёна Нехолены", "photo": "/images/jury/nekholeny.jpg" }, { "name": "Инна Некоровская", "photo": "/images/jury/nekorovskaya.jpg" }, { "name": "Андрей Крылов", "photo": "/images/jury/krylov.jpg" }, { "name": "Никита Мусатов", "photo": "/images/jury/musatov.jpg" }];
 const juryData = {
   type: type$3,
   title: title$3,
