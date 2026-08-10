@@ -37,6 +37,10 @@
     {
       "name": "Андрей Крылов",
       "photo": "/images/jury/krylov.jpg"
+    },
+    {
+      "name": "Никита Мусатов",
+      "photo": "/images/jury/musatov.jpg"
     }
   ]
 }
