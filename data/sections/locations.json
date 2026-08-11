@@ -4,11 +4,6 @@
   "timeBadge": "C 11:00 до 20:00",
   "items": [
     {
-      "name": "Зона разминки",
-      "description": "Подготовка к мастер-классам и выступлениям",
-      "icon": "/images/shared/icon-stretch.svg"
-    },
-    {
       "name": "Зона чирлидинга",
       "description": "Показательные выступления и соревнования",
       "icon": "/images/shared/icon-cheerleading.svg"

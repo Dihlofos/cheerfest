@@ -8,7 +8,7 @@
       "link": "https://yandex.com/maps/-/CTV3MZJw"
     }
   ],
-  "mapImage": "/images/map/map.webp",
+  "mapImage": "/images/map/map.jpg",
   "legend": [
     {
       "number": 1,
@@ -38,18 +38,6 @@
     {
       "number": 7,
       "name": "Место для судей"
-    },
-    {
-      "number": 8,
-      "name": "Фотозоны"
-    },
-    {
-      "number": 9,
-      "name": "Зона разминки"
-    },
-    {
-      "number": 10,
-      "name": "Раздевалки"
     }
   ]
 }
