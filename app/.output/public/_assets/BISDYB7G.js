@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./BB2b2lLI.js","./DOFwPVHe.js","./Container.popI4BHY.css","./dummy.BXppqpvp.css","./BJcOsPwP.js","./1tPrXgE0.js","./index.VkiUvjGp.css","./B5hF9nuT.js","./default.Bo4JzJA6.css","./Ba6EZn4C.js","./empty.9NtWlCq8.css","./BQAlrQe7.js","./error-404.Dv2pyLoR.css","./D6aRSnP9.js","./error-500.C2XaBLWY.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["./CT3jP4BW.js","./B0QJFT1w.js","./Container.popI4BHY.css","./dummy.BXppqpvp.css","./BMroNpnt.js","./1tPrXgE0.js","./index.VkiUvjGp.css","./D4i2aMpm.js","./default.Bo4JzJA6.css","./BqVctT8g.js","./empty.9NtWlCq8.css","./CZQeE0zf.js","./error-404.Dv2pyLoR.css","./BFh1mxgF.js","./error-500.C2XaBLWY.css"])))=>i.map(i=>d[i]);
 (function polyfill() {
   const relList = document.createElement("link").relList;
   if (relList && relList.supports && relList.supports("modulepreload")) return;
@@ -13634,13 +13634,13 @@ const _routes = [
     name: "dummy",
     path: "/dummy",
     meta: __nuxt_page_meta || {},
-    component: () => __vitePreload(() => import("./BB2b2lLI.js"), true ? __vite__mapDeps([0,1,2,3]) : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./CT3jP4BW.js"), true ? __vite__mapDeps([0,1,2,3]) : void 0, import.meta.url)
   },
   {
     name: "index",
     path: "/",
     meta: {},
-    component: () => __vitePreload(() => import("./BJcOsPwP.js"), true ? __vite__mapDeps([4,1,2,5,6]) : void 0, import.meta.url)
+    component: () => __vitePreload(() => import("./BMroNpnt.js"), true ? __vite__mapDeps([4,1,2,5,6]) : void 0, import.meta.url)
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -14184,8 +14184,8 @@ const components_plugin_z4hgvsiddfKkfXTP6M8M4zG5Cb7sGnDhcryKVM45Di4 = /* @__PURE
   name: "nuxt:global-components"
 });
 const layouts = {
-  default: /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./B5hF9nuT.js"), true ? __vite__mapDeps([7,1,2,5,8]) : void 0, import.meta.url).then((m) => m.default || m)),
-  empty: /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./Ba6EZn4C.js"), true ? __vite__mapDeps([9,5,10]) : void 0, import.meta.url).then((m) => m.default || m))
+  default: /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./D4i2aMpm.js"), true ? __vite__mapDeps([7,1,2,5,8]) : void 0, import.meta.url).then((m) => m.default || m)),
+  empty: /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./BqVctT8g.js"), true ? __vite__mapDeps([9,5,10]) : void 0, import.meta.url).then((m) => m.default || m))
 };
 function _loadAsyncComponent(component) {
   if (component?.__asyncLoader && !component.__asyncResolved) {
@@ -14814,8 +14814,8 @@ const _sfc_main$1 = {
     const statusText = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description2 = _error.message || _error.toString();
     const stack2 = void 0;
-    const _Error404 = /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./BQAlrQe7.js"), true ? __vite__mapDeps([11,5,12]) : void 0, import.meta.url));
-    const _Error = /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./D6aRSnP9.js"), true ? __vite__mapDeps([13,5,14]) : void 0, import.meta.url));
+    const _Error404 = /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./CZQeE0zf.js"), true ? __vite__mapDeps([11,5,12]) : void 0, import.meta.url));
+    const _Error = /* @__PURE__ */ defineAsyncComponent(() => __vitePreload(() => import("./BFh1mxgF.js"), true ? __vite__mapDeps([13,5,14]) : void 0, import.meta.url));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _cache) => {
       return openBlock(), createBlock(unref(ErrorTemplate), normalizeProps$1(guardReactiveProps({ status: unref(status), statusText: unref(statusText), statusCode: unref(status), statusMessage: unref(statusText), description: unref(description2), stack: unref(stack2) })), null, 16);

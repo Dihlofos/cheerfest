@@ -1,5 +1,5 @@
-import { _ as _sfc_main$g, a as _sfc_main$h } from "./DOFwPVHe.js";
-import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as createCommentVNode, _ as __vitePreload, N as resolveDirective, O as normalizeClass, P as normalizeStyle, l as unref, Q as withDirectives, H as createTextVNode, i as ref, m as computed, R as createBlock, S as renderSlot, T as resolveDynamicComponent, d as defineComponent, o as onMounted, U as onBeforeUpdate, V as onUpdated, c as onBeforeUnmount, W as provide, h, X as watch, Y as nextTick$1, s as shallowRef, A as useHead, K as normalizeProps, L as guardReactiveProps } from "./CL4YLZce.js";
+import { _ as _sfc_main$g, a as _sfc_main$h } from "./B0QJFT1w.js";
+import { B as openBlock, C as createElementBlock, F as createVNode, G as withCtx, D as createBaseVNode, E as toDisplayString, I as Fragment, J as renderList, M as createCommentVNode, _ as __vitePreload, N as resolveDirective, O as normalizeClass, P as normalizeStyle, l as unref, Q as withDirectives, H as createTextVNode, i as ref, m as computed, R as createBlock, S as renderSlot, T as resolveDynamicComponent, d as defineComponent, o as onMounted, U as onBeforeUpdate, V as onUpdated, c as onBeforeUnmount, W as provide, h, X as watch, Y as nextTick$1, s as shallowRef, A as useHead, K as normalizeProps, L as guardReactiveProps } from "./BISDYB7G.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
 const _hoisted_1$d = {
   id: "about",
@@ -6201,8 +6201,8 @@ const type$7 = "map";
 const title$8 = "Карта";
 const subtitle = "Все площадки фестиваля на одной карте";
 const buttons = [{ "text": "Построить маршрут", "link": "https://yandex.com/maps/-/CTV3MZJw" }];
-const mapImage = "/images/map/map.webp";
-const legend = [{ "number": 1, "name": "Главная сцена", "description": "мастер-классы, соревнования, выступление хедлайнера" }, { "number": 2, "name": "Зона чирлидинга и соревнования" }, { "number": 3, "name": "Зона современных танцев и пространство для батлов" }, { "number": 4, "name": "Акробатическая дорожка" }, { "number": 5, "name": "Каток" }, { "number": 6, "name": "Зона танцевального мэйкапа и кастомизация костюмов" }, { "number": 7, "name": "Место для судей" }, { "number": 8, "name": "Фотозоны" }, { "number": 9, "name": "Зона разминки" }, { "number": 10, "name": "Раздевалки" }];
+const mapImage = "/images/map/map.jpg";
+const legend = [{ "number": 1, "name": "Главная сцена", "description": "мастер-классы, соревнования, выступление хедлайнера" }, { "number": 2, "name": "Зона чирлидинга и соревнования" }, { "number": 3, "name": "Зона современных танцев и пространство для батлов" }, { "number": 4, "name": "Акробатическая дорожка" }, { "number": 5, "name": "Каток" }, { "number": 6, "name": "Зона танцевального мэйкапа и кастомизация костюмов" }, { "number": 7, "name": "Место для судей" }];
 const mapData = {
   type: type$7,
   title: title$8,
@@ -6278,7 +6278,7 @@ const juryData = {
 const type$2 = "locations";
 const title$2 = "локации";
 const timeBadge = "C 11:00 до 20:00";
-const items$1 = [{ "name": "Зона разминки", "description": "Подготовка к мастер-классам и выступлениям", "icon": "/images/shared/icon-stretch.svg" }, { "name": "Зона чирлидинга", "description": "Показательные выступления и соревнования", "icon": "/images/shared/icon-cheerleading.svg" }, { "name": "Зона спортивных танцев", "description": "Хип-хоп, контемпорари, K-Pop, брейкин", "icon": "/images/shared/icon-children.svg" }, { "name": "Пространство для батлов", "description": "Соревнования среди любителей", "icon": "/images/shared/icon-swords.svg" }, { "name": "Мейкап и кастомизация костюмов", "description": "Бьюти-зона для создания танцевального образа", "icon": "/images/shared/icon-costumes.svg" }, { "name": "Зона мастер-классов на льду", "description": "Сеансы свободного катания и мастер-класс", "icon": "/images/shared/icon-ice.svg" }, { "name": "Фотозоны", "description": "Тематические локации для фотографий", "icon": "/images/shared/icon-photo.svg" }];
+const items$1 = [{ "name": "Зона чирлидинга", "description": "Показательные выступления и соревнования", "icon": "/images/shared/icon-cheerleading.svg" }, { "name": "Зона спортивных танцев", "description": "Хип-хоп, контемпорари, K-Pop, брейкин", "icon": "/images/shared/icon-children.svg" }, { "name": "Пространство для батлов", "description": "Соревнования среди любителей", "icon": "/images/shared/icon-swords.svg" }, { "name": "Мейкап и кастомизация костюмов", "description": "Бьюти-зона для создания танцевального образа", "icon": "/images/shared/icon-costumes.svg" }, { "name": "Зона мастер-классов на льду", "description": "Сеансы свободного катания и мастер-класс", "icon": "/images/shared/icon-ice.svg" }, { "name": "Фотозоны", "description": "Тематические локации для фотографий", "icon": "/images/shared/icon-photo.svg" }];
 const locationsData = {
   type: type$2,
   title: title$2,

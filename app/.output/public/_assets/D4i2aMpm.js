@@ -1,5 +1,5 @@
-import { _ as _sfc_main$5, a as _sfc_main$6 } from "./DOFwPVHe.js";
-import { N as resolveDirective, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, R as createBlock, I as Fragment, J as renderList, Q as withDirectives, H as createTextVNode, E as toDisplayString, F as createVNode, O as normalizeClass, i as ref, o as onMounted, Z as onUnmounted, G as withCtx, d as defineComponent, $ as vShow, S as renderSlot } from "./CL4YLZce.js";
+import { _ as _sfc_main$5, a as _sfc_main$6 } from "./B0QJFT1w.js";
+import { N as resolveDirective, B as openBlock, C as createElementBlock, D as createBaseVNode, l as unref, R as createBlock, I as Fragment, J as renderList, Q as withDirectives, H as createTextVNode, E as toDisplayString, F as createVNode, O as normalizeClass, i as ref, o as onMounted, Z as onUnmounted, G as withCtx, d as defineComponent, $ as vShow, S as renderSlot } from "./BISDYB7G.js";
 import { _ as _export_sfc } from "./1tPrXgE0.js";
 const navItems = [{ "label": "О событии ", "link": "#about" }, { "label": "Карта", "link": "#map" }, { "label": "Расписание", "link": "#schedule" }, { "label": "Конкурс", "link": "#dance" }, { "label": "Локации", "link": "#locations" }, { "label": "Вопросы и ответы", "link": "#faq" }, { "label": "Контакты", "link": "#footer" }];
 const images = { "burger": "/images/burger.svg", "close": "/images/close.svg", "girls": "/images/hero/girls.png" };

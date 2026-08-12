@@ -7,16 +7,15 @@
       "events": [
         {
           "title": "Мастер-класс по&nbsp;уличным танцам с&nbsp;участием певицы Нюши",
-          "time": "11:30",
+          "time": "12:30",
           "registration": true,
           "link": "https://fest-dance-cheerleading.timepad.ru/event/4128185/"
         },
         {
-          "title": "Отборочные соревнования танцевальных клубов",
-          "time": "12:30",
+          "title": "Мастер-класс с&nbsp;хореографом Артемом Глотовым и&nbsp;студией ART FORCE",
+          "time": "13:30",
           "registration": true,
-          "anchor": true,
-          "link": "#dance"
+          "link": "https://fest-dance-cheerleading.timepad.ru/event/4128187/"
         },
         {
           "title": "КЕД концерт: танцевальное шоу от&nbsp;участников проекта &laquo;Танцы на&nbsp;ТНТ&raquo;",
@@ -24,49 +23,46 @@
           "registration": false
         },
         {
-          "title": "Отборочные соревнования танцевальных клубов",
-          "time": "14:00",
+          "title": "Соревнования танцевальных клубов (сольное исполнение)",
+          "time": "14:30",
+          "registration": true,
+          "link": "https://fest-dance-cheerleading.timepad.ru/event/4138707/"
+        },
+        {
+          "title": "Соревнования танцевальных клубов (групповое исполнение)",
+          "time": "15:20",
           "registration": true,
           "anchor": true,
           "link": "#dance"
         },
         {
-          "title": "Мастер-класс с&nbsp;хореографом Артемом Глотовым и&nbsp;студией ART FORCE",
-          "time": "15:00",
-          "registration": true,
-          "link": "https://fest-dance-cheerleading.timepad.ru/event/4128187/"
-        },
-        {
-          "title": "Отборочные соревнования танцевальных клубов",
-          "time": "16:00",
-          "registration": true,
-          "anchor": true,
-          "link": "#dance"
-        },
-        {
-          "title": "Выступление солиста российского Театра танца Todes Ильдара Гайнутдинова",
-          "time": "17:00",
+          "title": "КЕД концерт: танцевальное шоу от&nbsp;участников проекта &laquo;Танцы на&nbsp;ТНТ&raquo;",
+          "time": "16:40",
           "registration": false
-        },
-        {
-          "title": "Соревнования танцевальных клубов: полуфинал 20&nbsp;команд",
-          "time": "17:30"
-        },
-        {
-          "title": "Соревнования танцевальных клубов: финал 10&nbsp;команд",
-          "time": "18:10"
         },
         {
           "title": "Награждение победителей соревнований: танцы и&nbsp;чирлидинг",
-          "time": "18:30",
+          "time": "17:10",
           "registration": false
         },
         {
-          "title": "Массовый танец &laquo;Танцпол везде&raquo; с&nbsp;блогером и&nbsp;актрисой Анной Немченко",
-          "time": "19:00",
+          "title": "Выступление солиста российского Театра танца Todes Ильдара Гайнутдинова",
+          "time": "17:30",
           "registration": false
         },
-
+        {
+          "title": "Соревнования чирлидеров: финал",
+          "time": "17:40"
+        },
+        {
+          "title": "Награждение победителей соревнований: чирлидинг",
+          "time": "18:20"
+        },
+        {
+          "title": "Массовый танец &laquo;Танцпол везде&raquo; с&nbsp;блогером и&nbsp;актрисой Анной Немченко",
+          "time": "18:30",
+          "registration": false
+        },
         { "title": "Концерт NILETTO", "time": "19:15", "registration": false }
       ]
     },
@@ -81,17 +77,18 @@
           "link": "https://fest-dance-cheerleading.timepad.ru/event/4128188/"
         },
         {
-          "title": "Танцевальная студия GSS: мастер-класс по&nbsp;хип-хопу и&nbsp;показательные выступления",
-          "time": "12:00",
-          "registration": true,
-          "link": "https://fest-dance-cheerleading.timepad.ru/event/4128195/"
-        },
-        {
           "title": "Танцевальная студия GSS: мастер-класс по&nbsp;кей-попу и&nbsp;показательные выступления",
-          "time": "13:00",
+          "time": "12:00",
           "registration": true,
           "link": "https://fest-dance-cheerleading.timepad.ru/event/4128196/"
         },
+        {
+          "title": "Танцевальная студия GSS: мастер-класс по&nbsp;хип-хопу и&nbsp;показательные выступления",
+          "time": "13:00",
+          "registration": true,
+          "link": "https://fest-dance-cheerleading.timepad.ru/event/4128195/"
+        },
+
         {
           "title": "Танцевальная студия DANCO: показательный номер по&nbsp;кей-попу и&nbsp;мастер-класс",
           "time": "14:00",
@@ -118,7 +115,7 @@
         },
         {
           "title": "OBC crew: шоу-кейсы и&nbsp;мастер-класс с&nbsp;победителями международных чемпионатов по&nbsp;брейкингу",
-          "time": "18:30",
+          "time": "18:10",
           "registration": true,
           "link": "https://fest-dance-cheerleading.timepad.ru/event/4128203/"
         }
@@ -131,19 +128,10 @@
         {
           "title": "Показательное выступление",
           "time": "12:00"
-
         },
         {
-          "title": "Соревнования чирлидеров",
-          "time": "12:30",
-          "registration": true,
-          "anchor": true,
-          "link": "#contest"
-        },
-        {
-          "title": "Показательное выступление",
-          "time": "13:30",
-          "registration": false
+          "title": "Активности с гостями и фото с чирлидерами",
+          "time": "12:30"
         },
         {
           "title": "Соревнования чирлидеров",
@@ -154,38 +142,16 @@
         },
         {
           "title": "Показательное выступление",
-          "time": "14:30",
-          "registration": false
-        },
-        {
-          "title": "Соревнования чирлидеров",
-          "time": "15:00",
-          "registration": true,
-          "anchor": true,
-          "link": "#contest"
-        },
-        {
-          "title": "Показательное выступление",
-          "time": "16:00"
-        },
-        {
-          "title": "Соревнования чирлидеров",
           "time": "16:30",
-          "registration": true,
-          "anchor": true,
-          "link": "#contest"
-        },
-        {
-          "title": "Показательное выступление",
-          "time": "17:30",
           "registration": false
         },
         {
-          "title": "Соревнования чирлидеров",
-          "time": "18:00",
-          "registration": true,
-          "anchor": true,
-          "link": "#contest"
+          "title": "Активности с гостями и фото с чирлидерами",
+          "time": "17:00"
+        },
+        {
+          "title": "Активности с гостями и фото с чирлидерами",
+          "time": "18:10"
         }
       ]
     },
