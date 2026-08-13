@@ -1,13 +1,20 @@
 {
   "type": "dance",
-  "title": "Конкурс танцевальных клубов",
-  "text": "Покажите свой номер на главной сцене фестиваля и поборитесь за победу в одной из пяти номинаций. Победителей определяет звездное жюри, а лучшие команды получают денежные призы",
-  "titleImg": "/images/dance/title.svg",
-  "button": {
-    "link": "https://fest-dance-cheerleading.timepad.ru/event/4084236/",
-    "text": "Подать заявку",
-    "target": "_blank"
-  },
+  "title": "Танцевальный конкурс",
+  "text": "Покажите свой номер на главной сцене фестиваля и поборитесь за победу в одной из номинаций. Победителей выбирает звездное жюри, лучшие танцоры получают денежные призы.",
+  "titleImg": "/images/dance/title2.svg",
+  "buttons": [
+    {
+      "link": "https://fest-dance-cheerleading.timepad.ru/event/4084236/",
+      "text": "Зарегистрировать команду",
+      "target": "_blank"
+    },
+    {
+      "link": "https://fest-dance-cheerleading.timepad.ru/event/4138707/",
+      "text": "Зарегистрировать соло",
+      "target": "_blank"
+    }
+  ],
   "girl": "/images/dance/girls.png",
   "bg": "/images/dance/bg.png",
   "decorTop": "/images/dance/decor-top.png"

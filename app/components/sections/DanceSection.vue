@@ -8,13 +8,7 @@ const props = defineProps({
   girl: { type: String, required: true },
   bg: { type: String, required: true },
   decorTop: { type: String, required: true },
-  button: {
-    type: Object,
-    default: () => ({
-      link: '#',
-      text: 'Подать заявку',
-    }),
-  },
+  buttons: { type: Array, default: () => [] },
 })
 </script>
 
@@ -34,7 +28,15 @@ const props = defineProps({
           <Image class="dance__title-logo" :src="titleImg" alt="Title" />
           <div class="dance__text-content">
             <p class="dance__text text">{{ text }}</p>
-            <a :href="button.link" class="dance__button" :target="button.target">{{ button.text }}</a>
+            <div class="dance__buttons">
+              <a
+                v-for="btn in buttons"
+                :key="btn.text"
+                :href="btn.link"
+                class="dance__button"
+                :target="btn.target"
+              >{{ btn.text }}</a>
+            </div>
           </div>
         </div>
       </div>
@@ -96,7 +98,23 @@ const props = defineProps({
     }
   }
 
+  &__buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+
   &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: $magenta;
     padding: 1.5rem 2rem;
     font-size: 2.2rem;
@@ -105,6 +123,11 @@ const props = defineProps({
     text-decoration: none;
     border-radius: 20px;
     color: $white;
+
+    @media (max-width: $mobile) {
+      font-size: 1.8rem;
+      width: 100%;
+    }
   }
 
   &__decor {

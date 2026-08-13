@@ -1,5 +1,5 @@
-import { _ as _sfc_main$3, a as _sfc_main$4 } from "./B0QJFT1w.js";
-import { B as openBlock, C as createElementBlock, D as createBaseVNode, E as toDisplayString, F as createVNode, G as withCtx, I as Fragment, J as renderList, A as useHead, K as normalizeProps, L as guardReactiveProps, l as unref } from "./BISDYB7G.js";
+import { _ as _sfc_main$3, a as _sfc_main$4 } from "./pGzzZDVa.js";
+import { B as openBlock, C as createElementBlock, D as createBaseVNode, E as toDisplayString, F as createVNode, G as withCtx, I as Fragment, J as renderList, A as useHead, K as normalizeProps, L as guardReactiveProps, l as unref } from "./CvP-Pp3N.js";
 const _hoisted_1$1 = {
   id: "dummy",
   class: "dummy"
@@ -276,7 +276,7 @@ const title2 = "Состязания чирлидинг-команд";
 const text2 = "Выступаете в чирлидинге? Продемонстрируйте мощную энергетику и сложные элементы на главной арене фестиваля и поборитесь за призовой фонд.";
 const button = { "text": "Подать заявку", "link": "https://fest-dance-cheerleading.timepad.ru/event/4084236/", "target": "_blank" };
 const button2 = { "text": "Подать заявку", "link": "https://fest-dance-cheerleading.timepad.ru/event/4099869/", "target": "_blank" };
-const policyLinks = [{ "text": "Политика конфиденциальности", "href": "/docs/policy.pdf", "target": "_blank" }, { "text": "Регламент соревнований", "href": "/docs/reglament2.pdf", "target": "_blank" }];
+const policyLinks = [{ "text": "Политика конфиденциальности", "href": "/docs/policy.pdf", "target": "_blank" }, { "text": "Регламент соревнований", "href": "/docs/reglament4.pdf", "target": "_blank" }];
 const images = { "ballLeft": "/images/contest/ball-left.png", "ballRight": "/images/contest/ball-right.png", "ballMobile": "/images/contest/ball-mobile.png" };
 const contestData = {
   type,
